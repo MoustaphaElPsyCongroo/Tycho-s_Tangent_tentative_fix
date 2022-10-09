@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Tycho's Tots Adorbs Lil' Pets -->
+
+<books>
+<book ID="TT_Pet_D12_Story" Title="&amp;WSomething More" Format="Auto" Margins="1,2,2,2">
+  <page>Why me?
+
+D-12, despite supposedly only possessing a rudimentary form of intelligence, pondered this question for a while. Of course, it all began at the very beginning. First, D-12 was assembled with the wrong parts, namely a leg the size of a shepherd's arm, and LEDs worthy of competing with the city's adverts in flickering contests.
+This meant D-12 would have to perform its duties with a limp, and though D-12 maintained the expected quota for a while, they were soon added to the list of detritus to be collected and processed by one of the collective's numerous recycling units.
+
+The thought of such a tragic, brutal end D-12 could simply not bear. No, not me. Not today. And so D-12 skittered off, hiding amongst rats and men of strange tongues for days.
+At last, a breath of hope! D-12 would soon come crashing down a rusted vent, straight into the workshop of a grizzled snapjaw.</page>
+<page>The beastman, who was more man than beast, much to D-12's surprise, introduced himself merely as 'Pyre'. This was without a doubt the most eloquent snapjaw D-12 had ever encountered! Though, to be fair, D-12 had made few such encounters in a, comparatively speaking, short lifespan of two hundred years.
+
+Though D-12 found much comfort in the company of Ol' Pyre, this friendship could not last. Alas, even robotic forms of sentience possess some form of primal urge; a deep, inexplicable drive to wander the fields and mountains in search of the unknown.
+With Pyre's aid the tick was soon given a paintjob, a deep sky blue; reminiscent of freedom, D-12 thought; to avoid detection upon fleeing the city. And so began the tale of the Wandering Tick of Qud.</page>
+</book>
+
+<book ID="TT_Pet_Phelicia_Story" Title="&amp;WPyromaniac" Format="Auto" Margins="1,2,2,2">
+  <page>Leaving little to mystery, her favourite pastime is, without a doubt, setting things aflame.
+
+Such an unusual predicament meant she spent little time with her winged peers, preferring instead, you guessed it; setting things ablaze.
+
+Day after day, beast and man fell to her fiery gaze.
+
+Until at last, one day, she met a lunatic she knew was just the same.</page>
+</book>
+
+<book ID="TT_Pet_Centifriend_Story" Title="&amp;WJust A Little" Format="Auto" Margins="1,2,2,2">
+  <page>This poor critter was never quite the same; just a little different, never eating the game.
+
+Smaller than his peers, heart gazing the moon; just a little different, like a drifting balloon.
+
+At last, fifty feet beneath soil and sand, light; an escape, a new life ahoy!
+
+A world which - just a little different - brought at last a spark of joy.
+</page>
+</book>
+
+<!-- Don't touch this -->
+</books>

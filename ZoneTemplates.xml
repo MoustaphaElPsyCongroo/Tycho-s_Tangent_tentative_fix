@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates Load="Merge">
+
+
+<!-- TT Zone Templates  -->
+
+<zonetemplate Name="UnderbellyZone" RegionSize="400">    
+    <eachregion>
+      <!-- Place generic region decorations -->
+      <population Table="UnderbellyGlobals"/>
+      <population Table="UnderbellyCityStuff"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="UnderbellySurface" Chance="50"></population>
+      <population Table="LesserChimeras" Chance="3"></population>
+    </eachregion>
+</zonetemplate>
+
+
+</zonetemplates>

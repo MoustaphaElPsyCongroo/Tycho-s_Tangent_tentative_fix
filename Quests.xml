@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+
+  <quest Name="Dreamcatcher" Level="10" Manager="BringPyreADream"
+         Accomplishment="You fetched dreams for a snapjaw tinker."
+         Hagiograph="Beneath the yawning moon, =name= taught a friend the value of sleep."
+         HagiographCategory="Trysts">
+
+    <step Name="Obtain a Dream" XP="500">
+      <text>Search the marshlands for a rare seed.</text>
+    </step>
+
+    <step Name="Return to Ol' Pyre" XP="1500">
+      <text>Return to Master Pyre with a dream.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Silver Skies" Level="15" Manager="BringJuneABellflower"
+         Accomplishment="You acquired a flower worth its weight in silver."
+         Hagiograph="Beneath the full moon, =name= taught a friend the value of stealth."
+         HagiographCategory="Trysts">
+
+    <step Name="Obtain a Bellflower" XP="750">
+      <text>Search the chrome giants for a silver flower.</text>
+    </step>
+
+    <step Name="Return to June" XP="1750">
+      <text>Return to June with a bellflower.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="A Royal Wedding" Level="18" Manager="BringJuneAFdL"
+         Accomplishment="You acquired a flower worth its weight in gold."
+         Hagiograph="Beneath the rising sun, =name= taught a friend the value of beauty."
+         HagiographCategory="Trysts">
+
+    <step Name="Obtain the Flower" XP="1000">
+      <text>Search the lands for a Fleur de Lys.</text>
+    </step>
+
+    <step Name="Return to June" XP="2000">
+      <text>Return to June with the flower.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Tears of Heaven" Level="24" Manager="BringPyreAPearl"
+         Accomplishment="You acquired a pearl belonging to Chloris, goddess of spring."
+         Hagiograph="Beneath the midsummer sun, =name= taught a friend the value of love."
+         HagiographCategory="Trysts">
+
+    <step Name="Obtain a Pearl" XP="1250">
+      <text>Scour the lands for a shining pearl.</text>
+    </step>
+
+    <step Name="Return to Pyre" XP="2250">
+      <text>Return to Master Pyre with the pearl.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Gifts of Heaven" Level="27" Manager="BringJuneAStarseed"
+         Accomplishment="You acquired a seed of heavenly origins."
+         Hagiograph="Beneath the setting sun, =name= taught a friend the value of kinship."
+         HagiographCategory="Trysts">
+
+    <step Name="Obtain the Seed" XP="1500">
+      <text>Search the scorching sands for this rumoured gift of the Heavens.</text>
+    </step>
+
+    <step Name="Return to June" XP="2500">
+      <text>Return to June with a Starseed.</text>
+    </step>
+
+  </quest>
+
+  <!-- Don't touch this-->
+</quests>

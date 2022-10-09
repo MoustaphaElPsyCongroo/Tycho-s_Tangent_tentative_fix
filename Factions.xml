@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+
+  <!--
+
+    	***********************
+    	Sepherescent's Factions
+    	***********************
+
+  -->
+
+  <faction Name="Allhater" Visible="false" HatesPlayer="true" Load="Merge">
+    <feeling About="*" Value="-100" />
+  </faction>
+
+  <faction Name="Androids" DisplayName="androids" InitialPlayerReputation="-200" Load="Merge">
+    <feeling About="Androids" Value="100" />
+    <feeling About="Robots" Value="50" />
+    <feeling About="Prey" Value="50" />
+    <feeling About="Metropolitans" Value="50" />
+    <feeling About="Merchants" Value="50" />
+    <feeling About="Wardens" Value="50" />
+    <feeling About="Pariahs" Value="50" />
+    <feeling About="*" Value="-50" />
+    <partreputation About="AspiringBarathrumite" Value="250" />
+    <partreputation About="ChromeMother" Value="500" />
+    <partreputation About="DeathXIII" Value="-800" />
+    <waterritual Liquid="oil" Skill="Discipline_IronMind" Items="0-1" ItemBlueprint="CyberneticsCreditWedge" />
+  </faction>
+
+  <faction Name="Metropolitans" DisplayName="metropolitans" InitialPlayerReputation="0" Load="Merge">
+    <feeling About="Metropolitans" Value="100" />
+    <feeling About="Androids" Value="50" />
+    <feeling About="Pariahs" Value="50" />
+    <feeling About="Wardens" Value="50" />
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+
+  <!--
+
+      ******************
+      Base Game Factions
+      ******************
+
+  -->
+
+  <faction Name="Slumberlings" Visible="false" Load="Merge">
+    <partreputation About="DeathXIII" Value="-525" />
+  </faction>
+
+  <faction Name="Cherubim" Visible="false" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Prey" DisplayName="grazing hedonists" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Rootdweller" Value="-475" />
+  </faction>
+
+  <faction Name="Waydroids" Visible="false" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="TheHermitIX" Value="-300" />
+  </faction>
+
+  <faction Name="Hunters" Visible="false" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Joppa" DisplayName="villagers of Joppa" InitialPlayerReputation="-140" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="-60" />
+    <partreputation About="DeathXIII" Value="-860" />
+    <partreputation About="Deepdweller" Value="-60" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="GoatfolkDescendant" Value="-60" />
+    <partreputation About="Snapfriend" Value="-160" />
+  </faction>
+
+  <faction Name="Kyakukya" DisplayName="villagers of Kyakukya" Load="Merge">
+    <feeling About="Androids" Value="50" />
+    <feeling About="Pariahs" Value="50" />
+    <feeling About="Wardens" Value="50" />
+    <partreputation About="AgentOfEntropy" Value="-150" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="-100" />
+    <partreputation About="Flowerchild" Value="150" />
+    <partreputation About="Rootdweller" Value="150" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Ezra" DisplayName="villagers of Ezra" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="-150" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="-150" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="GoatfolkDescendant" Value="-100" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Snapjaws" DisplayName="snapjaws" Load="Merge">
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Snapfriend" Value="875" />
+  </faction>
+
+  <faction Name="Baboons" DisplayName="baboons" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-700" />
+    <partreputation About="GoatfolkDescendant" Value="300" />
+    <partreputation About="Rootdweller" Value="-200" />
+    <partreputation About="ServantOfPtoh" Value="-200" />
+  </faction>
+
+  <faction Name="Apes" DisplayName="apes" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="GoatfolkDescendant" Value="-475" />
+    <partreputation About="TheHermitIX" Value="150" />
+  </faction>
+
+  <faction Name="Crabs" DisplayName="crabs" Load="Merge">
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="275" />
+    <partreputation About="Flowerchild" Value="-125" />
+  </faction>
+
+  <faction Name="Bears" DisplayName="bears" Load="Merge">
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="Claymore" Value="325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Flowerchild" Value="-125" />
+    <partreputation About="Snapfriend" Value="325" />
+    <waterritual Liquid="honey" />
+  </faction>
+
+  <faction Name="Winged Mammals" DisplayName="winged mammals" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="Rootdweller" Value="-475" />
+  </faction>
+
+  <faction Name="Birds" DisplayName="birds" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="TheHermitIX" Value="150" />
+  </faction>
+
+  <faction Name="Fish" DisplayName="fish" Load="Merge">
+    <partreputation About="Claymore" Value="-200" />
+    <partreputation About="DeathXIII" Value="-600" />
+    <partreputation About="Rootdweller" Value="400" />
+    <partreputation About="TheHermitIX" Value="-75" />
+  </faction>
+
+  <faction Name="Insects" DisplayName="insects" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-325" />
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="275" />
+  </faction>
+
+  <faction Name="Swine" DisplayName="swine" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="275" />
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="GoatfolkDescendant" Value="275" />
+  </faction>
+
+  <faction Name="Unshelled Reptiles" DisplayName="unshelled reptiles" Load="Merge">
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Flowerchild" Value="-125" />
+    <partreputation About="GoatfolkDescendant" Value="275" />
+  </faction>
+
+  <faction Name="Cannibals" DisplayName="cannibals" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="500" />
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-500" />
+    <partreputation About="ServantOfPtoh" Value="-300" />
+    <partreputation About="TheHermitIX" Value="-300" />
+  </faction>
+
+  <faction Name="Arachnids" DisplayName="arachnids" Load="Merge">
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="275" />
+    <partreputation About="Flowerchild" Value="-125" />
+    <partreputation About="TheHermitIX" Value="-325" />
+  </faction>
+
+  <faction Name="Cats" DisplayName="cats" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-700" />
+    <partreputation About="Flowerchild" Value="300" />
+    <partreputation About="GoatfolkDescendant" Value="-300" />
+    <partreputation About="Snapfriend" Value="-175" />
+    <partreputation About="TheHermitIX" Value="-150" />
+  </faction>
+
+  <faction Name="Dogs" DisplayName="dogs" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="150" />
+    <partreputation About="ChromeMother" Value="-600" />
+    <partreputation About="Claymore" Value="150" />
+    <partreputation About="DeathXIII" Value="-1300" />
+    <partreputation About="Deepdweller" Value="-600" />
+    <partreputation About="Flowerchild" Value="-300" />
+    <partreputation About="Snapfriend" Value="100" />
+  </faction>
+
+  <faction Name="Cragmensch" DisplayName="cragmensch" Load="Merge">
+    <partreputation About="Biographer" Value="-300" />
+    <partreputation About="DeathXIII" Value="-500" />
+    <partreputation About="Flowerchild" Value="-100" />
+    <partreputation About="ServantOfPtoh" Value="300" />
+  </faction>
+
+  <faction Name="Mollusks" DisplayName="mollusks" Load="Merge">
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Flowerchild" Value="-125" />
+    <partreputation About="ServantOfPtoh" Value="-125" />
+  </faction>
+
+  <faction Name="Tortoises" DisplayName="tortoises" Load="Merge">
+    <partreputation About="Carapace" Value="300" />
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="300" />
+    <partreputation About="TheHermitIX" Value="-300" />
+  </faction>
+
+  <faction Name="Robots" DisplayName="robots" Load="Merge">
+    <feeling About="Androids" Value="50" />
+    <partreputation About="AspiringBarathrumite" Value="175" />
+    <partreputation About="ChromeMother" Value="475" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="-325" />
+  </faction>
+
+  <faction Name="Baetyls" DisplayName="baetyls" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Dromad" DisplayName="dromad merchants" Load="Merge">
+    <partreputation About="Claymore" Value="100" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Rootdweller" Value="-300" />
+    <partreputation About="Snapfriend" Value="-300" />
+  </faction>
+
+  <faction Name="highly entropic beings" Load="Merge">
+    <partreputation About="SpaceTimeVortex" Value="200" />
+    <partreputation About="AgentOfEntropy" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="ServantOfPtoh" Value="-300" />
+  </faction>
+
+  <faction Name="Antelopes" DisplayName="antelopes" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="GoatfolkDescendant" Value="200" />
+  </faction>
+
+  <faction Name="Worms" DisplayName="worms" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-325" />
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="775" />
+    <partreputation About="Flowerchild" Value="-125" />
+    <partreputation About="TheHermitIX" Value="-325" />
+  </faction>
+
+  <faction Name="Oozes" DisplayName="oozes" Load="Merge">
+    <partreputation About="Claymore" Value="-150" />
+    <partreputation About="DeathXIII" Value="-450" />
+    <partreputation About="Flowerchild" Value="-50" />
+    <partreputation About="Snapfriend" Value="300" />
+    <partreputation About="TheHermitIX" Value="-250" />
+  </faction>
+
+  <faction Name="Equines" DisplayName="equines" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="Claymore" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="-475" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="Snapfriend" Value="-300" />
+  </faction>
+
+  <faction Name="Newly Sentient Beings" DisplayName="newly sentient beings" Load="Merge">
+    <partreputation About="Biographer" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="100" />
+  </faction>
+
+  <faction Name="Goatfolk" DisplayName="goatfolk" Load="Merge">
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="GoatfolkDescendant" Value="775" />
+    <partreputation About="Rootdweller" Value="-525" />
+  </faction>
+
+  <faction Name="Hermits" DisplayName="hermits" Load="Merge">
+    <partreputation About="DeathXIII" Value="-900" />
+    <partreputation About="Deepdweller" Value="-375" />
+    <partreputation About="GoatfolkDescendant" Value="-200" />
+    <partreputation About="TheHermitIX" Value="450" />
+  </faction>
+
+  <faction Name="Frogs" DisplayName="frogs" Load="Merge">
+    <partreputation About="ChromeMother" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="TheHermitIX" Value="150" />
+  </faction>
+
+  <faction Name="Naphtaali" DisplayName="Naphtaali tribe" Load="Merge">
+    <partreputation About="ChromeMother" Value="350" />
+    <partreputation About="DeathXIII" Value="-650" />
+    <partreputation About="Flowerchild" Value="650" />
+    <partreputation About="GoatfolkDescendant" Value="-650" />
+    <partreputation About="Rootdweller" Value="750" />
+  </faction>
+
+  <faction Name="Trolls" DisplayName="trolls" Load="Merge">
+    <partreputation About="Claymore" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="ServantOfPtoh" Value="-325" />
+    <partreputation About="Snapfriend" Value="175" />
+  </faction>
+
+  <faction Name="Issachari" DisplayName="Issachari tribe" Load="Merge">
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="TheHermitIX" Value="375" />
+  </faction>
+
+  <faction Name="Strangers" DisplayName="mysterious strangers" Load="Merge">
+    <partreputation About="Claymore" Value="150" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="-300" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="TheHermitIX" Value="-500" />
+  </faction>
+
+  <faction Name="Solos" Visible="false" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Pariahs" DisplayName="pariahs" Load="Merge">
+    <feeling About="Androids" Value="50" />
+    <feeling About="Kyakukya" Value="50" />
+    <feeling About="Wardens" Value="50" />
+    <partreputation About="Biographer" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="100" />
+  </faction>
+
+  <faction Name="Hindren" DisplayName="hindren of Bey Lah" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="-300" />
+    <partreputation About="Biographer" Value="-100" />
+    <partreputation About="DeathXIII" Value="-800" />
+    <partreputation About="Deepdweller" Value="-100" />
+    <partreputation About="Flowerchild" Value="300" />
+    <partreputation About="GoatfolkDescendant" Value="-200" />
+    <partreputation About="Snapfriend" Value="-100" />
+  </faction>
+
+  <faction Name="Mopango" DisplayName="mopango" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="-300" />
+    <partreputation About="Deepdweller" Value="-150" />
+    <partreputation About="DeathXIII" Value="-1150" />
+    <partreputation About="GoatfolkDescendant" Value="-150" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Girsh" DisplayName="Girsh" Load="Merge">
+    <feeling About="*" Value="-50" />
+    <partreputation About="AgentOfEntropy" Value="800" />
+    <partreputation About="Claymore" Value="-400" />
+    <partreputation About="DeathXIII" Value="-200" />
+    <partreputation About="Flowerchild" Value="-200" />
+  </faction>
+
+  <faction Name="Barathrumites" DisplayName="Barathrumites" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="150" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="-100" />
+    <partreputation About="ServantOfPtoh" Value="-300" />
+  </faction>
+
+  <faction Name="Consortium" DisplayName="Consortium of Phyta" Load="Merge">
+    <partreputation About="Biographer" Value="-300" />
+    <partreputation About="DeathXIII" Value="-990" />
+    <partreputation About="Flowerchild" Value="200" />
+    <partreputation About="Rootdweller" Value="200" />
+  </faction>
+
+  <faction Name="Templar" DisplayName="Putus Templar" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="-300" />
+    <partreputation About="DeathXIII" Value="-300" />
+  </faction>
+
+  <faction Name="Mechanimists" DisplayName="Mechanimists" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-475" />
+    <partreputation About="Biographer" Value="100" />
+    <partreputation About="ChromeMother" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="TheHermitIX" Value="-150" />
+  </faction>
+
+  <faction Name="MechaSub" Visible="false" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-475" />
+    <partreputation About="Biographer" Value="100" />
+    <partreputation About="ChromeMother" Value="300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Glow Wights" DisplayName="Glow-Wights" Load="Merge">
+    <partreputation About="AgentOfEntropy" Value="950" />
+    <partreputation About="DeathXIII" Value="-350" />
+    <partreputation About="Flowerchild" Value="-150" />
+  </faction>
+
+  <faction Name="Mamon" DisplayName="Children of Mamon" Load="Merge">
+    <partreputation About="DeathXIII" Value="-400" />
+    <partreputation About="GoatfolkDescendant" Value="250" />
+    <partreputation About="ServantOfPtoh" Value="400" />
+  </faction>
+
+  <faction Name="Seekers" DisplayName="Seekers of the Sightless Way" Load="Merge">
+    <partreputation About="DeathXIII" Value="-500" />
+    <partreputation About="ServantOfPtoh" Value="800" />
+  </faction>
+
+  <faction Name="Wardens" DisplayName="Fellowship of Wardens" Load="Merge">
+    <feeling About="Androids" Value="50" />
+    <partreputation About="AgentOfEntropy" Value="-325" />
+    <partreputation About="Claymore" Value="100" />
+    <partreputation About="DeathXIII" Value="-850" />
+    <partreputation About="Deepdweller" Value="-125" />
+    <partreputation About="GoatfolkDescendant" Value="-125" />
+    <partreputation About="ServantOfPtoh" Value="-225" />
+    <partreputation About="Snapfriend" Value="-125" />
+    <waterritual Skill="Shield" />
+  </faction>
+
+  <faction Name="Water" DisplayName="water barons" Load="Merge">
+    <partreputation About="Biographer" Value="100" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="-150" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Flowers" DisplayName="flowers" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Flowerchild" Value="400" />
+  </faction>
+
+  <faction Name="Roots" DisplayName="roots" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-325" />
+    <partreputation About="Biographer" Value="-325" />
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Deepdweller" Value="275" />
+    <partreputation About="Rootdweller" Value="375" />
+  </faction>
+
+  <faction Name="Fungi" DisplayName="fungi" Load="Merge">
+    <partreputation About="Claymore" Value="-475" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Deepdweller" Value="300" />
+    <partreputation About="Flowerchild" Value="-150" />
+  </faction>
+
+  <faction Name="Vines" DisplayName="vines" Load="Merge">
+    <partreputation About="DeathXIII" Value="-525" />
+    <partreputation About="Flowerchild" Value="125" />
+    <partreputation About="Rootdweller" Value="175" />
+  </faction>
+
+  <faction Name="Urchins" DisplayName="urchins" Load="Merge">
+    <partreputation About="DeathXIII" Value="-500" />
+    <partreputation About="Flowerchild" Value="200" />
+  </faction>
+
+  <faction Name="Succulents" DisplayName="succulents" Load="Merge">
+    <partreputation About="ChromeMother" Value="-300" />
+    <partreputation About="Claymore" Value="-300" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="GoatfolkDescendant" Value="-475" />
+  </faction>
+
+  <faction Name="Trees" DisplayName="trees" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="-200" />
+    <partreputation About="Biographer" Value="-500" />
+    <partreputation About="DeathXIII" Value="-700" />
+    <partreputation About="Flowerchild" Value="100" />
+    <partreputation About="Rootdweller" Value="200" />
+  </faction>
+
+  <faction Name="Merchants" DisplayName="Merchants' Guild" Load="Merge">
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Farmers" DisplayName="Farmers' Guild" Load="Merge">
+    <partreputation About="AspiringBarathrumite" Value="150" />
+    <partreputation About="AgentOfEntropy" Value="-150" />
+    <partreputation About="DeathXIII" Value="-1000" />
+    <partreputation About="Snapfriend" Value="-150" />
+  </faction>
+
+  <faction Name="Resheph" DisplayName="Cult of the Coiled Lamb" Load="Merge">
+    <partreputation About="Biographer" Value="100" />
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="Daughters" DisplayName="Daughters of Exile" Load="Merge">
+    <partreputation About="Biographer" Value="100" />
+    <partreputation About="DeathXIII" Value="-1000" />
+  </faction>
+
+  <faction Name="SultanCult1" Load="Merge">
+    <partreputation About="Biographer" Value="500" />
+    <partreputation About="DeathXIII" Value="-500" />
+  </faction>
+
+  <faction Name="SultanCult2" Load="Merge">
+    <partreputation About="Biographer" Value="350" />
+    <partreputation About="DeathXIII" Value="-500" />
+  </faction>
+
+  <faction Name="SultanCult3" Load="Merge">
+    <partreputation About="Biographer" Value="200" />
+    <partreputation About="DeathXIII" Value="-500" />
+  </faction>
+
+  <faction Name="SultanCult4" Load="Merge">
+    <partreputation About="Biographer" Value="200" />
+    <partreputation About="DeathXIII" Value="-500" />
+  </faction>
+
+  <faction Name="SultanCult5" Load="Merge">
+    <partreputation About="Biographer" Value="200" />
+    <partreputation About="DeathXIII" Value="-500" />
+  </faction>
+
+</factions>

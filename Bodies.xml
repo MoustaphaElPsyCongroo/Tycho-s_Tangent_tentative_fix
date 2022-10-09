@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies Load="Merge">
+
+  <anatomies>
+
+  <anatomy Name="Faerie">
+    <part Type="Head" />
+    <part Type="Face" />
+    <part Type="Back" />
+  </anatomy>
+
+  <anatomy Name="WallBody">
+    <part Type="Face" />
+    <part Type="Back" />
+  </anatomy>
+
+  </anatomies>
+
+</bodies>

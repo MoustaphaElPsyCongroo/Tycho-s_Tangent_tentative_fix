@@ -1,0 +1,1956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+	<!-- Pretty Little Code	-->
+
+<object Name="TychoModInitialiserObject" Inherits="Widget">
+	<part Name="TychoModInitialiser"/>
+</object>
+
+
+<!--
+
+			************************
+			Seph's Armour & Clothing
+			************************
+
+-->
+
+	<object Name="Cultist Robe" Inherits="BaseArmor">
+    <part Name="Armor" AV="0" DV="3" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Mcultist &amp;yrobe" RenderString="]" Tile="Items/sw_robes1.bmp" ColorString="&amp;M" DetailColor="G"></part>
+    <part Name="Commerce" Value="6"></part>
+    <part Name="Description" Short="This airy robe was once woven from fine cloth... now, stained by the timeless depravities of sin..."></part>
+    <part Name="Physics" Weight="6"></part>
+    <part Name="AddsRep" Faction="Glow Wights" Value="100" />
+	  <tag Name="Tier" Value="1"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Seeker Robes" Inherits="BaseArmor">
+    <part Name="Armor" AV="0" Ego="1" DV="2" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;rseeker's &amp;yrobes" RenderString="]" Tile="Items/sw_robes1.bmp" ColorString="&amp;r" DetailColor="Y"></part>
+    <part Name="Commerce" Value="8"></part>
+    <part Name="Description" Short="Though different sects may sport different insignia, all robes are covered in the mildew of the morning boomrose, so as to ward off evil spirits."></part>
+    <part Name="Physics" Weight="8"></part>
+    <part Name="AddsRep" Faction="Seekers" Value="50" />
+    <tag Name="Tier" Value="2"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Seeker Exalted Robes" Inherits="BaseArmor">
+    <part Name="Armor" AV="1" Ego="2" DV="3" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;rseeker's &amp;Wexalted &amp;yrobes" RenderString="]" Tile="Items/sw_robes1.bmp" ColorString="&amp;r" DetailColor="W"></part>
+    <part Name="Commerce" Value="666"></part>
+    <part Name="Description" Short="The owner of these robes attained a high rank within the seekers' fellowship, as indicated by the golden star pins running down the shoulders. The quality is exceptional, soft to the touch and yet resistant to external traumas."></part>
+    <part Name="Physics" Weight="9"></part>
+    <part Name="AddsRep" Faction="Seekers" Value="100" />
+    <tag Name="Tier" Value="4"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Seeker's Blessing" Inherits="BaseArmor">
+    <part Name="Armor" AV="2" Ego="3" DV="4" Elec="10" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;rseeker's &amp;mbl&amp;We&amp;Yss&amp;Wi&amp;mng" RenderString="]" Tile="Items/sw_robes1.bmp" ColorString="&amp;m" DetailColor="W"></part>
+    <part Name="Commerce" Value="1200"></part>
+    <part Name="Description" Short="It glimmers and shimmers on all planes, visible to the mundane and otherworldly alike; so much so in fact that the magics contained therein spring forth, causing lesser beings to flee in fright. The seekers believe the robes to have been blessed by Ptoh."></part>
+    <part Name="Physics" Weight="10"></part>
+    <part Name="AddsRep" Faction="Seekers" Value="150" />
+    <tag Name="Tier" Value="6"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Suntan Tunic" Inherits="BaseArmor">
+    <part Name="Armor" AV="1" DV="2" Heat="8" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Wsun&amp;Otan &amp;ytunic" RenderString="]" ColorString="&amp;y" DetailColor="O"></part>
+    <part Name="Commerce" Value="5"></part>
+    <part Name="Description" Short="This simple tunic was woven of stiff plant fiber, then hardened by the baking sun. It smells of the meadows."></part>
+    <part Name="Physics" Weight="6"></part>
+    <tag Name="Tier" Value="2"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Sunblessed Tunic" Inherits="BaseArmor">
+    <part Name="Armor" AV="2" DV="1" Heat="16" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Wsun&amp;Oblessed &amp;ytunic" RenderString="]" ColorString="&amp;W" DetailColor="O"></part>
+    <part Name="Commerce" Value="21"></part>
+    <part Name="Description" Short="Years of exposure to the all-mother in the sky have imbued this simple tunic with an undying shine. It smells of the meadows, She says."></part>
+    <part Name="Physics" Weight="12"></part>
+    <part Name="LightSource" Lit="true" Radius="3" />
+    <tag Name="Tier" Value="3"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Mirrormask Helm" Inherits="BaseHelmet">
+    <part Name="Armor" AV="3" DV="-3" WornOn="Head" />
+    <part Name="Render" DisplayName="&amp;Kmi&amp;yrr&amp;Yor&amp;yma&amp;Ksk &amp;yhelm" ColorString="&amp;K" RenderString="]" Tile="Items/mirrormask_helm.png" DetailColor="Y" />
+    <part Name="Commerce" Value="275" />
+    <part Name="Description" Short="Enforcers of olde would wear these during tumultuous times. A safety bubble in a lake of madness." />
+    <part Name="Physics" Weight="20" />
+    <part Name="FlareCompensation" />
+    <part Name="RefractLight" Chance="1" RetroVariance="1d121-61" Verb="reflect" />
+    <tag Name="UsesSlots" Value="Face,Head" />
+    <tag Name="Tier" Value="4" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="DynamicObjectsTable:Headwear" />
+  </object>
+	<object Name="Bronze Shield" Inherits="BaseShield">
+    <part Name="Render" DisplayName="&amp;wbronze &amp;yshield" Tile="items/bronze_shield.png" ColorString="&amp;w" DetailColor="y"></part>
+    <part Name="Shield" AV="2" DV="-3" WornOn="Hand"></part>
+    <part Name="Description" Short="A large, circular shield, made of tin and copper."></part>
+    <part Name="Commerce" Value="10"></part>
+    <part Name="Physics" Weight="14"></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="0"></tag>
+  </object>
+	<object Name="Iron Buckler" Load="Merge">
+    <part Name="Shield" AV="2" DV="-2" WornOn="Arm"></part>
+    <part Name="Commerce" Value="10"></part>
+    <part Name="Physics" Weight="9"></part>
+  </object>
+	<object Name="Steel Buckler" Load="Merge">
+    <part Name="Shield" AV="2" DV="-1" WornOn="Arm"></part>
+    <part Name="Commerce" Value="50"></part>
+    <part Name="Physics" Weight="7"></part>
+  </object>
+	<object Name="Witchwood Crown" Inherits="BaseHelmet">
+    <part Name="Armor" AV="1" DV="0" WornOn="Head" />
+    <part Name="Render" DisplayName="&amp;Wwitchwood crown" RenderString="]" Tile="Items/sw_wreath.bmp" ColorString="&amp;W" DetailColor="W" />
+    <part Name="Commerce" Value="75" />
+    <part Name="Description" Short="Crafted and imbued with invigorating elements in such a fashion that only a skilled crone could weave." />
+    <part Name="Physics" Weight="2" />
+    <part Name="LightSource" Lit="true" Radius="5" />
+    <tag Name="Mods" Value="None" />
+	  <tag Name="Tier" Value="2" />
+    <tag Name="DynamicObjectsTable:Headwear" />
+  </object>
+	<object Name="Chrome Womb" Inherits="BaseArmor">
+    <part Name="Armor" AV="3" DV="-3" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Ychrome &amp;ywomb" RenderString="]" ColorString="&amp;y" DetailColor="Y"></part>
+    <part Name="Commerce" Value="0"></part>
+    <part Name="Description" Short="&amp;R[WARNING: Not yet fully implemented] &amp;yAn unsightly chrome bulge hangs from your frame, like a balloon awaiting a needle to absolve it of sin and pain."></part>
+    <part Name="Physics" Weight="20"></part>
+    <tag Name="Tier" Value="5"></tag>
+    <tag Name="Mods" Value="None" />
+    <part Name="Metal"></part>
+    <part Name="Cursed" RevealInDescription="false"/>
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+	<object Name="Carnival Mask" Inherits="BaseMask">
+    <part Name="Armor" AV="0" DV="1" Ego="2" WornOn="Face" />
+    <part Name="Render" DisplayName="&amp;oc&amp;Oa&amp;or&amp;On&amp;oi&amp;Ov&amp;oa&amp;Ol &amp;ymask" RenderString="]" Tile="Items/carnival_mask.png" ColorString="&amp;o" DetailColor="O" />
+    <part Name="Commerce" Value="12" />
+    <part Name="Description" Short="Pearl-bound sandals aren't the only piece of craftsmanship the river-wives are known for. Vibrant, fiery masks covered in autumn leaves are worn in nigh every celebration. It is stitched to a long stick so that it may be held with one hand" />
+    <part Name="Physics" Weight="3" />
+    <tag Name="UsesSlots" Value="Face,Hand" />
+    <tag Name="Tier" Value="2" />
+  </object>
+	<object Name="Feather Kilt" Inherits="BaseArmor">
+    <part Name="Armor" AV="2" DV="0" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Kf&amp;ye&amp;Ka&amp;yt&amp;Kh&amp;ye&amp;Kr &amp;ykilt" Tile="Items/kilt.png" RenderString="]" ColorString="&amp;y" DetailColor="K"></part>
+    <part Name="Commerce" Value="10"></part>
+    <part Name="Description" Short="This kilt was skillfully fletched using the metallic feathers of a coal-black swan."></part>
+    <part Name="Physics" Weight="7"></part>
+    <part Name="Metal"></part>
+    <part Name="AddsRep" Faction="Birds" Value="100" />
+    <tag Name="Tier" Value="1"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Koiskin Tunic" Inherits="BaseArmor">
+    <part Name="Armor" AV="4" DV="-3" Cold="-16" WornOn="Body"></part>
+    <part Name="Render" DisplayName="&amp;Rk&amp;Yo&amp;Ri&amp;Ys&amp;Rk&amp;Yi&amp;Rn &amp;ytunic" Tile="Items/shardmail.png" RenderString="]" ColorString="&amp;R" DetailColor="Y"></part>
+    <part Name="Commerce" Value="90"></part>
+    <part Name="Description" Short="The crystalline skin of the koi was flayed off and applied to a soft rubberseed interior. Were it not for this added layer, the wearer would surely impale themselves on the koi's sharp scales."></part>
+    <part Name="Physics" Weight="35"></part>
+    <part Name="AddsRep" Faction="Fish" Value="-200" />
+    <tag Name="Tier" Value="3"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+	<object Name="Flowershield" Inherits="BaseShield">
+    <part Name="Render" DisplayName="&amp;Of&amp;Bl&amp;Oo&amp;Bw&amp;Oe&amp;Br&amp;wshield" Tile="Items/flowershield.png" ColorString="&amp;B" DetailColor="O"></part>
+    <part Name="Shield" AV="2" DV="-1" WornOn="Hand"></part>
+    <part Name="Description" Short="Flowers align this decorative shield. The base is made of precious hardwood, which was drenched in woodworm toxins and tree sap, then left to oxidise over time."></part>
+    <part Name="Commerce" Value="80"></part>
+    <part Name="Physics" Weight="14"></part>
+    <part Name="AddsRep" Faction="Naphtaali,Flowers" Value="100" />
+    <tag Name="Tier" Value="3"></tag>
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Rootshield" Inherits="BaseShield">
+    <part Name="Render" DisplayName="&amp;gr&amp;Goo&amp;gt&amp;wshield" Tile="Items/flowershield.png" ColorString="&amp;g" DetailColor="G"></part>
+    <part Name="Shield" AV="2" DV="-2" WornOn="Hand"></part>
+    <part Name="Description" Short="Tangled mudroot was further entangled by some form of organised chaos into a useable shield."></part>
+    <part Name="Commerce" Value="28"></part>
+    <part Name="Physics" Weight="18"></part>
+    <part Name="AddsRep" Faction="Naphtaali,Roots" Value="100" />
+    <tag Name="Tier" Value="2"></tag>
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Halfmoon Shield" Inherits="BaseShield">
+    <part Name="Render" DisplayName="&amp;chalf&amp;Ymoon &amp;cshield" Tile="Items/halfmoon_shield.png" ColorString="&amp;r" DetailColor="Y"></part>
+    <part Name="Shield" AV="1" DV="2" WornOn="Hand"></part>
+    <part Name="Description" Short="Shaped like the crescent moon, this piece is surprisingly wieldy. The hillside natives are to be thanked for its existence."></part>
+    <part Name="Commerce" Value="80"></part>
+    <part Name="Physics" Weight="12"></part>
+    <part Name="AddsRep" Faction="Cannibals" Value="100" />
+    <tag Name="Tier" Value="3"></tag>
+    <intproperty Name="Inorganic" Value="0" />
+  </object>
+  <object Name="TT_Face_of_the_Firstborn" Inherits="Trinket">
+    <part Name="Armor" AV="4" Ego="4" DV="4" WornOn="Face" />
+    <part Name="Examiner" UnknownDisplayName="{{c|strange shield}}" AlternateDisplayName="heavy mask" Complexity="8" />
+    <part Name="Render" DisplayName="face of the {{paisley|firstborn}}" RenderString="]" DetailColor="M" ColorString="&amp;Y" Tile="Items/tt_mask.png" />
+    <part Name="Commerce" Value="25000" />
+    <part Name="Description" Short="Carved out of the petrified flesh of a wandering cherub, amongst the first to walk the Earth. Its very existence born from an unforgiveable crime - its wearer will likewise be judged and persecuted by the faithful." />
+    <part Name="Physics" Weight="5" />
+    <part Name="Cursed" RevealInDescription="true"/>
+    <part Name="TinkerItem" CanDisassemble="false" CanBuild="false" />
+    <part Name="AddsRep" Faction="Mechanimists,Templar" Value="-2000" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="Tier" Value="8" />
+  </object>
+
+
+<!--
+
+			*******************************
+			Sepherescent's Weapons & Widows
+			*******************************
+
+-->
+
+	<object Name="Iron Sickle" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="iron sickle" Tile="Items/sickle.png" TileColor="&amp;y" RenderString="\"></part>
+    <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Axe" />
+    <part Name="Commerce" Value="12"></part>
+    <part Name="Description" Short="A short, wooden shaft topped with a wicked curved blade. Used to harvest wheat and other edibles. A potentially dangerous weapon in skilled hands."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="1"></tag>
+  </object>
+	<object Name="Steel Sickle" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="&amp;Ysteel&amp;y sickle" Tile="Items/sickle.png" ColorString="&amp;Y" RenderString="\"></part>
+    <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3+1" Skill="Axe" />
+    <part Name="Commerce" Value="24"></part>
+    <part Name="Description" Short="A short, wooden shaft topped with a wicked curved blade. Used to harvest wheat and other edibles. A potentially dangerous weapon in skilled hands."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="2"></tag>
+  </object>
+	<object Name="Iron Vinereaper" Load="Merge">
+    <part Name="Render" DisplayName="iron vinereaper" Tile="Items/scythe.png" TileColor="&amp;y" RenderString="\"></part>
+    <part Name="Physics" Weight="9" UsesTwoSlots="true" />
+	  <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="3" BaseDamage="1d6" Skill="Axe" />
+    <part Name="Commerce" Value="18"></part>
+    <part Name="Description" Short="A long, flexible shaft topped with a wicked curved blade. Used to flay the tough watervine hides. Requires two hands, lest one wishes to maim oneself."></part>
+  </object>
+	<object Name="Steel Vinereaper" Load="Merge">
+    <part Name="Render" DisplayName="&amp;Ysteel&amp;y vinereaper" Tile="Items/scythe.png" ColorString="&amp;Y" RenderString="\"></part>
+    <part Name="Physics" Weight="12" UsesTwoSlots="true" />
+    <part Name="MeleeWeapon" PenBonus="2" MaxStrengthBonus="3" BaseDamage="1d6+1" Skill="Axe" />
+    <part Name="Commerce" Value="36"></part>
+    <part Name="Description" Short="A long, flexible shaft topped with a wicked curved blade. Used to flay the tough watervine hides. Requires two hands, lest one wishes to maim oneself."></part>
+  </object>
+	<object Name="Claymore Sword" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="&amp;Yclaymore" Tile="Items/claymoresword.png" ColorString="&amp;Y" RenderString="\"></part>
+    <part Name="MeleeWeapon" PenBonus="2" MaxStrengthBonus="3" BaseDamage="1d6+1" Skill="LongBlades" />
+    <part Name="Commerce" Value="40"></part>
+    <part Name="Description" Short="A hulking blade, the claymore is a massively popular weapon in the far west. It hungers for the flesh of giants."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="2"></tag>
+    <part Name="Physics" UsesTwoSlots="true" Weight="13"></part>
+  </object>
+	<object Name="Claymore Carbide" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="&amp;bcarbide &amp;Yclaymore" Tile="Items/claymoresword.png" ColorString="&amp;b" RenderString="\"></part>
+    <part Name="MeleeWeapon" PenBonus="2" MaxStrengthBonus="5" BaseDamage="1d8+2" Skill="LongBlades" />
+    <part Name="Commerce" Value="120"></part>
+    <part Name="Description" Short="A hulking blade, the claymore is a massively popular weapon in the far west. It hungers for the flesh of chrome giants."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="4"></tag>
+    <part Name="Physics" UsesTwoSlots="true" Weight="13"></part>
+  </object>
+  <object Name="TT_Crysteel_Claymore" Inherits="BaseLongBlade">
+    <part Name="Render" DisplayName="{{crysteel|crysteel}} &amp;Yclaymore" Tile="Items/claymoresword.png" ColorString="&amp;g" DetailColor="K" RenderString="\"></part>
+    <part Name="MeleeWeapon" PenBonus="2" MaxStrengthBonus="7" BaseDamage="2d8+2" Skill="LongBlades" />
+    <part Name="Commerce" Value="390" />
+    <part Name="Description" Short="A hulking blade, the claymore is a massively popular weapon in the far west. It hungers for the flesh of chrome giants."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="6"></tag>
+    <part Name="Physics" UsesTwoSlots="true" Weight="13"></part>
+  </object>
+	<object Name="Reaper's Claw" Inherits="BaseAxe">
+    <part Name="Render" DisplayName="&amp;Rreaper's &amp;Yclaw" Tile="Items/scythe.png" ColorString="&amp;R" DetailColor="Y" RenderString="\"></part>
+    <part Name="Physics" Weight="12" UsesTwoSlots="true" />
+    <part Name="MeleeWeapon" PenBonus="2" MaxStrengthBonus="6" BaseDamage="1d8+2" Skill="Axe" />
+    <part Name="Commerce" Value="250"></part>
+    <part Name="Description" Short="In Qud's deepest cracks, where even the long arm of justice may not reach, death's arm, shapeless and ever-growing, stretches out to strangle the breath of life out of all beings equally, without forethought or prejudice."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="5"></tag>
+  </object>
+	<object Name="Pitchfork" Inherits="BaseDagger">
+    <part Name="Render" DisplayName="pitchfork" Tile="Items/pitchfork.png" DetailColor="w" RenderString="\"></part>
+    <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2+1" Skill="ShortBlades" SecondaryStat="Agility"></part>
+    <part Name="Commerce" Value="9"></part>
+    <part Name="Description" Short="A farmhand's best friend, or so it would be were it not for dogs. Three sharp points stand ready to impale the target."></part>
+    <part Name="Metal"></part>
+    <tag Name="Tier" Value="1"></tag>
+    <part Name="Physics" Weight="7" UsesTwoSlots="true"></part>
+  </object>
+	<object Name="Stun Staff" Inherits="MeleeWeapon">
+    <part Name="Render" DisplayName="&amp;cstun &amp;ystaff" RenderString="\" Tile="Items/stun_staff.png" ColorString="&amp;K" DetailColor="W" />
+    <part Name="Examiner" Complexity="3" />
+    <part Name="MeleeWeapon" RenderString="\" MaxStrengthBonus="3" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" />
+    <part Name="Commerce" Value="150" />
+    <part Name="Description" Short="A sleek metal shaft dotted with electroglands on one end." />
+    <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+    <part Name="DischargeOnHit" ChargeUse="0" Voltage="1d6" Damage="1d2" IsEMPSensitive="true" IsTechScannable="true" />
+    <part Name="TinkerItem" Bits="CG1" CanDisassemble="true" CanBuild="true" CanRepair="true" />
+    <part Name="Metal" />
+    <part Name="Physics" Weight="5" />
+    <tag Name="Mods" Value="WeaponMods,CommonMods,ElectronicsMods" />
+    <tag Name="Tier" Value="3" />
+  </object>
+  <object Name="TT_Blade_of_a_Forgotten_Prince" Inherits="Vibro Blade">
+    <part Name="Render" DisplayName="&amp;Gblade of a forgotten prince&amp;Y" Tile="Items/tt_scimitar.png" ColorString="&amp;G" DetailColor="M" />
+    <part Name="Commerce" Value="4200" />
+    <part Name="Description" Short="A gleaming blade of foreign origins. Or rather, foreign to you - not to this world. Indeed, it does not take long for it to dawn on you that you are the foreigner here. The hilt's purple wrappings are as soft as a calves' thighs, but you feel wrong holding it, perhaps realising this blade wasn't meant for you." />
+    <part Name="Physics" Weight="5" />
+    <part Name="MeleeWeapon" PenBonus="0" MaxStrengthBonus="0" BaseDamage="1d20+4" Ego="-2" Skill="LongBlades" />
+    <part Name="BootSequence" BootTime="3" VerbOnBootInitialized="buzz" VerbOnBootAborted="clack" VerbOnBootDone="hum" />
+    <part Name="ZeroPointEnergyCollector" ChargeRate="40" World="JoppaWorld,OrbWorld" />
+    <part Name="Circuitry" />
+    <part Name="VibroWeapon" ChargeUse="20" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="Tier" Value="8" />
+  </object>
+
+
+	<!--
+
+				***********************************
+				Seph's Terrrain, Trinkets & Baubles
+				***********************************
+
+	-->
+
+	<object Name="TerrainCarbideCity" Inherits="Terrain">
+    <part Name="Render" DisplayName="Andromimos" Tile="Terrain/tt_carbide_city.png" TileColor="&amp;c^k" DetailColor="Y" RenderString="254" ColorString="&amp;K^y" />
+    <part Name="Description" Short="Great stretches of sun-bleached azure embrace the remnants of a once great city. An intricate web of desolate chrome towers caress the sky." />
+    <tag Name="NoBiomes" Value="1" />
+    <xtagGrammar Proper="true" />
+    <tag Name="OverlayColor" Value="&amp;W" />
+  </object>
+	<object Name="CarbideWall" Inherits="BaseWallMetal">
+    <part Name="Render" DisplayName="carbide wall" RenderString="177" ColorString="&amp;c^Y" Occluding="true" />
+    <stat Name="AV" Value="25" />
+    <stat Name="Hitpoints" Value="300" />
+    <part Name="Description" Short="Contrary to popular belief, the walls of this solemn place have not been, in fact, reworked into folded carbide. Rather, they had originally been made using its much darker forefather and namesake, carbide. Over millenia, the sun has sapped all life out of its hue; where there were once glistening veins, there lie now empty cracks." />
+    <tag Name="PaintWith" Value="MetalWalls" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="VaporObject" Value="LavaPuddle" />
+    <tag Name="ImmutableWhenUnexplored" Value="1" />
+    <tag Name="Mods" Value="TechWallMods" />
+    <tag Name="Tier" Value="3" />
+    <part Name="Graffitied" ChanceOneIn="600"></part>
+  </object>
+  <object Name="TT_Secure_Wall_Yellow" Inherits="BaseWallSecure">
+    <part Name="Render" DisplayName="Striped Wall" ColorString="&amp;K^W" />
+    <part Name="Description" Short="Black and yellow stripes run along the walls, reminiscent of a hornet's nest." />
+  </object>
+  <object Name="TT_Secure_Wall_Orange" Inherits="BaseWallSecure">
+    <part Name="Render" DisplayName="Striped Wall" ColorString="&amp;Y^O" />
+    <part Name="Description" Short="Timeless concrete was poured in methodical fashion, then washed in a nauseating sea of orange." />
+  </object>
+  <object Name="CarbideCityFloor" Inherits="Floor">
+    <part Name="Render" DisplayName="sapped floor" RenderString="250" ColorString="&amp;y" RenderLayer="0"></part>
+    <part Name="Physics"></part>
+    <tag Name="NoSparkingQuest"></tag>
+  </object>
+	<object Name="ShadedFloor" Inherits="Floor">
+    <part Name="Render" DisplayName="shaded floor" RenderString="250" ColorString="&amp;K" RenderLayer="0"></part>
+    <part Name="Physics"></part>
+    <tag Name="NoSparkingQuest"></tag>
+  </object>
+	<object Name="Sconce Pole Light" Inherits="NotakeFurniture">
+    <part Name="Render" DisplayName="faux star" RenderString="249" ColorString="&amp;c" DetailColor="y" Occluding="false" Tile="Terrain/tt_sconce.png" />
+    <part Name="AnimatedMaterialTechlight" baseColor="&amp;c" />
+    <part Name="Physics" Weight="20" Takeable="false" Solid="false" />
+    <part Name="LightSource" Lit="true" Radius="6" />
+    <part Name="Description" Short="A mimicry - an imitation - une fausse etoile." />
+    <part Name="Metal" />
+    <intproperty Name="Inorganic" Value="1" />
+    <stag Name="LightSource" />
+    <tag Name="TechTier" Value="5" />
+  </object>
+	<object Name="Sconce Pole" Inherits="NotakeFurniture">
+    <part Name="Render" DisplayName="pole" Tile="Terrain/tt_pole.png" RenderString="46" ColorString="&amp;c" DetailColor="Y" Occluding="false" />
+    <part Name="Physics" Weight="40" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="10" />
+    <stat Name="Hitpoints" Value="50" />
+		<part Name="Description" Short="A slender spine bathed in chrome."></part>
+		<intproperty Name="AllowMissiles" Value="1" />
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Marble Pillar" Inherits="NotakeFurniture">
+    <part Name="Render" DisplayName="marble pillar" RenderString="46" ColorString="&amp;C" DetailColor="Y" Occluding="false" />
+		<part Name="RandomTile" Tiles="Tiles/tt_marble_pillar.png,Tiles/tt_marble_pillar2.png,Tiles/tt_marble_pillar3.png,Tiles/tt_marble_pillar4.png,Tiles/tt_marble_pillar5.png" />
+    <part Name="Physics" Weight="300" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="300" />
+		<part Name="Description" Short="The craftsmanship and ingenuity of a thousand years encapsulated in a singular ageless shape."></part>
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Statue Top" Inherits="NotakeFurniture">
+		<part Name="Render" DisplayName="statue of Chloris" Tile="Terrain/tt_goddess_top.png" DetailColor="y" ColorString="&amp;Y" Occluding="false"></part>
+    <part Name="Physics" Weight="300" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="300" />
+		<part Name="Description" Short="Countless shrines and depictions such as this one litter and permeate Qud. Chloris is most popular among the Screaming Men; the biannual Dromad's Qud Chronicles on fitness and wellbeing rank Her as second most popular deity in this area. Her hair was made to match the motion of the wind's many tantrums."></part>
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Statue Bottom" Inherits="NotakeFurniture">
+		<part Name="Render" DisplayName="statue of Chloris" Tile="Terrain/tt_goddess_bottom.png" DetailColor="y" ColorString="&amp;Y" Occluding="false"></part>
+    <part Name="Physics" Weight="300" Takeable="false" Solid="true" />
+    <stat Name="AV" Value="15" />
+    <stat Name="Hitpoints" Value="300" />
+		<part Name="Description" Short="A pair of legs twice your height carry the wordless beauty above it with immaculate precision and balance. You feel a strange sense of embarrassment staring at this part for too long; perhaps you ought to adjust your gaze upward?"></part>
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Supply Crate" Inherits="Chest">
+    <part Name="Render" DisplayName="supply crate" Tile="Items/tt_crate.png" ColorString="&amp;R" DetailColor="Y" />
+    <part Name="Description" Short="A sturdy crate. The scent of plastic is nauseating." />
+    <tag Name="InventoryPopulationTable" Value="SupplyCrateInventory"></tag>
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="DroidSign1" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_datadisc.bmp" Occluding="false" />
+    <part Name="Chat" Says="Drones, Drills, Droids" ShowInShortDescription="true" />
+  </object>
+	<object Name="DroidSign2" Inherits="Sign">
+    <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_datadisc.bmp" Occluding="false" />
+    <part Name="Chat" Says="Boosterbot 9000 - now half price!" ShowInShortDescription="true" />
+  </object>
+	<object Name="Neon Sign1" Inherits="Sconce">
+    <part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_vertical1.png" ColorString="&amp;M" DetailColor="c" />
+    <part Name="Description" Short="The buzz of the lights is overshadowed by nearby commotion." />
+    <part Name="AnimatedMaterialNeon" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+	<object Name="Neon Sign2" Inherits="Neon Sign1">
+    <part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_vertical2.png" ColorString="&amp;M" DetailColor="c" />
+  </object>
+	<object Name="Neon Sign3" Inherits="Neon Sign1">
+		<part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_horizontal1.png" ColorString="&amp;M" DetailColor="c" />
+	</object>
+	<object Name="Neon Sign4" Inherits="Neon Sign1">
+		<part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_horizontal2.png" ColorString="&amp;M" DetailColor="c" />
+	</object>
+	<object Name="Neon Sign5" Inherits="Neon Sign1">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_vertical1.png" ColorString="&amp;G" DetailColor="c" />
+    <part Name="AnimatedMaterialNeon2" />
+	</object>
+	<object Name="Neon Sign6" Inherits="Neon Sign5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_vertical2.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="Neon Sign7" Inherits="Neon Sign5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_horizontal1.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="Neon Sign8" Inherits="Neon Sign5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_horizontal2.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="TT_Neon_Sign_Top1" Inherits="Neon Sign1">
+    <part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_top1.png" ColorString="&amp;M" DetailColor="c" />
+  </object>
+  <object Name="Neon SignX1" Inherits="Neon Sign1">
+		<part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_vertical1.png" ColorString="&amp;M" DetailColor="c" />
+    <part Name="Physics" Weight="100" Takeable="false" Solid="true"></part>
+	</object>
+	<object Name="Neon SignX2" Inherits="Neon SignX1">
+    <part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_vertical2.png" ColorString="&amp;M" DetailColor="c" />
+  </object>
+	<object Name="Neon SignX3" Inherits="Neon SignX1">
+		<part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_horizontal1.png" ColorString="&amp;M" DetailColor="c" />
+	</object>
+	<object Name="Neon SignX4" Inherits="Neon SignX1">
+		<part Name="Render" DisplayName="&amp;Mn&amp;Ye&amp;Mon s&amp;Yi&amp;Mgn" Tile="Terrain/tt_neon_sign_horizontal2.png" ColorString="&amp;M" DetailColor="c" />
+	</object>
+	<object Name="Neon SignX5" Inherits="Neon SignX1">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_vertical1.png" ColorString="&amp;G" DetailColor="c" />
+    <part Name="AnimatedMaterialNeon2" />
+	</object>
+	<object Name="Neon SignX6" Inherits="Neon SignX5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_vertical2.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="Neon SignX7" Inherits="Neon SignX5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_horizontal1.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="Neon SignX8" Inherits="Neon SignX5">
+		<part Name="Render" DisplayName="&amp;on&amp;Ye&amp;oon s&amp;Yi&amp;ogn" Tile="Terrain/tt_neon_sign_horizontal2.png" ColorString="&amp;G" DetailColor="c" />
+	</object>
+	<object Name="Porcelain Bowl" Inherits="NotakeFurniture">
+		<part Name="Render" DisplayName="porcelain bowl" Tile="Items/tt_porcelain_bowl.png" DetailColor="y" ColorString="&amp;K" Occluding="false"></part>
+    <part Name="Physics" Weight="100" Takeable="false" Solid="false" />
+    <stat Name="AV" Value="7" />
+    <stat Name="Hitpoints" Value="70" />
+		<part Name="Description" Short="You really have no idea what this does. A waste of space if you've ever seen one."></part>
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <intproperty Name="Inorganic" Value="1" />
+  </object>
+	<object Name="Porcelain Bowl2" Inherits="Porcelain Bowl">
+		<part Name="Render" DisplayName="porcelain bowl" Tile="Items/tt_porcelain_bowl2.png" DetailColor="y" ColorString="&amp;K" Occluding="false"></part>
+  </object>
+	<object Name="Tick Husk" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;wtick husk" RenderString="2" ColorString="&amp;w" DetailColor="k" RenderLayer="5" />
+		<part Name="RandomTile" Tiles="Creatures/tick1.png,Creatures/tick2.png,Creatures/tick3.png,Creatures/tick4.png"/>
+    <part Name="Commerce" Value="5" />
+    <part Name="Description" Short="The empty husk of a drilling tick." />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+	<object Name="Dice" Inherits="BaseGlove">
+    <part Name="Armor" AV="0" DV="2" WornOn="Hands"></part>
+	  <part Name="Render" DisplayName="&amp;Ypa&amp;Ri&amp;Yr of d&amp;Ri&amp;Yce" RenderString="2" ColorString="&amp;Y" DetailColor="R" RenderLayer="5" />
+    <part Name="Commerce" Value="8" />
+    <part Name="Description" Short="These dice are used by folk of all ages to play simple games of chance. They can be attached to one's wrist, begifting the favour of Lady Luck. A minuscule inscription reads: 'Midnight Paradice'" />
+		<part Name="Physics" Weight="3" />
+    <tag Name="Tier" Value="1" />
+    <tag Name="Mods" Value="None" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+	<object Name="Guiding Starcandle" Inherits="LightSource">
+    <part Name="Render" DisplayName="&amp;ygu&amp;Wi&amp;yding &amp;Ystarcandle" RenderString="*" RenderLayer="4" Tile="Items/guiding_starcandle.png" DetailColor="W" />
+    <part Name="LightSource" Lit="true" Radius="9" />
+    <part Name="GlowsphereProperties" AllowedParts="Hand" />
+    <part Name="Commerce" Value="48" />
+    <part Name="Description" Short="It is inscribed with the wisdom of a nameless hermit: 'Lest others hate thee, supposed absence of intimate affection does not result in proof of absence thereof. Forget not; what is most important is merely to love thyself.'" />
+  </object>
+	<object Name="Folded Duowheeler" Inherits="Tool">
+    <part Name="Armor" AV="0" DV="-3" WornOn="Hand"></part>
+	  <part Name="Render" DisplayName="&amp;Bfolded &amp;yduowheeler" RenderString="*" RenderLayer="4" Tile="Items/tt_folded_duowheeler.png" ColorString="&amp;Y" DetailColor="Y" />
+    <part Name="Commerce" Value="350" />
+    <part Name="Description" Short="Moonlit streets. Roaring engines. Neon lights.
+
+		Activating the contraption reveals the following inscription in digital form: 'Ride or die baby.'" />
+		<tag Name="UsesSlots" Value="Hand,Missile Weapon,Feet" />
+    <tag Name="Tier" Value="5" />
+    <part Name="MoveCostMultiplier" Amount="-50"></part>
+    <part Name="Physics" Weight="50"></part>
+    <part Name="Backpack" WeightWhenWorn="0"></part>
+		<part Name="Examiner" AlternateDisplayName="metallic frame" Complexity="5"></part>
+    <part Name="TinkerItem" Bits="BB33" CanDisassemble="true" CanBuild="false" CanRepair="true"></part>
+    <part Name="Metal" />
+    <part Name="DuowheelerLights" />
+  </object>
+	<object Name="Mintlace Thread" Inherits="Snack">
+    <part Name="Render" DisplayName="&amp;cmintlace thread" RenderString="%" ColorString="&amp;c" DetailColor="C" RenderLayer="4" Tile="Items/mintlace.png"></part>
+    <part Name="Commerce" Value="0.3"></part>
+    <part Name="Food" Satiation="Snack"></part>
+    <part Name="Description" Short="A long, damp and sticky thread of mintlace that has undergone secondary fermentation."></part>
+    <part Name="Physics" Weight="1"></part>
+    <part Name="PreservableItem" Result="Mintlace Preserves" Number="3"></part>
+  </object>
+	<object Name="Mintlace Preserves" Inherits="Preservable">
+    <part Name="Render" DisplayName="&amp;Cmint jam" RenderString="%" ColorString="&amp;C" TileColor="&amp;y" DetailColor="C" RenderLayer="4" Tile="Items/sw_Jam.bmp"></part>
+    <part Name="Commerce" Value="6"></part>
+    <part Name="Description" Short="The bittersweet threads of the mintlace tree were mashed, set over an open flame, left out to cool, and jarred for later use. The smell embodies the thriving yet vicious nature of the hills and marshes."></part>
+    <part Name="PreparedCookingIngredient" type="cold" charges="1"></part>
+    <tag Name="Plant"></tag>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Ingredients"></tag>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"></tag>
+  </object>
+	<object Name="Boomrose" Inherits="Snack">
+    <part Name="Render" DisplayName="&amp;Rboomrose" RenderString="%" ColorString="&amp;g" DetailColor="R" RenderLayer="4" Tile="Items/boomrose.png"></part>
+    <part Name="Commerce" Value="0.2"></part>
+    <part Name="Food" Satiation="Snack"></part>
+    <part Name="Description" Short="Its entire being unwinds in the palm of your hand, a foreshow to its imminent demise."></part>
+    <part Name="Physics" Weight="1"></part>
+    <part Name="PreservableItem" Result="Boomrose Arrow" Number="1"></part>
+  </object>
+	<object Name="Bittergrette" Inherits="Snack">
+    <part Name="Render" DisplayName="&amp;bb&amp;Yi&amp;bttergrette" RenderString="%" ColorString="&amp;b" DetailColor="b" RenderLayer="4" Tile="Items/moonpearl.png"></part>
+    <part Name="Commerce" Value="1"></part>
+    <part Name="Food" Message="Yuck! The taste is sure to linger a little while longer" Satiation="Snack"></part>
+    <part Name="Description" Short="The children of the new age have come up with their own playful taunts, adding some much-needed childlike reprieve to a world harsh beyond measure. For these berries, the rhyme goes: 'Bitter-batter, bitter-batter, Igrette ate it, ate the latter!'"></part>
+    <part Name="Physics" Weight="0"></part>
+  </object>
+	<object Name="Moonpearl" Inherits="Gemstone">
+    <part Name="Render" DisplayName="&amp;Ymoonpearl" Tile="Items/moonpearl.png" DetailColor="Y" RenderString="*" ColorString="&amp;Y" RenderLayer="4"></part>
+    <part Name="Commerce" Value="200"></part>
+    <part Name="Description" Short="A glint of light in a desolate world; a sister moon."></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+    <intproperty Name="Currency" Value="1" />
+    <tag Name="Tier" Value="3"></tag>
+    <tag Name="DynamicObjectsTable:TradeGoods"></tag>
+  </object>
+	<object Name="TT_Penny" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;rpenny" Tile="Items/moonpearl.png" DetailColor="r" RenderString="*" ColorString="&amp;r" RenderLayer="4"></part>
+    <part Name="Commerce" Value="1"></part>
+    <part Name="Description" Short="A glint of light in a desolate world; the remedy to a famished belly."></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+    <intproperty Name="Currency" Value="1" />
+    <tag Name="Tier" Value="0"></tag>
+    <tag Name="DynamicObjectsTable:TradeGoods"></tag>
+  </object>
+  <object Name="Fleur de Lys" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;mfleur de lys" Tile="Items/fleur_de_lys_item.png" DetailColor="m" RenderString="*" ColorString="&amp;Y" RenderLayer="4"></part>
+    <part Name="Commerce" Value="100"></part>
+    <part Name="Description" Short="The purple-blue hue envelops your mind, turning your third eye to an imaginary realm of opulence and debauchery."></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+    <intproperty Name="Currency" Value="1" />
+    <tag Name="Tier" Value="1"></tag>
+    <tag Name="DynamicObjectsTable:TradeGoods"></tag>
+  </object>
+	<object Name="Moonkoi Scales" Inherits="Item">
+		<part Name="Render" DisplayName="&amp;Ymoon&amp;ckoi &amp;yscales" Tile="Items/scales.png" DetailColor="c" RenderString="*" ColorString="&amp;Y" RenderLayer="4"></part>
+		<part Name="Commerce" Value="75"></part>
+		<part Name="Description" Short="Soft yet resilient; matte yet glistening; vicious yet beautiful."></part>
+		<part Name="Physics" Category="Trade Goods"></part>
+		<intproperty Name="Currency" Value="1" />
+		<tag Name="Tier" Value="1"></tag>
+		<tag Name="DynamicObjectsTable:TradeGoods"></tag>
+	</object>
+	<object Name="Starseed" Inherits="Item">
+		<part Name="Render" DisplayName="&amp;Ystar&amp;ms&amp;We&amp;Oe&amp;Md" Tile="Items/starseed.png" DetailColor="Y" RenderString="*" ColorString="&amp;B" RenderLayer="4"></part>
+		<part Name="Commerce" Value="300"></part>
+		<part Name="Description" Short="A strange, glowing tube. It shines the same light as the stars above. Sporadically, it shakes and quivers in your bag."></part>
+		<part Name="Physics" Category="Trade Goods"></part>
+		<intproperty Name="Currency" Value="1" />
+		<tag Name="Tier" Value="5"></tag>
+		<tag Name="DynamicObjectsTable:TradeGoods"></tag>
+	  <tag Name="NoSparkingQuest" />
+  </object>
+	<object Name="TT_Dream" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;Wd&amp;Yr&amp;We&amp;Ya&amp;Wm" ColorString="&amp;W" DetailColor="W" RenderLayer="4" Tile="Items/moonpearl.png"></part>
+    <part Name="Commerce" Value="20"></part>
+    <part Name="Description" Short="Golden-wet ivy leaves entangle your mind as you peer into its shining recesses. The dream never ends."></part>
+		<part Name="LightSource" Lit="true" Radius="2" />
+	  <part Name="Physics" Weight="1"></part>
+  </object>
+	<object Name="TT_Bellflower" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;Ybell&amp;yflower" Tile="Items/fleur_de_lys_item.png" DetailColor="Y" ColorString="&amp;y" RenderLayer="4"></part>
+    <part Name="Commerce" Value="60"></part>
+    <part Name="Description" Short="With every move you fear the flower may fall apart, like sand between your palms."></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+  </object>
+	<object Name="Mingo" Inherits="Snack">
+    <part Name="Render" DisplayName="&amp;om&amp;Oin&amp;Ggo" RenderString="%" ColorString="&amp;O" TileColor="&amp;O" DetailColor="G" RenderLayer="4" Tile="Items/mingo.png"></part>
+    <part Name="Commerce" Value="3"></part>
+    <part Name="Description" Short="The mingo fits in your hand like a glowsphere, and though it isn't luminescent the splendid colours do brighten your day."></part>
+    <part Name="Physics" Weight="1"></part>
+	  <tag Name="Plant"></tag>
+    <part Name="PreservableItem" Result="Mingo Juice" Number="3"></part>
+  </object>
+	<object Name="Mingo Juice" Inherits="Preservable">
+    <part Name="Render" DisplayName="&amp;om&amp;Oin&amp;Ggo &amp;Ojuice" RenderString="%" ColorString="&amp;O" DetailColor="O" RenderLayer="4" Tile="Items/sw_Jam.bmp"></part>
+    <part Name="Commerce" Value="5"></part>
+    <part Name="PreparedCookingIngredient" type="random" charges="1"></part>
+    <part Name="Food" Satiation="Snack"></part>
+    <part Name="Description" Short="The essence of mingo is known to have countless unforeseen effects when ingested, this being likely due to the nature of the mimingo as it imitates its environment for the sake of survival. Most often though it merely has a reinvigorating effect on the eater."></part>
+		<tag Name="DynamicObjectsTable:Jungle_Ingredients"></tag>
+    <tag Name="DynamicObjectsTable:Jungle_FarmablePlants"></tag>
+  </object>
+  <object Name="TT_Magazine" Inherits="Item">
+    <part Name="Render" DisplayName="{{ubernostrum|magazine}}" Tile="Items/tt_magazine.png" DetailColor="W" RenderString="*" ColorString="&amp;m" RenderLayer="4"></part>
+    <part Name="Commerce" Value="9"></part>
+    <part Name="Description" Short="A series of colourful, explosive images; wild movements and flashy poses, all coupled with strange symbols strewn across the pages. A vibrant mess."></part>
+    <tag Name="Tier" Value="1"></tag>
+  </object>
+	<object Name="TT_The_Black_Lotus" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;mt&amp;Mh&amp;Ke black lot&amp;Mu&amp;ms" Tile="Items/tt_the_black_lotus.png" DetailColor="O" RenderString="*" ColorString="&amp;K" RenderLayer="4"></part>
+    <part Name="Commerce" Value="50000"></part>
+    <part Name="Description" Short="[...] with wars having been fought over the course of centuries for this prized flower. Tomes dating to the pre-Sultanate era recall the tales of the Power Nine, a group of legendary warriors [...] and craftsmen, whose founding purpose was to retrieve and [contain] the powers imbued within The Black Lotus. Though these historic tomes were lost not long ago, their existence was confirmed by the magi of the azure city, whose records detail their retrieval and eventual loss to the Emerald Kings. [...] Scholars and merchants of the present day doubt the very existence of this flower, citing the tomes as nothing more than 'folklore and faerie tales'..."></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+    <tag Name="Tier" Value="8"></tag>
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true"></xtagGrammar>
+  </object>
+  <object Name="TT_Everspring_Emerald" Inherits="Gemstone">
+    <part Name="Render" DisplayName="&amp;Ge&amp;gver&amp;Gs&amp;Yp&amp;yr&amp;Gin&amp;gg &amp;ge&amp;Gme&amp;gral&amp;Gd" Tile="Items/tt_everspring_emerald.png" DetailColor="Y" RenderString="*" ColorString="&amp;G" RenderLayer="4"></part>
+    <part Name="Commerce" Value="5000"></part>
+    <part Name="Description" Short="In the deepest, darkest gorges of Qud is where the Everspring Emerald is formed. Over millenia, it seeps the energies of the Mother Oak, whose roots stretch into and across land's end. The powers within this emerald possess enough force to revitalise an entire quadrant of desolate land - and keep it in a blossoming state until the crystal is sapped of all power, or time itself ceases to flow - whichever comes first. Considering its rarity, geologists estimate the total count of the emerald to range from ten to a hundred at most."></part>
+    <part Name="Physics" Category="Trade Goods" Weight="3"></part>
+    <tag Name="Tier" Value="8"></tag>
+    <tag Name="NoSparkingQuest" />
+  </object>
+  	<object Name="TT_Imperial_Seal" Inherits="Item">
+    <part Name="Render" DisplayName="&amp;mimperial &amp;rseal" Tile="Items/tt_imperial_seal.png" DetailColor="R" RenderString="*" ColorString="&amp;r" RenderLayer="4"></part>
+    <part Name="Commerce" Value="10000"></part>
+    <part Name="Description" Short="'If Heaven has placed it in your hands, it means that the throne is destined to be yours.'
+    
+    - The Founding Chronicles, Tome II"></part>
+    <part Name="Physics" Category="Trade Goods"></part>
+    <tag Name="Tier" Value="8"></tag>
+    <tag Name="NoSparkingQuest" />
+  </object>
+  <object Name="HEGrenade3" Inherits="Grenade" Load="Merge">
+    <part Name="TinkerItem" Bits="001" Ingredient="Boomrose" />
+  </object>
+	<object Name="HeatGrenade3" Inherits="Grenade" Load="Merge">
+    <part Name="TinkerItem" Bits="001" Ingredient="Boomrose" />
+  </object>
+	<object Name="ColdGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="Mintlace Thread" />
+	</object>
+	<object Name="DefoliantGrenade3" Inherits="Grenade" Load="Merge">
+    <part Name="TinkerItem" Bits="003" Ingredient="Smoldered Mushroom" />
+  </object>
+	<object Name="SleepGasGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="TT_Dream" />
+	</object>
+	<object Name="PoisonGasGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="Poison-tipped Spear" />
+	</object>
+	<object Name="StunGasGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="StunBreatherGlandPaste" />
+	</object>
+	<object Name="AcidGasGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="CorrosiveBreatherGlandPaste" />
+	</object>
+	<object Name="FlashbangGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="001" Ingredient="Mirror Dust" />
+	</object>
+	<object Name="EMPGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="002" Ingredient="Spark Tick Scutum" />
+	</object>
+	<object Name="NormalityGasGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="003" Ingredient="NormalityBreatherGlandPaste" />
+	</object>
+	<object Name="StasisGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="002" Ingredient="Voider Gland" />
+	</object>
+	<object Name="SunderGrenade3" Inherits="Grenade" Load="Merge">
+    <part Name="TinkerItem" Bits="002" Ingredient="Dreadroot Tuber" />
+  </object>
+	<object Name="FungicideGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="003" Ingredient="Bittergrette" />
+	</object>
+	<object Name="FireSupportGrenade3" Inherits="Grenade" Load="Merge">
+		<part Name="TinkerItem" Bits="045" Ingredient="Tick Husk" />
+	</object>
+	<object Name="TimeDilationGrenade3" Inherits="Grenade" Load="Merge">
+    <part Name="TinkerItem" Bits="046" Ingredient="Fleur de Lys" />
+  </object>
+
+
+<!--
+
+		******************
+		Sepherescent's Fauna
+		******************
+
+-->
+
+<!-- Sepherescent's Mystical & Fabulous Creatures -->
+
+<object Name="BaseFaerie" Inherits="BaseInsect">
+	<stat Name="Strength" sValue="6,1d3,(t-1)d2" />
+	<stat Name="Agility" sValue="14,1d3,(t-1)d2" />
+	<stat Name="Toughness" sValue="10,1d3,(t-1)d2" />
+	<stat Name="Intelligence" sValue="10,1d2,(t-1)d2-1" />
+	<stat Name="Willpower" sValue="4,1d2,(t-1)d2-1" />
+	<stat Name="Ego" sValue="2,1d2,(t-1)d2-1" />
+	<intproperty Name="Bleeds" Value="0" />
+	<part Name="Body" Anatomy="Faerie" />
+	<part Name="Brain" Factions="Prey-100,Insects-25" />
+	<tag Name="BaseObject" Value="*noinherit" />
+	<tag Name="Gender" Value="neuter" />
+	<part Name="ConversationScript" ConversationID="Insects" />
+	<property Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Vibrant,Motley,Limber,Gleaming" />
+	<xtagTextFragments YounglingNoise="*bzzz*" Activity="droning for the flock,burrowing into the earth,rummaging through petals" VillageActivity="fastidiously nesting,multiplying in droves," NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for my eyes" SacredThing="chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="grazing grounds,wandering grounds" ValuedOre="pollen" />
+	<tag Name="SimpleConversation" Value="&amp;w*soft buzzing*&amp;y" />
+</object>
+<object Name="BaseFox" Inherits="BaseAnimal">
+	<part Name="Brain" Hostile="false" Factions="Dogs-100" />
+	<part Name="Pettable" useFactionForFeelingFloor="Dogs" />
+	<tag Name="PetResponse" Value="barks" />
+	<part Name="SmartuseForceTwiddles" />
+	<tag Name="Species" Value="fox" />
+	<tag Name="BaseObject" Value="*noinherit" />
+</object>
+<object Name="FarmerWife" Inherits="NPC">
+  <part Name="Render" DisplayName="farmer's wife" Tile="Creatures/farmer_wife.png" ColorString="&amp;y" RenderString="W" />
+  <part Name="ConversationScript" ConversationID="FarmerWife" />
+  <part Name="Brain" Wanders="true" Factions="Farmers-100" />
+  <stat Name="AV" Value="2" />
+  <stat Name="DV" Value="3" />
+  <stat Name="Hitpoints" Value="45" />
+	<part Name="GenericInventoryRestocker" />
+  <tag Name="GenericInventoryRestockerPopulationTable" Value="FarmerWifeInventory" />
+  <inventoryobject Blueprint="Leather Moccasins" />
+  <inventoryobject Blueprint="Woven Tunic" />
+  <inventoryobject Blueprint="*Junk 1" Number="1-4" />
+  <skill Name="CookingAndGathering_Harvestry" />
+  <part Name="Description" Short="=pronouns.IndicativeProximal= vigilant, hearty =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the scent of mintlace threads. =pronouns.Possessive= sharp eyes pierce through the browned skin of =pronouns.possessive= tired face. From =pronouns.possessive= right forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
+  <tag Name="Gender" Value="female" />
+  <property Name="Role" Value="Brute" />
+  <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
+  <tag Name="DynamicObjectsTable:Hills_Creatures" />
+</object>
+	<object Name="Fox Corpse" Inherits="Corpse">
+    <part Name="Render" DisplayName="fox corpse"></part>
+    <part Name="Description" Short="That's a dead fox."></part>
+    <part Name="Physics" Weight="10"></part>
+    <part Name="Commerce" Value="10"></part>
+    <tag Name="DynamicObjectsTable:Corpses"></tag>
+  </object>
+	<object Name="Rubberfox" Inherits="BaseFox">
+		<part Name="Render" DisplayName="rubberfox" Tile="Creatures/fox.png" RenderString="d" ColorString="&amp;W" DetailColor="Y"></part>
+		<part Name="Corpse" CorpseChance="50" CorpseBlueprint="Fox Corpse" BodyDrop="true" InventoryDrop="true"></part>
+    <stat Name="Level" Value="6"></stat>
+		<stat Name="AV" Value="3"></stat>
+		<stat Name="DV" Value="6"></stat>
+		<stat Name="ElectricResistance" Value="30"></stat>
+		<stat Name="Hitpoints" Value="16"></stat>
+		<part Name="Description" Short="...tenses, before springing forth with explosive elasticity onto its prey. It must keep its young fed."></part>
+    <skill Name="Tactics_Charge"></skill>
+		<inventoryobject Blueprint="Dog_Bite" Number="1"></inventoryobject>
+		<tag Name="DynamicObjectsTable:DesertCanyon_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Hills_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Mountains_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Flowerfields_Creatures"></tag>
+	</object>
+	<object Name="Desert Fox" Inherits="BaseFox">
+		<part Name="Render" DisplayName="desert fox" Tile="Creatures/desert_fox.png" RenderString="d" ColorString="&amp;y" DetailColor="Y"></part>
+		<part Name="Corpse" CorpseChance="50" CorpseBlueprint="Fox Corpse" BodyDrop="true" InventoryDrop="true"></part>
+    <stat Name="Level" Value="9"></stat>
+		<stat Name="AV" Value="2"></stat>
+		<stat Name="DV" Value="14"></stat>
+		<stat Name="HeatResistance" Value="15"></stat>
+		<stat Name="Hitpoints" Value="14"></stat>
+		<part Name="Description" Short="This tiny furball uses its pointy ears and a keen sense of smell to spot prey in the vast emptiness of the desert. Over generations its coat has been painted and stained in the dizzying gravel-white of the salt pans."></part>
+    <mutation Name="HeightenedSmell" Level="6" />
+    <skill Name="Tactics_Charge"></skill>
+    <skill Name="Tactics_Run"></skill>
+		<inventoryobject Blueprint="BigDog_Bite" Number="1"></inventoryobject>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+		<tag Name="DynamicObjectsTable:SaltDesert_Creatures"></tag>
+	</object>
+	<object Name="Firefox" Inherits="BaseFox">
+		<part Name="Render" DisplayName="firefox" Tile="Creatures/fox.png" RenderString="d" ColorString="&amp;o" DetailColor="Y"></part>
+		<part Name="Corpse" CorpseChance="50" CorpseBlueprint="Fox Corpse" BodyDrop="true" InventoryDrop="true"></part>
+    <stat Name="Level" Value="19"></stat>
+		<stat Name="AV" Value="3"></stat>
+		<stat Name="DV" Value="12"></stat>
+    <stat Name="Agility" sValue="20" />
+		<stat Name="HeatResistance" Value="75"></stat>
+		<stat Name="Hitpoints" Value="30"></stat>
+		<part Name="Description" Short="...Her gaze embraces you through the auburn mist of its eyes. At last, you feel... tranquil."></part>
+    <mutation Name="FlamingHands" Level="6" CreateObject="false" />
+		<inventoryobject Blueprint="BigDog_Bite" Number="1"></inventoryobject>
+		<tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+    <tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+	</object>
+	<object Name="Secluded Witch" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="secluded witch" Tile="Creatures/witch.png" ColorString="&amp;m" DetailColor="W" RenderString="d" />
+		<part Name="Brain" Wanders="true" Hostile="True" Factions="Hermits-100"></part>
+    <stat Name="Level" Value="12"></stat>
+	  <stat Name="AV" Value="3" />
+    <stat Name="DV" Value="6" />
+    <stat Name="Hitpoints" Value="40" />
+		<part Name="GenericInventoryRestocker" />
+    <tag Name="GenericInventoryRestockerPopulationTable" Value="SecludedWitchInventory" />
+    <inventoryobject Blueprint="Leather Moccasins" />
+    <inventoryobject Blueprint="Woven Tunic" />
+    <inventoryobject Blueprint="*Junk 2" Number="1-3" />
+    <skill Name="CookingAndGathering_Harvestry" />
+    <mutation Name="Burgeoning" Level="3" />
+		<part Name="RandomMutations" Mental="1d1" MentalLevel="1d2" Physical="0" PhysicalLevel="0"></part>
+	  <part Name="Description" Short="An aura of mystery surrounds this crone, her eyes gazing blankly at her diligent fingers whilst her mind drowns in a river of thoughts. Her goals are well beyond your comprehension." />
+	  <tag Name="Gender" Value="female" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_Creatures" />
+    <tag Name="DynamicObjectsTable:Hills_Creatures" />
+		<tag Name="DynamicObjectsTable:Ruins_Creatures" />
+  </object>
+	<object Name="FaerieBlue" Inherits="BaseFaerie">
+		<part Name="Render" DisplayName="blue faerie" Tile="Creatures/faerie1.png" RenderString="i" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="B"></part>
+		<part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+		<stat Name="Agility" Boost="3"></stat>
+		<part Name="Brain" Factions="Prey-100,Insects-25" FlocksWith="FaerieBlue,FaeriePink,FaerieYoung"></part>
+    <stat Name="Level" Value="15" />
+		<stat Name="AV" Value="3"></stat>
+		<stat Name="ColdResistance" Value="25" />
+		<stat Name="Hitpoints" Value="16"></stat>
+		<mutation Name="Wings" Level="10"></mutation>
+		<inventoryobject Blueprint="Faerie_Bite" Number="1"></inventoryobject>
+		<inventoryobject Blueprint="Faerie_Gaze" Number="1" />
+		<part Name="Description" Short="Blue is a colour oft associated with anxiety, sadness or melancholy - some feel a great emptiness within them, as for others, memories of a drowning child resurface. A blue faerie is never a good omen."></part>
+    <part Name="LightSource" Lit="true" Radius="3" />
+		<tag Name="Species" Value="faerie" />
+	  <tag Name="Gender" Value="neuter" />
+	  <tag Name="ExcludeFromVillagePopulations"></tag>
+		<tag Name="DynamicObjectsTable:DesertCanyon_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Saltmarsh_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Flowerfields_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+	</object>
+	<object Name="FaeriePink" Inherits="BaseFaerie">
+		<part Name="Render" DisplayName="pink faerie" Tile="Creatures/faerie2.png" RenderString="i" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="M"></part>
+		<part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+		<stat Name="Agility" Boost="2"></stat>
+		<part Name="Brain" Hostile="False" Calm="True" Factions="Prey-100,Insects-25" FlocksWith="FaerieBlue,FaeriePink,FaerieYoung"></part>
+    <stat Name="Level" Value="10" />
+		<stat Name="AV" Value="2"></stat>
+		<stat Name="Hitpoints" Value="10"></stat>
+		<mutation Name="Wings" Level="10"></mutation>
+		<inventoryobject Blueprint="Faerie_Bite" Number="1"></inventoryobject>
+		<inventoryobject Blueprint="Faerie_Gaze" Number="1" />
+		<part Name="Description" Short="The pink faerie is a joyous, vivid being. It buzzes about without a care for the happenings around it, living in a perpetual state of blissful ignorance."></part>
+    <part Name="LightSource" Lit="true" Radius="3" />
+		<tag Name="Species" Value="faerie" />
+	  <tag Name="Gender" Value="neuter" />
+		<tag Name="DynamicObjectsTable:DesertCanyon_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Saltmarsh_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Flowerfields_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+	</object>
+	<object Name="FaerieYoung" Inherits="BaseFaerie">
+		<part Name="Render" DisplayName="young faerie" Tile="Creatures/faerie3.png" RenderString="i" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="C"></part>
+		<part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+		<stat Name="Agility" Boost="1"></stat>
+		<part Name="Brain" Hostile="False" Calm="True" Factions="Prey-100,Insects-25" FlocksWith="FaerieBlue,FaeriePink,FaerieYoung"></part>
+		<stat Name="AV" Value="1"></stat>
+		<stat Name="Hitpoints" Value="5"></stat>
+		<mutation Name="Wings" Level="10"></mutation>
+		<inventoryobject Blueprint="Young_Faerie_Bite" Number="1"></inventoryobject>
+		<part Name="Description" Short="The youngest of these gorgeous four-winged spirits are like clay waiting to be moulded; their wings bear no marks of ancestry, and their essence is of a pallid nature."></part>
+		<part Name="LightSource" Lit="true" Radius="2" />
+    <part Name="AISelfPreservation" Threshold="40" />
+		<tag Name="Species" Value="faerie" />
+	  <tag Name="Gender" Value="neuter" />
+		<tag Name="DynamicObjectsTable:DesertCanyon_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Saltmarsh_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Flowerfields_Creatures"></tag>
+		<tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+	</object>
+	<object Name="Faerie_Bite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="dazzling aura" />
+		<part Name="MeleeWeapon" BaseDamage="2d3+1" Skill="Cudgel" Stat="Strength" Slot="Body" />
+	</object>
+	<object Name="Young_Faerie_Bite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="gentle aura" />
+		<part Name="MeleeWeapon" BaseDamage="1d3+1" Skill="Cudgel" Stat="Strength" Slot="Body" />
+	</object>
+	<object Name="Faerie_Gaze" Inherits="NaturalMissileWeapon">
+    <part Name="Render" DisplayName="gaze" ColorString="&amp;Y" RenderString=")" />
+    <part Name="MissileWeapon" RangeIncrement="10" Skill="Rifle" AmmoChar="&amp;Y&#236;" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" />
+    <part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="Projectile_FaerieGaze" />
+    <tag Name="UsesSlots" Value="Face" />
+  </object>
+	<object Name="Projectile_FaerieGaze" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="&amp;Yflash of light" ColorString="&amp;Y" />
+    <part Name="Projectile" BasePenetration="6" BaseDamage="1d5" ColorString="&amp;Y" PassByVerb="flicker" />
+    <part Name="Physics" IsReal="false" />
+  </object>
+	<object Name="Iron Swan" Inherits="BaseBird">
+    <part Name="Render" DisplayName="iron swan" RenderString="224" Tile="Creatures/iron_swan.png" DetailColor="O" ColorString="&amp;Y"></part>
+    <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="true"></part>
+    <stat Name="Level" Value="8" />
+	  <stat Name="Hitpoints" Value="25"></stat>
+		<stat Name="Agility" sValue="12,1d3,(t-1)d2" />
+		<stat Name="Ego" sValue="16,1d3,(t-1)d2" />
+		<stat Name="Willpower" sValue="16,1d3,(t-1)d2" />
+		<stat Name="AV" Value="7"></stat>
+    <part Name="Brain" Hostile="true" Wanders="true" Factions="Birds-100"></part>
+    <part Name="Description" Short="A vessel of pride. Its feathers are unbending."></part>
+    <part Name="Metal"></part>
+		<skill Name="Endurance_Swimming" />
+	  <inventoryobject Blueprint="Swan_Bite" Number="1"></inventoryobject>
+    <tag Name="Species" Value="swan" />
+	  <tag Name="DynamicObjectsTable:Saltmarsh_Creatures"></tag>
+    <tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+  </object>
+	<object Name="Swan_Bite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="beak" />
+		<part Name="MeleeWeapon" BaseDamage="1d4+2" Skill="ShortBlades" Stat="Strength" Slot="Face" />
+	</object>
+	<object Name="Black Swan" Inherits="BaseBird">
+    <part Name="Render" DisplayName="black swan" RenderString="224" Tile="Creatures/black_swan.png" DetailColor="y" ColorString="&amp;K"></part>
+    <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="true"></part>
+    <stat Name="Level" Value="20" />
+	  <stat Name="Hitpoints" Value="40"></stat>
+		<stat Name="Agility" sValue="17,1d3,(t-1)d2" />
+		<stat Name="Ego" sValue="24,1d3,(t-1)d2" />
+		<stat Name="Willpower" sValue="24,1d3,(t-1)d2" />
+		<stat Name="AV" Value="13"></stat>
+		<stat Name="HeatResistance" Value="100" />
+	  <part Name="Brain" Hostile="true" Wanders="true" Factions="Birds-100"></part>
+    <part Name="Description" Short="As black as fullerite, =pronouns.subjective= flexes =pronouns.possessive= wings in a display of dominance. In this lake, =pronouns.subjective= is the apex predator."></part>
+    <part Name="Metal"></part>
+    <skill Name="Tactics_Run"></skill>
+		<skill Name="Endurance_Swimming" />
+	  <inventoryobject Blueprint="Black_Swan_Bite" Number="1"></inventoryobject>
+    <tag Name="Species" Value="swan" />
+	  <tag Name="DynamicObjectsTable:Saltmarsh_Creatures"></tag>
+    <tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+  </object>
+	<object Name="Black_Swan_Bite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="beak" />
+		<part Name="MeleeWeapon" BaseDamage="2d4+2" Skill="ShortBlades" Stat="Strength" Slot="Face" />
+	</object>
+	<object Name="River Nymph" Inherits="BaseHunter">
+    <part Name="Render" DisplayName="river nymph" ColorString="&amp;y" RenderString="c" DetailColor="o" />
+    <part Name="RandomTile" Tiles="Creatures/river_nymph1.png,Creatures/river_nymph2.png" />
+    <stat Name="Level" Value="7" />
+    <stat Name="Agility" Boost="3" />
+    <stat Name="MoveSpeed" Value="115" />
+    <part Name="ConversationScript" ConversationID="Woodsprog" />
+    <part Name="Brain" Calm="True" Wanders="true" FlocksWith="River Nymph" />
+    <part Name="Description" Short="River nymphs are shy, craven creatures. Under cover of the beetle moon they commit to their ritualistic dances, spreading seed and sap to all four corners of Qud. They bear oddly humanoid features, despite evidence to the contrary." />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="RiverNymphInventory"></tag>
+		<skill Name="Tactics" />
+    <skill Name="Tactics_Juke" />
+	  <tag Name="Gender" Value="female" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+  </object>
+	
+
+  <!-- Sepherescent's Androids -->
+  
+  <object Name="Tick" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="tick" RenderString="K" ColorString="&amp;w" DetailColor="Y"></part>
+		<part Name="RandomTile" Tiles="Creatures/tick1.png,Creatures/tick2.png,Creatures/tick3.png,Creatures/tick4.png"/>
+	  <part Name="Corpse" CorpseChance="10" CorpseBlueprint="Tick Husk" BodyDrop="true" InventoryDrop="false"></part>
+    <intproperty Name="Bleeds" Value="0" />
+	  <part Name="Body" Anatomy="QuadrupedalRobot" />
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-50,Pariahs-50" FlocksWith="Tick Shepherd"></part>
+    <stat Name="Toughness" Boost="-1"></stat>
+    <stat Name="AV" Value="4"></stat>
+    <stat Name="Level" Value="12"></stat>
+    <stat Name="Hitpoints" Value="14"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+	  <inventoryobject Blueprint="Tick_Drill" Number="1"></inventoryobject>
+    <part Name="Description" Short="A small, humming sphere, crawling on four legs as it grazes the landscape in search of minerals."></part>
+    <part Name="Swarmer"></part>
+    <skill Name="ShortBlades"></skill>
+    <property Name="Role" Value="Minion" />
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="Tick_Drill" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="drill" />
+    <part Name="MeleeWeapon" RenderString="\" BaseDamage="2d3" Skill="ShortBlades" Stat="Strength" Slot="Head" />
+    <part Name="Metal" />
+  </object>
+	<object Name="Tick Shepherd" Inherits="BaseRobot">
+    <part Name="ConversationScript" ConversationID="TickShepherd" />
+    <part Name="Render" DisplayName="tick shepherd" Tile="Creatures/android_shepherd.png" RenderString="B" ColorString="&amp;w" DetailColor="Y"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25" FlocksWith="Tick"></part>
+    <stat Name="Strength" Boost="2"></stat>
+    <stat Name="Toughness" Boost="2"></stat>
+    <stat Name="AV" Value="9"></stat>
+    <stat Name="Level" Value="17"></stat>
+    <stat Name="Hitpoints" Value="64"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+    <inventoryobject Blueprint="Stun Staff" Number="1" />
+    <inventoryobject Blueprint="Chem Cell" Number="1" />
+    <part Name="Description" Short="...then, there are the shepherds, who oversee the great flocks of nanite ticks grazing the soil and rock. Though of a lesser caste, they play just as vital a role as the socialites within the collective."></part>
+    <skill Name="Endurance"></skill>
+		<property Name="Role" Value="Leader"></property>
+    <part Name="Swarmer" ExtraBonus="2"></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="Tick Shepherd Still" Inherits="Tick Shepherd">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+	</object>
+	<object Name="Android Socialite" Inherits="BaseRobot">
+    <part Name="ConversationScript" ConversationID="AndroidSocialite" />
+	  <part Name="Render" DisplayName="android socialite" Tile="Creatures/android_socialite.png" RenderString="r" ColorString="&amp;c" DetailColor="Y"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25"></part>
+    <stat Name="Intelligence" Boost="3"></stat>
+    <stat Name="Ego" Boost="2"></stat>
+    <stat Name="AV" Value="9"></stat>
+    <stat Name="Level" Value="18"></stat>
+    <stat Name="Hitpoints" Value="50"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+    <inventoryobject Blueprint="Waydroid_Shockrod" Number="1" />
+    <inventoryobject Blueprint="Cloth Robe" Number="1" />
+	  <part Name="Description" Short="Whereas the shepherds oversee the ticks, it is the socialites who oversee the shepherds. Possessing the newest in digimind technology [warning: root OOD], they are believed to possess the most rational of thought processeses, and thus for the collective their word is law."></part>
+		<property Name="Role" Value="Skirmisher"></property>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="Android Socialite Still" Inherits="Android Socialite">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+	</object>
+	<object Name="Android Socialite Shouter" Inherits="Android Socialite">
+    <part Name="SocialiteShout" OriginalLastTalk="25" QuietTimer="25" />
+	</object>
+	<object Name="prev.gen Android" Inherits="BaseRobot">
+    <part Name="ConversationScript" ConversationID="prev.genAndroid" />
+	  <part Name="Render" DisplayName="prev.gen android" Tile="Creatures/android_elder.png" RenderString="c" ColorString="&amp;w" DetailColor="W"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25"></part>
+    <stat Name="MoveSpeed" Value="90" />
+    <stat Name="Strength" Boost="-1"></stat>
+    <stat Name="Agility" Boost="-1"></stat>
+    <stat Name="Toughness" Boost="-1"></stat>
+    <stat Name="AV" Value="7"></stat>
+    <stat Name="Level" Value="16"></stat>
+    <stat Name="Hitpoints" Value="42"></stat>
+		<stat Name="ElectricResistance" Value="100"></stat>
+    <inventoryobject Blueprint="prev.gen zap" Number="1" />
+    <part Name="Description" Short="The prev.gen androids, as their name implies, are obsolete models, discontinued by the assemblies of the collective. Over the decades, their specialised carbide plating and circuitry become an increasingly rare find, effectively making repairs nigh impossible. Stumbling about half-conscious, these tree-hives of entangled copper contribute little to the collective."></part>
+    <intproperty Name="AmbientElectricity" Value="1" />
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="prev.gen Android Still" Inherits="prev.gen Android">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+    <part Name="Sitting" />
+	</object>
+	<object Name="prev.gen zap" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="&amp;Whanging wires" />
+    <part Name="MeleeWeapon" RenderString="\" BaseDamage="1d4" Skill="ShortBlades" Stat="Strength" Slot="Body" />
+		<part Name="DischargeOnHit" ChargeUse="0" Voltage="1d5+1" Damage="1d4" IsEMPSensitive="true" IsTechScannable="true" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+	<object Name="Android Worker" Inherits="BaseRobot">
+    <part Name="ConversationScript" ConversationID="AndroidWorker" />
+    <part Name="Render" DisplayName="android worker" Tile="Creatures/android_worker.png" RenderString="B" ColorString="&amp;w" DetailColor="G"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25" ></part>
+    <stat Name="AV" Value="7"></stat>
+    <stat Name="Level" Value="15"></stat>
+    <stat Name="Hitpoints" Value="56"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+		<stat Name="HeatResistance" Value="50"></stat>
+    <inventoryobject Blueprint="rusty grabber" Number="2" />
+    <part Name="Description" Short="As with any successful colony, there are workers who toil day in and day out. This series of android forms the backbone of the collective's production capacity and workforce."></part>
+    <skill Name="Endurance"></skill>
+		<property Name="Role" Value="Brute"></property>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="rusty grabber" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="&amp;wrusty grabber" />
+    <part Name="MeleeWeapon" RenderString="\" BaseDamage="2d3+1" Skill="ShortBlades" Stat="Strength" Slot="Hand" />
+    <tag Name="Gender" Value="neuter" />
+  </object>
+	<object Name="Android Worker Still" Inherits="Android Worker">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+	</object>
+	<object Name="gen.5 Mechanite" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="gen.5 mechanite" Tile="Creatures/android_mechanite1.png" RenderString="B" ColorString="&amp;c" DetailColor="R"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25"></part>
+    <stat Name="MoveSpeed" Value="125" />
+    <stat Name="Strength" Boost="2"></stat>
+    <stat Name="Toughness" Boost="2"></stat>
+    <stat Name="AV" Value="13"></stat>
+    <stat Name="Level" Value="26"></stat>
+    <stat Name="Hitpoints" Value="100"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+		<stat Name="HeatResistance" Value="75"></stat>
+		<stat Name="AcidResistance" Value="75"></stat>
+		<skill Name="Dual_Wield"></skill>
+	  <inventoryobject Blueprint="Rending_Claw" Number="2" />
+		<property Name="Role" Value="Tank"></property>
+    <part Name="Description" Short="Any developed civilisation relies on tools for their continued survival, be they pitchforks, telepathy, or nimble toes. For the androids, the mechanites are their tool for war. Though they possess only a rudimentary form of intelligence, the mechanites are more than capable of shredding entities marked as [hostile] by their overseers. This model sports twin-linked wheels on both of its lower appendages, allowing it to scoot across the battlefield at high speeds."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="gen.5 Mechanite Still" Inherits="gen.5 Mechanite">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+	</object>
+	<object Name="Rogue Mechanite" Inherits="gen.5 Mechanite">
+    <part Name="Render" DisplayName="rogue gen.5 mechanite" Tile="Creatures/android_mechanite1.png" RenderString="B" ColorString="&amp;w" DetailColor="R"></part>
+    <part Name="Brain" Hostile="True" Factions="Allhater-100"></part>
+    <stat Name="AV" Value="12"></stat>
+    <stat Name="Hitpoints" Value="90"></stat>
+		<stat Name="HeatResistance" Value="70"></stat>
+		<stat Name="AcidResistance" Value="70"></stat>
+		<property Name="Role" Value="Lurker"></property>
+    <part Name="Description" Short="A minor glitch in this older model has spiraled out of control, causing a multi-threaded corruption of the kernel. Of course, as the skies would have it, its sensors now mark every living thing within range and beyond as [hostile]. The frame itself sports twin-linked wheels on both of its lower appendages, allowing it to scoot across the battlefield at high speeds."></part>
+    <tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+  </object>
+  <object Name="TT_Rogue Mechanite" Inherits="gen.6 Mechanite">
+    <part Name="Render" DisplayName="rogue gen.6 mechanite" Tile="Creatures/android_mechanite2.png" RenderString="B" ColorString="&amp;w" DetailColor="R"></part>
+    <part Name="Brain" Hostile="True" Hibernating="true" Factions="Allhater-100"></part>
+		<property Name="Role" Value="Artillery"></property>
+    <part Name="Description" Short="A minor glitch in this older model has spiraled out of control, causing a multi-threaded corruption of the kernel. Of course, as the skies would have it, its sensors now mark every living thing within range and beyond as [hostile]. 'GEN.6' was spray-painted in big, yellow letters on its frame."></part>
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="Rending_Claw" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="&amp;Rrending claw" />
+    <part Name="MeleeWeapon" RenderString="\" BaseDamage="2d4" Skill="Axe" Stat="Strength" Slot="Hand" />
+  </object>
+	<object Name="gen.6 Mechanite" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="gen.6 mechanite" Tile="Creatures/android_mechanite2.png" RenderString="B" ColorString="&amp;c" DetailColor="R"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+    <part Name="Brain" Hostile="false" Factions="Androids-100,Wardens-25,Pariahs-25"></part>
+    <stat Name="MoveSpeed" Value="90" />
+    <stat Name="Agility" Boost="2"></stat>
+    <stat Name="Toughness" Boost="2"></stat>
+    <stat Name="AV" Value="14"></stat>
+    <stat Name="Level" Value="28"></stat>
+    <stat Name="Hitpoints" Value="130"></stat>
+		<stat Name="ElectricResistance" Value="-50"></stat>
+		<stat Name="HeatResistance" Value="100"></stat>
+		<stat Name="AcidResistance" Value="100"></stat>
+	  <inventoryobject Blueprint="Rending_Claw" Number="1" />
+    <inventoryobject Blueprint="Missile Launcher" Number="1" />
+    <inventoryobject Blueprint="HE Missile" Number="1d6+3" />
+		<property Name="Role" Value="Artillery"></property>
+	  <part Name="Description" Short="The moment you notice its hulking frame approach in your direction, every fibre in your body instinctively tells you to run. For once, your instict is right on the drams; most cannot imagine beating this adversary, let alone outrunning its rockets."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="gen.6 Mechanite Still" Inherits="gen.6 Mechanite">
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+	</object>
+	<object Name="Sunkoi Fish" Inherits="BaseFish">
+    <part Name="Render" DisplayName="sunkoi" RenderString="224" Tile="Creatures/koi.png" DetailColor="R" ColorString="&amp;Y"></part>
+    <part Name="Corpse" CorpseChance="25" CorpseBlueprint="Sunkoi Corpse" BodyDrop="false" InventoryDrop="true"></part>
+		<stat Name="Level" Value="16" />
+    <stat Name="AV" Value="9"></stat>
+    <stat Name="Hitpoints" Value="40"></stat>
+		<stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="-30" />
+	  <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Factions="Fish-100"></part>
+    <mutation Name="Gills" Score="12"></mutation>
+    <part Name="Description" Short="Up and down the river it swims, up and down, always going against the tide in hopes of avoiding the hungering madpoles..."></part>
+    <inventoryobject Blueprint="Koi_Bite" Number="1"></inventoryobject>
+		<skill Name="ShortBlades_Expertise"></skill>
+    <skill Name="ShortBlades_Bloodletter"></skill>
+    <skill Name="ShortBlades_Jab"></skill>
+    <tag Name="Species" Value="catfish" />
+    <tag Name="DynamicObjectsTable:Water_Creatures"></tag>
+  </object>
+	<object Name="Moonkoi Fish" Inherits="BaseFish">
+    <part Name="Render" DisplayName="moonkoi" RenderString="224" Tile="Creatures/koi.png" DetailColor="K" ColorString="&amp;Y"></part>
+    <part Name="Corpse" CorpseChance="25" CorpseBlueprint="Moonkoi Corpse" BodyDrop="false" InventoryDrop="true"></part>
+		<stat Name="Level" Value="14" />
+    <stat Name="AV" Value="7"></stat>
+    <stat Name="Hitpoints" Value="40"></stat>
+		<stat Name="HeatResistance" Value="-30" />
+    <stat Name="ColdResistance" Value="100" />
+	  <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Factions="Fish-100"></part>
+    <mutation Name="Gills" Score="12"></mutation>
+    <part Name="Description" Short="...though its wet belly is softer than that of its sunkissed counterpart, the moonkoi is a far rarer find, and its scales are all-the-more desired."></part>
+    <inventoryobject Blueprint="Koi_Bite" Number="1"></inventoryobject>
+		<skill Name="ShortBlades_Expertise"></skill>
+    <skill Name="ShortBlades_Bloodletter"></skill>
+    <skill Name="ShortBlades_Jab"></skill>
+    <tag Name="Species" Value="catfish" />
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+  <object Name="Koi_Bite" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="cr&amp;Yy&amp;ystalline bite"></part>
+    <part Name="MeleeWeapon" BaseDamage="3d3+2" Skill="ShortBlades" SecondaryStat="Agility" Slot="Face"></part>
+  </object>
+  <object Name="Sunkoi Corpse" Inherits="Corpse">
+    <part Name="Render" DisplayName="sunkoi corpse" ColorString="&amp;R"></part>
+    <part Name="Description" Short="Violence has sapped all value out of this fish, its shattered scales now worthless."></part>
+    <part Name="Commerce" Value="2"></part>
+    <part Name="Physics" Weight="50"></part>
+    <tag Name="DynamicObjectsTable:Corpses"></tag>
+  </object>
+	<object Name="Moonkoi Corpse" Inherits="Corpse">
+    <part Name="Render" DisplayName="moonkoi corpse" ColorString="&amp;R"></part>
+    <part Name="Description" Short="The bloated koi rapidly depreciates; the time for harvest is now."></part>
+    <part Name="Commerce" Value="20"></part>
+    <part Name="Physics" Weight="50"></part>
+    <part Name="Butcherable" OnSuccess="Moonkoi Scales"></part>
+    <tag Name="DynamicObjectsTable:Corpses"></tag>
+  </object>
+
+
+<!-- Sepherescent's Metropolitans -->
+
+  <object Name="BaseMetro" Inherits="NPC">
+    <part Name="Brain" Hostile="false" Factions="Metropolitans-100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="SecretAdjectives" Value="humanoid" />
+  </object>
+	<object Name="Metropolitan" Inherits="BaseMetro">
+    <part Name="Render" DisplayName="metropolitan" Tile="Creatures/tt_lady.png" ColorString="&amp;y" DetailColor="R" RenderString="W" />
+    <part Name="ConversationScript" ConversationID="Metropolitan" />
+    <part Name="Brain" Wanders="true" Factions="Metropolitans-100,Androids-50,Wardens-25,Pariahs-25" />
+    <stat Name="AV" Value="2" />
+    <stat Name="DV" Value="10" />
+    <stat Name="Ego" Boost="4"></stat>
+	  <stat Name="Hitpoints" Value="30" />
+    <tag Name="InventoryPopulationTable" Value="MetropolitanInventory"></tag>
+    <part Name="Description" Short="The apex of fashion, this progenitor of the city stands upright, displaying a deep sense of decorum. =pronouns.Subjective= =verb:wear:afterpronoun= =pronouns.possessive= finest and wields an ego vanity itself would covet. =pronouns.Subjective= competes with =pronouns.possessive= contemporaries in a bustling, ever-changing environment." />
+    <tag Name="Gender" Value="female" />
+    <property Name="Role" Value="Skirmisher" />
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+  <object Name="TT_Penny_Pincher" Inherits="BaseMetro">
+    <part Name="Render" DisplayName="&amp;wp&amp;re&amp;wnny pincher" Tile="Creatures/tt_penny_pincher.png" ColorString="&amp;w" DetailColor="o" RenderString="W" />
+    <part Name="ConversationScript" ConversationID="Woodsprog" />
+    <part Name="Brain" Wanders="true" Factions="Metropolitans-100,Androids-50,Wardens-25,Pariahs-25" />
+    <stat Name="AV" Value="0" />
+    <stat Name="DV" Value="13" />
+	  <stat Name="Hitpoints" Value="14" />
+    <tag Name="InventoryPopulationTable" Value="PennyPincherInventory"></tag>
+    <part Name="Description" Short="[...] [in] the dirt-brown rubble, a gleaming penny. Around the penny, a mud-caked hand - indeed, a child, hiding in plain sight, who's outlines melt into the rock and soil of bygone ages. [...] Playfully reflecting the penny's gleam at passerby, out of boredom moreso than malice..." />
+    <property Name="Role" Value="Skirmisher" />
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+  <object Name="Tame Dog" Inherits="BaseDog">
+    <part Name="Render" DisplayName="tame dog" Tile="creatures/sw_dog.bmp" RenderString="d" ColorString="&amp;O"></part>
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Dog Corpse" BodyDrop="false" InventoryDrop="true"></part>
+    <part Name="Brain" Wanders="true" Factions="Metropolitans-100,Dogs-50,Androids-50,Wardens-25,Pariahs-25" />
+	  <stat Name="AV" Value="1"></stat>
+    <stat Name="Hitpoints" Value="22"></stat>
+    <part Name="Description" Short="This dog appears to be quite well fed. Its amber coat is the result of generations of selective breeding; such an eye-catching fur would serve no purpose in the wild."></part>
+    <inventoryobject Blueprint="Dog_Bite" Number="1"></inventoryobject>
+    <part Name="Swarmer"></part>
+    <property Name="Role" Value="Minion" />
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+
+
+<!-- Sepherescent's Horrors -->
+
+	<object Name="Urman" Inherits="BaseHumanoid">
+		<part Name="Render" DisplayName="&amp;Kurman" Tile="Creatures/urman.png" ColorString="&amp;K" DetailColor="K" ></part>
+		<part Name="Description" Short="The Urman is a being older than memory. Using ripples in time and approaching its prey from odd angles, it shadows itself, fragmenting the continuum over and over and over again."></part>
+    <part Name="Brain" Hostile="True" Factions="Allhater-100" />
+    <intproperty Name="Bleeds" Value="0" />
+		<stat Name="Level" Value="44"></stat>
+    <stat Name="Agility" Boost="2" />
+		<stat Name="AV" Value="9"></stat>
+		<stat Name="DV" Value="18"></stat>
+		<stat Name="Hitpoints" Value="666" />
+		<skill Name="Cudgel" />
+		<skill Name="Cudgel_Bludgeon" />
+		<skill Name="Dual_Wield"></skill>
+    <skill Name="Tactics_Run"></skill>
+		<inventoryobject Blueprint="Urman_Arm" Number="2" />
+		<inventoryobject Blueprint="Urberry" Number="1" />
+		<mutation Name="TemporalFugue" Level="6" />
+    <tag Name="Gender" Value="male" />
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="Urman_Arm" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="&amp;Kessence" />
+		<part Name="MeleeWeapon" BaseDamage="2d8+2" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+	</object>
+		<object Name="Genesplice Worm" Inherits="BaseWorm">
+    <part Name="Render" DisplayName="&amp;ggenespl&amp;Yi&amp;gce &amp;yworm" RenderString="w" ColorString="&amp;Y" DetailColor="g"></part>
+    <part Name="Corpse" CorpseChance="20" CorpseBlueprint="Genesplice Worm Corpse" BodyDrop="false" InventoryDrop="false"></part>
+		<part Name="RandomTile" Tiles="Creatures/genesplice_worm1.png,Creatures/genesplice_worm2.png"/>
+    <stat Name="AV" Value="7"></stat>
+    <stat Name="DV" Value="13"></stat>
+    <stat Name="Level" Value="26"></stat>
+    <stat Name="Hitpoints" Value="30"></stat>
+    <stat Name="AcidResistance" Value="-50" />
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <part Name="Breeder" Blueprint="Genesplice Worm" Chance="4" ReductionChance="35"></part>
+    <part Name="Brain" Hostile="false" Factions="Worms-100"></part>
+    <inventoryobject Blueprint="Genesplice_Bite" Number="1"></inventoryobject>
+    <part Name="Description" Short="They say it is the root cause of all change, and of all things. But if it truly were so, then what came before it?"></part>
+    <mutation Name="LifeDrain"></mutation>
+    <tag Name="Species" Value="worm" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+    <tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+  </object>
+	<object Name="Genesplice Worm Corpse" Inherits="Corpse">
+		<part Name="Butcherable" OnSuccess="Raw Worm Meat"></part>
+		<part Name="Render" DisplayName="genesplice worm corpse" ColorString="&amp;w"></part>
+		<part Name="Physics" Weight="90"></part>
+		<tag Name="DynamicObjectsTable:Corpses"></tag>
+	</object>
+	<object Name="Genesplice_Bite" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="&amp;Msplicing &amp;ghelix" />
+		<part Name="MeleeWeapon" BasePenetration="8" BaseDamage="1d10" Skill="ShortBlades" Stat="Strength" Slot="Body" Attributes="Mutagenic" />
+		<part Name="MutateOnHit" Chance="75" IncubationTime="100" ResultTable="MutatingResults"></part>
+	</object>
+  <object Name="TT_Replicant" Inherits="BaseWorm">
+    <part Name="Render" DisplayName="&amp;yr&amp;re&amp;yplicant" ColorString="&amp;r" DetailColor="y"></part>
+    <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="false"></part>
+		<part Name="RandomTile" Tiles="Creatures/tt_replicant1.png,Creatures/tt_replicant2.png,Creatures/tt_replicant3.png"/>
+		<stat Name="Strength" sValue="10,1d10,(t-1)d2" />
+		<stat Name="Agility" sValue="10,1d5,(t-1)d2" />
+		<stat Name="Toughness" sValue="10,1d5,(t-1)d2" />
+		<stat Name="Intelligence" sValue="10,1d10,(t-1)d2-1" />
+		<stat Name="Willpower" sValue="10,1d10,(t-1)d2-1" />
+		<stat Name="Ego" sValue="10,1d10,(t-1)d2-1" />
+    <stat Name="AV" Value="9"></stat>
+    <stat Name="DV" Value="16"></stat>
+    <stat Name="Level" Value="30"></stat>
+    <stat Name="Hitpoints" Value="128"></stat>
+    <stat Name="AcidResistance" Value="50" />
+    <stat Name="HeatResistance" Value="-25" />
+    <part Name="Brain" Hostile="true" Factions="Allhater-100"></part>
+    <inventoryobject Blueprint="TT_Replicant_Bite" Number="1"></inventoryobject>
+    <part Name="Mimic" CopyBackground="false" CopyColor="true" CopyString="false" />
+		<part Name="RandomMutations" Mental="1d2" MentalLevel="1d4+4" Physical="1d2" PhysicalLevel="1d4+4"></part>
+	  <part Name="Description" Short="These unsightly creatures come in many forms; mounds of flesh, boneless men crawling on fours, or streaks of shade bordering the ethereal realms. The origins of the replicants has long since been lost to the winds of time. Their minds, much like their bodies, are coated in the powers of entropy."></part>
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures"></tag>
+    <tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+  </object>
+	  <object Name="TT_Replicant_Bite" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="bite" />
+    <part Name="MeleeWeapon" BaseDamage="1d8+1" Skill="Axe" Stat="Strength" Slot="Head" />
+  </object>
+	<object Name="TT_Kernishi" Inherits="BaseReptile">
+    <part Name="Render" DisplayName="kernishi" Tile="Creatures/tt_kernishi1.png" RenderString="B" ColorString="&amp;y" DetailColor="r"></part>
+    <part Name="Body" Anatomy="WallBody" />
+    <part Name="Corpse" CorpseChance="0" />
+    <part Name="Brain" Hostile="True" Factions="Allhater-100"></part>
+    <stat Name="AV" Value="8"></stat>
+    <stat Name="DV" Value="0" />
+    <stat Name="Hitpoints" Value="80"></stat>
+		<stat Name="ColdResistance" Value="100"></stat>
+		<stat Name="AcidResistance" Value="-50"></stat>
+    <stat Name="Willpower" sValue="10,1d10,(t-1)d2-1" />
+    <property Name="Role" Value="Leader"></property>
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="Species" Value="*" />
+    <part Name="Description" Short="A baseline kernishi."></part>
+    <tag Name="DynamicObjectsTable:Ruins_Creatures"></tag>
+  </object>
+  <object Name="TT_Kernishi_Eater" Inherits="TT_Kernishi">
+    <part Name="RandomTile" Tiles="Creatures/tt_kernishi1.png,Creatures/tt_kernishi2.png,Creatures/tt_kernishi3.png" />
+    <part Name="Render" DisplayName="kernishi eater" ColorString="&amp;Y" DetailColor="R"></part>
+    <inventoryobject Blueprint="TT_Kernishi_Devour" Number="1" />
+    <stat Name="Level" Value="20" />
+    <skill Name="Axe" />
+    <skill Name="Axe_Cleave" />
+    <part Name="Engulfing" />
+    <part Name="EngulfingDamage" Amount ="3-6" />
+    <part Name="EngulfingWanders" />
+    <part Name="Description" Short="Kernishi, urban slang for 'glutton', are semi-animate, semi-sentient beings. Much like a medusa, they possess only the most basic of instincts, and no instinct is known to be more dangerous than that of a hungry kernishi."></part>
+  </object>
+  <object Name="TT_Kernishi_Blocker" Inherits="TT_Kernishi">
+    <part Name="RandomTile" Tiles="Creatures/tt_kernishi4.png,Creatures/tt_kernishi5.png,Creatures/tt_kernishi6.png" />
+    <stat Name="Level" Value="16" />
+    <stat Name="AV" Value="14"></stat>
+    <stat Name="Hitpoints" Value="60"></stat>
+    <inventoryobject Blueprint="TT_Kernishi_Slam" Number="1" />
+    <part Name="Description" Short="There is much debate as to whether kernishi are individuals that choose to operate in tightly-knit packs, hunting colonies of sorts, or whether the colony as a whole is an individual, compromised of several member bodies under the control of one hivemind."></part>
+  </object>
+	<object Name="TT_Kernishi_Devour" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="vicious teeth" />
+    <part Name="MeleeWeapon" BaseDamage="1d7+3" Skill="Axe" Stat="Strength" Slot="Face" />
+  </object>
+	<object Name="TT_Kernishi_Slam" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="metallic slab" />
+    <part Name="MeleeWeapon" BaseDamage="1d6+2" Skill="Cudgel" Stat="Strength" Slot="Face" />
+  </object>
+	<object Name="TT_Ectomorph" Inherits="BaseHumanoid">
+		<part Name="Render" DisplayName="ectomorph" Tile="Creatures/tt_ectomorph.png" ColorString="&amp;y" DetailColor="R" ></part>
+		<part Name="Description" Short="A tall, lanky frame pours out of the shadows; though it appears to stumble moreso than walk. Despite this, it jolts and bolts across great distances, at times parctically falling on fours as it rushes to its prey in a frenzy. In place of forearms, two chitinous blades sprawl forth in a menacing manner, covered in the remains of its last meal."></part>
+    <stat Name="MoveSpeed" Value="110"></stat>
+    <part Name="Corpse" CorpseChance="0" />
+    <part Name="Brain" Hostile="True" Factions="Allhater-100" />
+    <part Name="AISelfPreservation" Threshold="25" />
+		<stat Name="Level" Value="25"></stat>
+    <stat Name="Agility" Boost="5" />
+		<stat Name="AV" Value="4"></stat>
+		<stat Name="DV" Value="16"></stat>
+    <stat Name="Hitpoints" Value="80"></stat>
+		<skill Name="ShortBlades" />
+    <skill Name="ShortBlades_Bloodletter" /> 
+		<skill Name="Dual_Wield"></skill>
+    <skill Name="Dual_Wield_Offhand_Strikes" />
+    <skill Name="Dual_Wield_Ambidexterity" />
+    <skill Name="Dual_Wield_Two_Weapon_Fighting" />
+    <skill Name="Tactics_Run"></skill>
+		<mutation Name="HeightenedHearing" Level="5" />
+    <property Name="Role" Value="Brute" />
+    <inventoryobject Blueprint="TT_Chitin_Blade" Number="2" />
+    <tag Name="DeathSounds" Value="death_insect_1,death_insect_2,death_insect_3" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+  <object Name="TT_Chitin_Blade" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="chitin blade" />
+    <part Name="MeleeWeapon" BaseDamage="1d6+4" Skill="ShortBlades" Stat="Strength" Slot="Hand" />
+  </object>
+  <object Name="TT_Test1" Inherits="FarmerWife">
+    <part Name="Render" DisplayName="{{M-m-b-b sequence|test}} 1" Tile="Creatures/tt_fleshcreep.png" DetailColor="r" ColorString="&amp;w"></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="TT_Test2" Inherits="FarmerWife">
+		<part Name="Render" DisplayName="&amp;Gt&amp;Ye&amp;Gst 2" Tile="Creatures/tt_planewalker.png" DetailColor="Y" ColorString="&amp;W"></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="TT_Test3" Inherits="FarmerWife">
+	  <part Name="Render" DisplayName="&amp;gSolid &amp;GSnake" Tile="Creatures/tt_solid_snake.png" DetailColor="R" ColorString="&amp;g"></part>
+	  <tag Name="DeathSounds" Value="tt_snake_death" />
+    <xtagGrammar Proper="true"></xtagGrammar>
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+
+
+
+	<!--
+
+			*******************
+			Seph's Awesome Pets
+			*******************
+
+	-->
+
+	<object Name="Phelicia" Inherits="BaseFaerie">
+		<part Name="Render" DisplayName="&amp;GPhelicia" Tile="Creatures/tt_pet_fae.png" ColorString="&amp;Y" DetailColor="C"></part>
+    <part Name="Corpse" BodyDrop="false" InventoryDrop="true" />
+    <part Name="Brain" Wanders="false" Factions="Prey-100" />
+		<stat Name="Level" Value="2"></stat>
+		<stat Name="AV" Value="2"></stat>
+		<stat Name="Willpower" sValue="18"></stat>
+		<stat Name="Agility" sValue="18"></stat>
+    <stat Name="Intelligence" sValue="16"></stat>
+		<stat Name="Hitpoints" Value="25"></stat>
+    <stat Name="MoveSpeed" Value="110"></stat>
+		<mutation Name="Wings" Level="10"></mutation>
+		<inventoryobject Blueprint="Faerie_Bite" Number="1"></inventoryobject>
+		<inventoryobject Blueprint="Fiery_Gaze" Number="1" />
+		<tag Name="PetResponse" Value="beams in delight,comes a little too close for comfort,buzzes" />
+		<tag Name="Pet"/>
+		<tag Name="StartingPet"/>
+		<part Name="Pettable"/>
+		<part Name="Description" Short="Fiery blue light engulfs your peripheral vision. Phelicia is never far."></part>
+		<part Name="LightSource" Lit="true" Radius="3" />
+		<part Name="PheliciaGlow" />
+		<tag Name="Species" Value="faerie" />
+    <tag Name="Gender" Value="female" />
+		<xtagGrammar Proper="true"></xtagGrammar>
+		<property Name="Story" Value="TT_Pet_Phelicia_Story" />
+		<part Name="ConversationScript" ConversationID="Phelicia" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="Fiery_Gaze" Inherits="NaturalMissileWeapon">
+    <part Name="Render" DisplayName="&amp;cf&amp;Ci&amp;Ye&amp;Cr&amp;cy &amp;ygaze" ColorString="&amp;R" RenderString=")" />
+    <part Name="MissileWeapon" RangeIncrement="10" Skill="Rifle" AmmoChar="&amp;Y&#236;" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" />
+    <part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="Projectile_FieryGaze" />
+    <tag Name="UsesSlots" Value="Face" />
+  </object>
+	<object Name="Projectile_FieryGaze" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="&amp;Yflash of fire" ColorString="&amp;Y" />
+    <part Name="Projectile" BasePenetration="4" BaseDamage="1d3" ElementalDamage="5-10" Element="Fire" ColorString="&amp;Y" PassByVerb="flicker" />
+    <part Name="Physics" IsReal="false" />
+  </object>
+	<object Name="Centifriend" Inherits="BaseInsect">
+		<part Name="Render" DisplayName="&amp;GCentifriend" Tile="Creatures/tt_pet_centifriend.png" ColorString="&amp;y" DetailColor="O"></part>
+    <part Name="Corpse" BodyDrop="false" InventoryDrop="true" />
+    <part Name="Brain" Wanders="false" Factions="Prey-100,Insects-25" />
+		<stat Name="AV" Value="3"></stat>
+    <stat Name="DV" Value="3"></stat>
+    <stat Name="Hitpoints" Value="40"></stat>
+		<stat Name="Agility" sValue="20"></stat>
+    <stat Name="Intelligence" sValue="14"></stat>
+	  <stat Name="Level" Value="2"></stat>
+		<skill Name="ShortBlades"></skill>
+		<skill Name="ShortBlades_Bloodletter"></skill>
+    <skill Name="Acrobatics_Jump" />
+	  <inventoryobject Blueprint="GiantCentipede_Bite" Number="1"></inventoryobject>
+		<part Name="Description" Short="Chitinous plates protect his tender heart, and with a gaze of wonder he peers at the moon. Despite their appearance giant centipedes are considered sacred by some; they are seen as harbingers of fertility and rebirth."></part>
+    <tag Name="Species" Value="centipede" />
+		<tag Name="PetResponse" Value="does a little dance of joy,gazes at the moon,entangles your arm" />
+		<tag Name="Pet"/>
+		<tag Name="StartingPet"/>
+		<part Name="Pettable"/>
+	  <tag Name="Gender" Value="male" />
+		<xtagGrammar Proper="true"></xtagGrammar>
+    <property Name="Role" Value="Skirmisher" />
+		<property Name="Story" Value="TT_Pet_Centifriend_Story" />
+		<part Name="ConversationScript" ConversationID="Centifriend" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="D-12" Inherits="BaseRobot">
+		<part Name="Render" DisplayName="&amp;GD-12" Tile="Creatures/tt_pet_tick.png" ColorString="&amp;Y" DetailColor="B"></part>
+    <part Name="Corpse" BodyDrop="false" InventoryDrop="true" />
+    <part Name="Brain" Wanders="false" Factions="Prey-100,Androids-25" />
+		<part Name="Body" Anatomy="QuadrupedalRobot" />
+		<intproperty Name="Bleeds" Value="0" />
+		<stat Name="Level" Value="2"></stat>
+		<stat Name="AV" Value="4"></stat>
+		<stat Name="Willpower" sValue="13"></stat>
+		<stat Name="Agility" sValue="17"></stat>
+    <stat Name="Intelligence" sValue="18"></stat>
+		<stat Name="Hitpoints" Value="35"></stat>
+		<stat Name="ElectricResistance" Value="-25"></stat>
+    <stat Name="MoveSpeed" Value="80"></stat>
+		<skill Name="ShortBlades"></skill>
+    <skill Name="Acrobatics_Jump" />
+		<inventoryobject Blueprint="Tick_Drill" Number="1"></inventoryobject>
+		<part Name="Description" Short="D-12's LEDs flash a white-pink, and though they convey no emotion, you can tell there is love in its eyes."></part>
+		<part Name="D12Hearts" />
+		<tag Name="PetResponse" Value="does a little dance of joy,ticks,recounts one of its many stories" />
+		<tag Name="Pet"/>
+		<tag Name="StartingPet"/>
+		<part Name="Pettable"/>
+    <tag Name="Gender" Value="neuter" />
+		<xtagGrammar Proper="true"></xtagGrammar>
+    <property Name="Role" Value="Skirmisher" />
+		<part Name="ConversationScript" ConversationID="D12" />
+		<property Name="Story" Value="TT_Pet_D12_Story" />
+		<tag Name="Robot" Value="true" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+
+
+	<!--
+
+			***********
+			Seph's NPCs
+			***********
+
+	-->
+
+	<object Name="September" Inherits="Android Socialite">
+  	<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="September" />
+    <part Name="Render" DisplayName="September" Tile="Creatures/android_hero1.png" ColorString="&amp;r" DetailColor="Y"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="true"></part>
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+    <stat Name="Level" Value="24"></stat>
+    <inventoryobject Blueprint="Dice" Number="1" />
+		<tag Name="staticFaction3" Value=",friend,granting them refuge in Andromimos" />
+    <tag Name="staticFaction2" Value=",dislike,gambling away their prized gift" />
+    <tag Name="staticFaction1" Value=",hate,ignoring a call to arms" />
+		<part Name="Description" Short="A distant, pensive look coupled with a warm embrace. September stands ready to roll the dice of fate once more."></part>
+    <tag Name="Gender" Value="neuter" />
+		<property Name="Role" Value="NPC"></property>
+    <part Name="GivesRep"></part>
+    <xtagGrammar Proper="true"></xtagGrammar>
+	</object>
+	<object Name="October" Inherits="Android Socialite">
+  	<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="October" />
+    <part Name="Render" DisplayName="October" Tile="Creatures/android_hero2.png" ColorString="&amp;O" DetailColor="Y"></part>
+	  <part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="true"></part>
+    <part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+    <stat Name="Level" Value="24"></stat>
+		<part Name="Description" Short="A kind, loving being, October wishes for nothing more than peace and prosperity. Ventilation exhausts peer out of her head, haphazardly blowing out steam as her processors attempt to solve the unsolveable."></part>
+    <tag Name="Gender" Value="female" />
+		<property Name="Role" Value="NPC"></property>
+    <xtagGrammar Proper="true"></xtagGrammar>
+	</object>
+	<object Name="November" Inherits="Android Socialite">
+   	<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="November" />
+		<part Name="Render" DisplayName="November" Tile="Creatures/android_hero3.png" ColorString="&amp;B" DetailColor="Y"></part>
+		<part Name="Corpse" CorpseChance="0" BodyDrop="false" InventoryDrop="true"></part>
+		<part Name="Brain" WandersRandomly="false" Wanders="false"></part>
+		<stat Name="Level" Value="24"></stat>
+		<part Name="Description" Short="The ring of tiny bells clipped to his headwear echoes through the Amphitheatre. A tall, lanky frame towers over you, and a cold, condescending look meets your eyes as you as you approach. You are not welcome here."></part>
+    <tag Name="Gender" Value="male" />
+		<property Name="Role" Value="NPC"></property>
+		<xtagGrammar Proper="true"></xtagGrammar>
+	</object>
+	<object Name="Master Pyre" Inherits="Snapjaw">
+  	<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="MasterPyre" />
+    <part Name="Render" DisplayName="Master Pyre" Tile="Creatures/tt_pyre.png" ColorString="&amp;o" DetailColor="C"></part>
+    <part Name="Brain" WandersRandomly="false" Wanders="false" Factions="Pariahs-100,Snapjaws-25"></part>
+    <stat Name="Level" Value="24"></stat>
+		<skill Name="Tinkering_GadgetInspector" />
+    <skill Name="Tinkering_Tinker1" />
+    <skill Name="Tinkering_Tinker2" />
+    <skill Name="Tinkering_Disassemble" />
+    <skill Name="Tinkering_Repair" />
+		<inventoryobject Blueprint="Sandals" />
+    <inventoryobject Blueprint="Spectacles" />
+    <inventoryobject Blueprint="Leather Apron" />
+    <inventoryobject Blueprint="*Junk 1" Number="2-4" />
+    <inventoryobject Blueprint="Chaingun" Number="1" />
+    <inventoryobject Blueprint="Lead Slug" Number="500-2500" />
+    <property Name="WontSell" Value="Lead Slug" />
+    <builder Name="DataDiskWares" />
+		<part Name="Description" Short="Ol' Pyre is known around these parts as being one of the best of his craft. Though he is a pariah to his people, few would dare say ill of him."></part>
+    <tag Name="Gender" Value="male" />
+		<property Name="Role" Value="NPC"></property>
+    <xtagGrammar Proper="true"></xtagGrammar>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="June" Inherits="Snapjaw">
+		<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="TT_June" />
+		<part Name="Render" DisplayName="June" Tile="Creatures/tt_june.png" ColorString="&amp;Y" DetailColor="G"></part>
+		<part Name="Brain" WandersRandomly="false" Wanders="false" Factions="Pariahs-100,Snapjaws-25"></part>
+		<stat Name="Level" Value="24"></stat>
+		<inventoryobject Blueprint="Sandals" />
+		<inventoryobject Blueprint="Leather Gloves" />
+		<inventoryobject Blueprint="Feather Kilt" />
+		<part Name="GenericInventoryRestocker" />
+    <tag Name="GenericInventoryRestockerPopulationTable" Value="SecludedWitchInventory" />
+		<part Name="Description" Short="A timid figure, this snapjaw's fingers are tinted a spring green. Her pouch is filled to the brim with herbs and flowers of all colours and variants. Periodically she takes a seat and peeks inside the workshop whilst organising her crop."></part>
+		<tag Name="Gender" Value="female" />
+		<property Name="Role" Value="NPC"></property>
+		<xtagGrammar Proper="true"></xtagGrammar>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="Meribelle" Inherits="BaseHumanoid">
+		<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="Meribelle" />
+		<part Name="Render" DisplayName="Warden Meribelle" Tile="Creatures/tt_meribelle.png" ColorString="&amp;B" DetailColor="W"></part>
+		<part Name="Brain" WandersRandomly="false" Wanders="false" Factions="Wardens-100,Androids-50,Metropolitans-50"></part>
+		<stat Name="Level" Value="30"></stat>
+		<stat Name="Strength" sValue="20" />
+    <stat Name="Agility" sValue="24" />
+    <stat Name="Toughness" sValue="24" />
+    <stat Name="Intelligence" sValue="25" />
+    <stat Name="Willpower" sValue="26" />
+    <stat Name="Ego" sValue="20" />
+    <stat Name="Hitpoints" sValue="128" />
+		<mutation Name="Teleportation" Level="6" />
+    <mutation Name="Telepathy" Level="1" />
+    <mutation Name="SensePsychic" Level="1" />
+		<part Name="RandomMutations" Mental="1d1" MentalLevel="6" Physical="0" PhysicalLevel="0"></part>
+		<inventoryobject Blueprint="Elastyne Skin Suit" />
+  	<inventoryobject Blueprint="Elastyne Gloves" />
+	  <inventoryobject Blueprint="Reaper's Claw" BoostModChance="true" />
+  	<inventoryobject Blueprint="Blue Security Card" />
+    <inventoryobject Blueprint="Chem Cell" Number="1" />
+	  <inventoryobject Blueprint="Hologram Bracelet" />
+    <skill Name="Persuasion_Intimidate"></skill>
+		<skill Name="Axe" />
+		<skill Name="Axe_Dismember" />
+		<skill Name="Axe_Cleave" />
+		<skill Name="Axe_HookAndDrag" />
+		<skill Name="Axe_Decapitate" />
+    <skill Name="Survival_RuinsSurvival" />
+	  <part Name="GivesRep" />
+		<tag Name="NoSleep" />
+    <tag Name="Gender" Value="female" />
+    <tag Name="NoHateFactions" Value="Pariahs,Androids" />
+		<part Name="Description" Short="You feel Meribelle's golden eyes pierce right through you like a hot knife through butter. What others are oblivious to, she sees."></part>
+		<property Name="Role" Value="NPC"></property>
+		<xtagGrammar Proper="true"></xtagGrammar>
+    <xtagWaterRitual SellSkill="Survival_RuinsSurvival" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="Konkomorus" Inherits="BaseHumanoid">
+		<stat Name="Noclone" Value="1"></stat>
+		<part Name="ConversationScript" ConversationID="Konkomorus" />
+    <part Name="KonkomorusShout" OriginalLastTalk="10" QuietTimer="10" />
+		<part Name="Render" DisplayName="Konkomorus" Tile="Creatures/tt_konkomorus.png" ColorString="&amp;W" DetailColor="C"></part>
+		<part Name="Brain" WandersRandomly="true" Wanders="true" Factions="Pariahs-100,Androids-50"></part>
+		<stat Name="Level" Value="20"></stat>
+		<stat Name="Strength" sValue="12" />
+		<stat Name="Agility" sValue="14" />
+		<stat Name="Toughness" sValue="14" />
+		<stat Name="Intelligence" sValue="26" />
+		<stat Name="Willpower" sValue="20" />
+		<stat Name="Ego" sValue="26" />
+		<stat Name="Hitpoints" sValue="64" />
+		<mutation Name="SpacetimeVortex" Level="7" />
+		<inventoryobject Blueprint="Cultist Robe" />
+    <inventoryobject Blueprint="*Junk 1" Number="2-4" />
+		<inventoryobject Blueprint="Sandals" />
+    <skill Name="Persuasion_Berate" />
+	  <skill Name="Persuasion_Proselytize" />
+    <skill Name="Persuasion_SnakeOiler" />
+		<tag Name="NoSleep" />
+		<tag Name="Gender" Value="male" />
+		<tag Name="NoHateFactions" Value="Pariahs,Androids" />
+		<part Name="Description" Short="A short, angry man, Konkomorus is a self-described 'passionate' preacher of the 'true faith'. His arms flail wildly, gesturing to the people of the city, paired with grandiose statements regarding the state of the world."></part>
+		<property Name="Role" Value="NPC"></property>
+		<xtagGrammar Proper="true"></xtagGrammar>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+  <object Name="TT_Solid_Snake" Inherits="NPC">
+	  <part Name="Render" DisplayName="{{snakeskin|Solid Snake}}" Tile="Creatures/tt_solid_snake.png" DetailColor="R" ColorString="&amp;g"></part>
+    <part Name="Description" Short="Halfway through applying a crude mixture of camouflage, this man dons a mossy suit and a red bandana. It isn't hard to tell he isn't from around here; as with you, his missteps have echoed through the annals of time, landing himself a place here, in this hell of verdant greenery."></part>
+    <part Name="ConversationScript" ConversationID="TT_Solid_Snake" />
+    <stat Name="Level" Value="22" />
+    <part Name="Brain" Wanders="true" Factions="Strangers-100" />
+    <stat Name="DV" Value="8" />
+    <part Name="Mimic" CopyBackground="false" CopyColor="true" CopyString="false" />
+    <inventoryobject Blueprint="Leather Boots" />
+    <inventoryobject Blueprint="Leather Gloves" />
+    <inventoryobject Blueprint="Grassy Yurtmat" />
+    <inventoryobject Blueprint="Night-vision Goggles" />
+    <inventoryobject Blueprint="Borderlands Revolver" />
+    <inventoryobject Blueprint="Lead Slug" Number="20-40" />
+    <inventoryobject Blueprint="Steel Dagger" />
+    <skill Name="CookingAndGathering_Harvestry" />
+    <skill Name="Tactics" />
+    <skill Name="ShortBlades_Jab" />
+    <skill Name="ShortBlades" />
+    <skill Name="Pistol" />
+    <skill Name="Discipline_FastingWay" />
+    <skill Name="Discipline_IronMind" />
+    <skill Name="Firstaid_StaunchWounds" />
+    <skill Name="Firstaid_Heal" />
+	  <tag Name="DeathSounds" Value="tt_snake_death" />
+    <tag Name="Gender" Value="male" />
+    <property Name="Role" Value="Skirmisher" />
+    <xtagGrammar Proper="true"></xtagGrammar>
+    <tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+
+
+	<!--
+
+			************
+			Seph's Flora
+			************
+
+	-->
+
+	<object Name="Mintlace Tree" Inherits="Plant">
+    <part Name="Render" DisplayName="mintlace tree" RenderString="157" ColorString="&amp;R" TileColor="&amp;w" Tile="Terrain/mintlace_tree.png" DetailColor="C" Occluding="true"></part>
+    <part Name="RandomTile" Tiles="Terrain/mintlace_tree.png,Terrain/mintlace_tree2.png" />
+    <part Name="Harvestable" OnSuccess="Mintlace Thread" OnSuccessAmount="1d2" StartRipeChance="1:9" RipeColor="&amp;c" RipeTileColor="&amp;w" RipeDetailColor="c" UnripeColor="&amp;C" UnripeTileColor="&amp;w" UnripeDetailColor="C"></part>
+    <part Name="Description" Short="Long, viscous threads of hair hang down its bark, the cold morning breeze no match for its temper. The tree obscures vision - an eye for an eye, it is sure to make the world blind."></part>
+    <tag Name="HangingSupport" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants"></tag>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Plants"></tag>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+  </object>
+	<object Name="Boomrose Bush" Inherits="Plant">
+		<part Name="Render" DisplayName="boomrose bush" RenderString="157" ColorString="&amp;R" TileColor="&amp;g" Tile="Terrain/boomrose_bush.png" DetailColor="R" Occluding="false"></part>
+		<part Name="RandomTile" Tiles="Terrain/boomrose_bush.png,Terrain/boomrose_bush2.png" />
+		<part Name="Harvestable" OnSuccess="Boomrose" OnSuccessAmount="1d1" StartRipeChance="1:2" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;k" UnripeTileColor="&amp;g" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="Two large stems intertwine and elope in a majestic display of Junoesque beauty. The twin lies of love and justice are born. The only justice one may find in this life, however, is the explosive crescendo of its fiery petals."></part>
+		<tag Name="DynamicObjectsTable:Flowerfields_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:Hills_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:Flowerfields_Plants"></tag>
+		<tag Name="DynamicObjectsTable:DesertCanyon_Plants"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_Plants"></tag>
+		<tag Name="DynamicObjectsTable:Hills_Plants"></tag>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="Tears of Chloris" Inherits="Plant">
+		<part Name="Render" DisplayName="tears of Chloris" RenderString="157" ColorString="&amp;Y" TileColor="&amp;g" Tile="Terrain/boomrose_bush.png" DetailColor="Y" Occluding="false"></part>
+		<part Name="RandomTile" Tiles="Terrain/boomrose_bush.png,Terrain/boomrose_bush2.png" />
+		<part Name="Harvestable" OnSuccess="Moonpearl" OnSuccessAmount="1" StartRipeChance="1:1" RipeColor="&amp;Y" RipeTileColor="&amp;g" RipeDetailColor="Y" UnripeColor="&amp;k" UnripeTileColor="&amp;g" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="'twas on the fifth day that Chloris left her children, shedding heavenly tears, blessing the earth one final time."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="Bittergrette Bush" Inherits="Plant">
+		<part Name="Render" DisplayName="bittergrette bush" RenderString="157" ColorString="&amp;Y" TileColor="&amp;g" Tile="Terrain/bittergrette_bush.png" DetailColor="Y" Occluding="false"></part>
+		<part Name="RandomTile" Tiles="Terrain/bittergrette_bush.png,Terrain/bittergrette_bush2.png" />
+		<part Name="Harvestable" OnSuccess="Bittergrette" OnSuccessAmount="1d2" StartRipeChance="1:3" RipeColor="&amp;Y" RipeTileColor="&amp;g" RipeDetailColor="Y" UnripeColor="&amp;k" UnripeTileColor="&amp;g" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="Named after the bitter regret one's mouth may taste after ingestion of its acrid berries. They are, however, a key ingredient to many wines and tinctures."></part>
+		<tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants"></tag>
+		<tag Name="DynamicObjectsTable:DesertCanyon_Plants"></tag>
+		<tag Name="DynamicObjectsTable:Saltmarsh_Plants"></tag>
+	</object>
+	<object Name="Fleur de Lys Flower" Inherits="Plant">
+		<part Name="Render" DisplayName="fleur de lys" RenderString="157" ColorString="&amp;m" TileColor="&amp;c" Tile="Terrain/fleur_de_lys.png" DetailColor="m" Occluding="false"></part>
+		<part Name="Harvestable" OnSuccess="Fleur de Lys" OnSuccessAmount="1" StartRipeChance="1:2" RipeColor="&amp;m" RipeTileColor="&amp;c" RipeDetailColor="m" UnripeColor="&amp;k" UnripeTileColor="&amp;c" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="A gentle, eye-catching flower, the Fleur de Lys is prized not only for its beauty but for its purple-blue dye. Sultans and royals from lands beyond memory paint their regalia in its splendid colour."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="Starspawn" Inherits="Plant">
+		<part Name="Render" DisplayName="&amp;Ystar&amp;G[S]p?wN" RenderString="157" ColorString="&amp;B" TileColor="&amp;B" Tile="Terrain/starspawn.png" DetailColor="Y" Occluding="true"></part>
+		<part Name="Harvestable" OnSuccess="Starseed" OnSuccessAmount="1" StartRipeChance="1:3" RipeColor="&amp;Y" RipeTileColor="&amp;B" RipeDetailColor="Y" UnripeColor="&amp;k" UnripeTileColor="&amp;C" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="It undulates in synchrony with the gushes of wind around it. It stands tall in perfect symmetry. It has a new home."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="Mimingo" Inherits="Plant">
+		<part Name="Render" DisplayName="mimingo" RenderString="157" ColorString="&amp;G" TileColor="&amp;G" Tile="Terrain/mimingo.png" DetailColor="O" Occluding="true"></part>
+		<part Name="RandomTile" Tiles="Terrain/mimingo1.png,Terrain/mimingo2.png,Terrain/mimingo3.png" />
+		<part Name="Harvestable" OnSuccess="Mingo" OnSuccessAmount="1d1" StartRipeChance="1:9" RipeColor="&amp;O" RipeTileColor="&amp;G" RipeDetailColor="O" UnripeColor="&amp;O" UnripeTileColor="&amp;g" UnripeDetailColor="O"></part>
+		<part Name="Description" Short="You let out a silent shriek at first sight of this unsighlty being. It writhes about as you approach, and for a split second, you mistake it for a mimic. It would appear even the mimic has a mimic."></part>
+		<tag Name="DynamicObjectsTable:Jungle_Plants"></tag>
+		<tag Name="DynamicObjectsTable:Jungle_FarmablePlants"></tag>
+	</object>
+	<object Name="Dreamweaver" Inherits="Plant">
+		<part Name="Render" DisplayName="&amp;Wd&amp;Yr&amp;We&amp;Ya&amp;Wm&amp;Cweaver" Tile="Terrain/tt_dreamweaver.png" ColorString="&amp;R" TileColor="&amp;g" DetailColor="W" Occluding="false"></part>
+		<part Name="Harvestable" OnSuccess="TT_Dream" OnSuccessAmount="1d1" StartRipeChance="1:1" RipeColor="&amp;Y" RipeTileColor="&amp;g" RipeDetailColor="Y" UnripeColor="&amp;k" UnripeTileColor="&amp;g" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="The dreamweaver is as beautiful as it is mesmerising. It is said gazing into one may restore peace of mind, instilling dreams so that one's thoughts may rest."></part>
+		<part Name="LightSource" Lit="true" Radius="2" />
+	  <part Name="DreamweaverGlow" />
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="TT_Bellflower Plant" Inherits="Plant">
+		<part Name="Render" DisplayName="&amp;Ybell&amp;yflower" ColorString="&amp;Y" TileColor="&amp;y" Tile="Terrain/tt_bellflower.png" DetailColor="Y" Occluding="false"></part>
+		<part Name="Harvestable" OnSuccess="TT_Bellflower" OnSuccessAmount="1" StartRipeChance="1:1" RipeColor="&amp;Y" RipeTileColor="&amp;y" RipeDetailColor="Y" UnripeColor="&amp;k" UnripeTileColor="&amp;y" UnripeDetailColor="k"></part>
+		<part Name="Description" Short="...that such a delicate flower could possibly thrive in any environment has for centuries baffled the Platomagi. Its habitat requirements make it all the more rare; only in the cool, dry and metallic air of Andromimos' skyscrapers is this silvery flower willing to grow."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="TT_Skyvines" Inherits="Plant">
+		<part Name="Render" DisplayName="skyvines" ColorString="&amp;w" TileColor="&amp;g" Tile="Terrain/tt_skyvine.png" DetailColor="w" Occluding="true"></part>
+		<part Name="RandomTile" Tiles="Terrain/tt_skyvine.png,Terrain/tt_skyvine2.png" />
+		<part Name="Description" Short="Thin, leathery vines hang from the ceiling, obstructing vision. Sounds eminate from deep within; you are not alone here."></part>
+    <xtagGrammar iArticle="some" />
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+	<object Name="TT_Grimshoot" Inherits="Plant">
+		<part Name="Render" DisplayName="grimshoot" ColorString="&amp;k" TileColor="&amp;w" Tile="Terrain/bittergrette_bush.png" DetailColor="k" Occluding="false"></part>
+		<part Name="RandomTile" Tiles="Terrain/bittergrette_bush.png,Terrain/bittergrette_bush2.png" />
+		<part Name="Description" Short="Not much is there to be said of the grimshoot. It is as remarkable as it is useful."></part>
+		<tag Name="ExcludeFromDynamicEncounters"></tag>
+	</object>
+
+
+	<!--
+
+			*********************
+			Flora & Fauna Revised
+			*********************
+
+	-->
+
+	<object Name="Glow Wight" Load="Merge">
+		<inventoryobject Blueprint="Cultist Robe" Number="1" />
+  </object>
+	<object Name="Novice of the Sightless Way" Load="Merge">
+		<inventoryobject Blueprint="Seeker Robes" Number="1" />
+	</object>
+	<object Name="Disciple of the Sightless Way" Load="Merge">
+		<inventoryobject Blueprint="Seeker Robes" Number="1" />
+	</object>
+	<object Name="Dervish of the Sightless Way" Load="Merge">
+		<inventoryobject Blueprint="Seeker Exalted Robes" Number="1" />
+	</object>
+	<object Name="High Dervish of the Sightless Way" Load="Merge">
+    <inventoryobject Blueprint="Seeker's Blessing" Number="1" Chance="100" />
+  </object>
+	<object Name="Arch Dervish of the Sightless Way" Load="Merge">
+    <inventoryobject Blueprint="Seeker's Blessing" Number="1" Chance="100" />
+  </object>
+	<object Name="Naphtaali" Load="Merge">
+		<inventoryobject Blueprint="Suntan Tunic" Number="1" Chance="19" />
+    <inventoryobject Blueprint="Sunblessed Tunic" Number="1" Chance="1" />
+    <inventoryobject Blueprint="Rootshield" Number="1" Chance="5" />
+    <inventoryobject Blueprint="Flowershield" Number="1" Chance="1" />
+  </object>
+	<object Name="Hide-Sheathed Hermit" Load="Merge">
+    <inventoryobject Blueprint="Guiding Starcandle" Number="1" Chance="2" />
+	</object>
+	<object Name="Snapjaw Warrior" Load="Merge">
+		<inventoryobject Blueprint="Iron Buckler" Number="1"></inventoryobject>
+		<skill Name="Shield" />
+    <skill Name="Shield_Block" />
+  </object>
+	<object Name="BaseFarmer" Load="Merge">
+		<part Name="GenericInventoryRestocker" />
+    <tag Name="GenericInventoryRestockerPopulationTable" Value="FarmerWeapon" />
+	</object>
+	<object Name="Glowcrow" Load="Merge">
+		<part Name="Description" Short="Lucent skin blooms beneath matted feathers. =pronouns.Possessive= tiny beak is hooked.
+
+&amp;mphosphorescent&amp;y"></part>
+	</object>
+	<object Name="Glowpad" Load="Merge">
+		<part Name="Description" Short="A disc of leaf with luminous veins.
+
+&amp;mphosphorescent&amp;y" />
+	</object>
+	<object Name="Glowfish" Load="Merge">
+    <part Name="Description" Short="Luminescent flecks flit beneath the water's surface.
+
+&amp;mphosphorescent&amp;y"></part>
+  </object>
+	<object Name="Vintner" Load="Merge">
+    <part Name="ConversationScript" ConversationID="vintner" />
+    <tag Name="GenericInventoryRestockerPopulationTable" Value="VintnerInventoryRevised" />
+  </object>
+	<object Name="StiltChef" Load="Merge">
+    <inventoryobject Blueprint="Mintlace Preserves" Number="1d4" Chance="25" />
+    <inventoryobject Blueprint="Mingo Juice" Number="1d4" Chance="25" />
+  </object>
+	<object Name="Starapple" Load="Merge">
+    <part Name="PreservableItem" Result="Starapple Preserves" Number="3"></part>
+  </object>
+	<object Name="Vinewafer" Load="Merge">
+    <part Name="PreservableItem" Result="Vinewafer Sheaf" Number="3"></part>
+  </object>
+	<object Name="PlasticTree" Load="Merge">
+  	<part Name="RandomTile" Tiles="Items/sw_plastic_tree.bmp,Items/tt_plastic_tree.png" />
+  </object>
+
+</objects>

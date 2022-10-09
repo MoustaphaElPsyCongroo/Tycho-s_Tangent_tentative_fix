@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+
+
+<!-- Random NPCs -->
+
+<conversation ID="FarmerWife">
+	<node ID="Start">
+		<text>
+			Live and drink, traveller. How goes it?~
+			Bad breath?~
+			Mmh?~
+			Mind those beautiful threads, =player.formalAddressTerm=. They ain't yours.~
+			I best not catch you near my daughters.~
+			Rough day, eh?~
+			The sun weighs heavy, =player.formalAddressTerm=. Nothin' better than a glass o' mint to freshen ya up.~
+			It reinvigorates. Need I say more? Nay!~
+			Beware the lurking crone, =player.formalAddressTerm=.~
+			Moon and sun, =player.formalAddressTerm=.
+		</text>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+</conversation>
+
+<conversation ID="Metropolitan">
+	<node ID="Start">
+		<text>
+			I was walking down the broadway and people just couldn't stop looking at me! It sure does feel great being me.~
+			What's that you're wearing? Is it a new trend from beyond the civilized plane?~
+			You ought to visit some libraries, =player.formalAddressTerm=. Plenty around in all four directions. Actually, make that five.~
+			I wouldn't touch you with my gloves on.~
+			What's that smell?~
+			Ugh, mirrorshades are so out of fashion. But you know what, crimson hoods are in!~
+			Half empty streets, the glint of chrome towers, the buzz of neon lights and second-degree burns from this tanning cream I've been smearing over my skin. I sure love this place.~
+			Beware the lurking mimic, =player.formalAddressTerm=. I lost a good fan to one not long ago.~
+			Moon and sun, =player.formalAddressTerm=. Ahh, who am I kiddin'! Moon and dusk all the way, baby!
+		</text>
+		<choice GotoID="End">Live and drink.</choice>
+		<choice GotoID="End">Alright...</choice>
+	</node>
+</conversation>
+
+
+
+<!-- Androids -->
+
+<conversation ID="TickShepherd">
+	<node ID="Start">
+		<text>
+			Ah, &amp;winsert:[casual.greeting]&amp;y!~
+			Rusty day, ain't it?~
+			Beep boop...~
+			Mind the ticks, =player.formalAddressTerm=. They got drills, 'n they don't mind drillin'.~
+			Ya seen any mineral patches 'round 'ere?~
+			Hmm?~
+			Rust be damned, =player.formalAddressTerm=.~
+			Womb and sun, =player.formalAddressTerm=. Bless the chrome mothers.
+		</text>
+		<choice GotoID="End">Live and... remain ever rustless.</choice>
+	</node>
+</conversation>
+
+<conversation ID="AndroidWorker">
+	<node ID="Start">
+		<text>
+			&amp;w*initiating smile.cs* insert:[casual.greeting]&amp;y!~
+			Rusty day? &amp;w*initiating frown.cs*~
+			Beep boop. B#ep?~
+			Mind the machinery, =player.formalAddressTerm=. Kills quicker than you think.~
+			'Seen any supply crates lying around?~
+			Hmm?~
+			Rust be damned, =player.formalAddressTerm=.~
+			Womb and sun, =player.formalAddressTerm=. Bless the chrome mothers.
+		</text>
+		<choice GotoID="End">Live and... remain ever rustless.</choice>
+	</node>
+</conversation>
+
+<conversation ID="AndroidSocialite">
+	<node ID="Start">
+		<text>
+			Ah, &amp;winsert:[formal.greeting]&amp;y!~
+			May the assemblies remain ever rustless.~
+			Come close, =player.formalAddressTerm=, and heed my word!~
+			We shepherd the shepherds.~
+			...the Klanq constant is such a fascinating topic! Wouldn't you agree?~
+			&amp;w*beep*&amp;y? I mean, greetings!~
+			For the collective, =player.formalAddressTerm=, we must push onwards.~
+			Womb and sun, =player.formalAddressTerm=. Blessed be the chrome mothers.
+		</text>
+		<choice GotoID="End">Live and think.</choice>
+	</node>
+</conversation>
+
+<conversation ID="prev.genAndroid">
+	<node ID="Start">
+		<text>
+			y##,u-*?hh(Q)!~
+			=_#h,e!l?(vv)p.$ppp.q.pppp.q~
+			%F../a/sin?&amp;w*EeEeEeE*&amp;yy-yes.~
+			L#ve ?Nd [expunged]
+			&amp;w*initiating update* &amp;y... &amp;w*network_errrr@000&amp;y...~
+			W0mb -nd sun, &amp;w//person.formalAddressTerm//&amp;y. 1less the chr*me m*t{?her}s.
+		</text>
+		<choice GotoID="End">Live and... remain ever... ahh forget it.</choice>
+	</node>
+</conversation>
+
+
+
+<!-- Pet NPCs -->
+
+<conversation ID="Phelicia">
+	<node ID="Start">
+		<text>
+			Burn? Burn!!~
+			Squeeeeeee!~
+			&amp;w*bZzZzZz*&amp;y~
+			L...luive? Lieve and...~
+			Dink. Dwenk... d-dwimk. Dwimk!!
+		</text>
+		<choice GotoID="End">You're too close, that burns!</choice>
+	</node>
+</conversation>
+
+<conversation ID="Centifriend">
+	<node ID="Start">
+		<text>
+			...?~
+			Kuh. Kuh. Kuh. Krk.~
+			&amp;w*gazes into the sky*&amp;y~
+			...~
+			&amp;w*clicks*&amp;y
+		</text>
+		<choice GotoID="End">I wish you understood me, my many-legged friend.</choice>
+	</node>
+</conversation>
+
+<conversation ID="D12">
+	<node ID="Start">
+		<text>
+			Tick, tick ... boOoOoOM! Haha.~
+			Have you heard of the snapjaw tinker? My friend, we should pay him a visit, in the blue city.~
+			&amp;w*struggles to keep up*&amp;y~
+			What would you do for freedom? For the freedom of living...~
+			&amp;w*chirps*&amp;y
+		</text>
+		<choice GotoID="D12_Question">D-12?</choice>
+		<choice GotoID="End">Live and think, D-12.</choice>
+	</node>
+	<node ID="D12_Question">
+		<text>
+			Yes?
+		</text>
+		<choice GotoID="D12_City">What's the blue city like?</choice>
+		<choice GotoID="D12_Why">Why me?</choice>
+		<choice GotoID="D12_Weather">Alex- I mean, D-12, give me a weather report.</choice>
+		<choice GotoID="End">Nevermind.</choice>
+	</node>
+	<node ID="D12_City">
+		<text>
+			It's gorgeous. At night, the city is aloof with a kind of energy unlike any other in the entirety of Qud.
+
+			You know, I do miss it... Andromimos, that is. If only I weren't a registered piece of detritus there.
+		</text>
+		<choice GotoID="D12_GoCity">I'd like to visit, someday. This vibrant village.</choice>
+		<choice GotoID="D12_Weather">What about the weather, D-12?</choice>
+		<choice GotoID="End">Fascinating.</choice>
+	</node>
+	<node ID="D12_GoCity">
+		<text>
+			Why, you must! I too wish to see it once more, one last time. Though beware, dangers lurk around every corner, above and below; and the treck itself is nothing to scoff at either.
+		</text>
+		<choice GotoID="End">Thank you, D-12.</choice>
+	</node>
+	<node ID="D12_Why">
+		<text>
+				Why, you're one to ask! Why are we still here? Just to suffer?
+				Or are you asking why I chose you? Because really I didn't, you found me!
+		</text>
+		<choice GotoID="End">Fair enough...</choice>
+	</node>
+	<node ID="D12_Weather">
+		<text>
+				Imperial or metric? Wait, you don't know what those are.~
+				This is not what I was made for.~
+				Look at the sky; your guess is as good as mine!
+		</text>
+		<choice GotoID="D12_Joke">*crack a joke*</choice>
+	</node>
+	<node ID="D12_Joke">
+		<text>
+				I've got 'spunk'? Very funny.
+				You're lucky you weren't born a comedian, friend.
+		</text>
+		<choice GotoID="End">*laugh*</choice>
+	</node>
+</conversation>
+
+
+
+<!-- Important NPCs -->
+
+<conversation ID="September">
+	<node ID="Start">
+		<text>
+			Come, sit, traveller. Share your tales with me. Would you fancy a game of chance?
+		</text>
+	  <choice GotoID="September_Who">...who are you?</choice>
+		<choice GotoID="September_Quest">Have you any work for a pair of starving hands?</choice>
+		<choice GotoID="End">Live and think.</choice>
+	</node>
+	<node ID="September_Who">
+		<text>
+			They call me September! Along with my two batch-kin, Octo and Vem, we are commonly referred to as the three android Magi.
+
+			We are some of the only 7th generation androids in existence! Well, that we know of, anyways.
+		</text>
+		<choice GotoID="September_Generation">Why aren't there more of you? You seem... so much more advanced.</choice>
+		<choice GotoID="September_Quest">Have you any work for a pair of starving hands?</choice>
+		<choice GotoID="End">Live and think, September.</choice>
+	</node>
+	<node ID="September_Generation">
+		<text>
+			Hah! Why indeed! Well, we'd need the materials first. Advanced assemblies. A functioning administrative AI. It's a complicated process, breathing life into the unliving, you see.
+
+			Really, what you've witnessed thus far is nothing; the city is but a shell of its former self. Yes, there was indeed a time when Andromimos reigned over sea and land, when birds of every colour would mingle in our city under a brazen sky.
+		</text>
+		<choice GotoID="September_Quest">Have you any work for a pair of starving hands?</choice>
+		<choice GotoID="End">Live and think, September.</choice>
+	</node>
+	<node ID="September_Quest">
+		<text>
+			I'm afraid not! But my gut, well, if I had one, but just muse this thought with me one moment; yes, my gut tells me Master Pyre may have a task for you. He resides in a tent northwards, near the Reliquary.
+			If you're in search of treasure, countless tragedies await in the towers above.
+		</text>
+		<choice GotoID="September_Generation">Why aren't there more androids like you? You seem so much more... lifelike.</choice>
+		<choice GotoID="End">Live and think, September.</choice>
+	</node>
+</conversation>
+
+<conversation ID="October">
+	<node ID="Start">
+		<text>
+			Greetings young one! Would you be interested in solving a dilemma? Hmmm?~
+			Mind the turrets, friend; they've gone haywire. But please, I ask you bear them no ill will; they’re just a little confused.
+
+			I'd shift our efforts towards fixing them, were it not for entirely different dilemma...
+		</text>
+		<choice GotoID="October_Dilemma">A dilemma?</choice>
+		<choice GotoID="October_Who">It is customary to introduce oneself first.</choice>
+		<choice GotoID="End">Live and think.</choice>
+	</node>
+	<node ID="October_Dilemma">
+		<text>
+			Yes, well, you see, it's like this; some of my contemporaries have recently developed a deep-rooted angst of the unknown. That is to say, strangers like you! They are being led by my batch-brother, November.
+
+			He may come across as cold, but I assure you he has heart; the wellbeing of his kin comes first, and for that, I admire him.
+
+			Anywho, I've been hard at work, trying to resolve this societal divide; you see, September figures if we were to officially reopen our borders and reconsider trade with the dromads we'd develop greatly, both in material and cultural wealth. Of course, November and his party are strongly opposed to this idea.
+		</text>
+		<choice GotoID="October_Dilemma2">Why not compromise? Surely, there must be a way.</choice>
+		<choice GotoID="End">I'll go speak to this November. Perhaps I can change his mind.</choice>
+	</node>
+	<node ID="October_Dilemma2">
+		<text>
+			Oh believe me I have tried! If only it were so simple. They both present radical ideas, and the will of a swan. The best I've managed thus far is cooling down their heated disputes.
+		</text>
+		<choice GotoID="End">Live and think. This is beyond the scope of my capabilities.</choice>
+	</node>
+	<node ID="October_Who">
+		<text>
+			Of course! I apologise. I am October, though my bubbly batch-kin calls me Octo.
+		</text>
+		<choice GotoID="October_Dilemma">Now, about that dilemma...</choice>
+		<choice GotoID="End">Live and think, Octo.</choice>
+	</node>
+</conversation>
+
+<conversation ID="November">
+	<node ID="Start">
+		<text>
+			...
+		</text>
+		<choice GotoID="November_Drink">Live and drink.</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="November_Drink">
+		<text>
+			It's live and think around these parts, human, if that is indeed what you are.
+		</text>
+		<choice GotoID="November_Problem">Apologies.</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="November_Problem">
+		<text>
+			&amp;w*synthetic chuckles*&amp;y Why are you here, in Andromimos?
+
+			You know, because of vandals like you, scittering about our city, our safety has been compormised.
+
+			Cannibals, life-sapping plants, cultists and two and a half timelines worth of crazies roam about in our homes.
+		</text>
+		<choice GotoID="November_Solution">If you're worried about safety, why not install more turrets, like the Barathrumites?</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="November_Solution">
+		<text>
+			Oh fleshsack. You don't think we've tried that? Our entire defense system went haywire a few years back when our facilities were flooded with salt water. No, the wall comes first; if we don't patch up those holes, the rats won't stop flooding the city.
+		</text>
+		<choice GotoID="End">I'm not a rat...</choice>
+	</node>
+</conversation>
+
+<conversation ID="MasterPyre">
+	<node ID="Start" IfNotHaveQuest="Dreamcatcher">
+		<text>
+			Live and drink, traveller. How goes it?
+		</text>
+		<choice GotoID="Pyre_Inquire">Are you a... tinker?</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="Pyre_Inquire">
+		<text>
+			Surprising, is it? &amp;w*chuckles*&amp;y
+
+			Tell me, which surprised you most; that I am a tinker, or that my tongue matches yours?
+		</text>
+		<choice GotoID="Pyre_Dunno">I really don't know.</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="Pyre_Dunno">
+		<text>
+			&amp;w*chuckles*&amp;y
+
+			Nevermind then.
+
+			Surely, yer in search of work, yes?
+		</text>
+		<choice GotoID="Pyre_Work">Always.</choice>
+		<choice GotoID="End">No thanks.</choice>
+	</node>
+	<node ID="Pyre_Work">
+		<text>
+			&amp;w*smiles*&amp;y
+
+			Well, yer certainly not the first. Though I must warn you, some of my fetchers've lost eyes, limbs, and e'en lives.
+
+			Though I'd imagine this shan't dissuade you. In which case, fetch me a dream, would you? For my restless mind, I require it.
+		</text>
+		<choice GotoID="Pyre_Trouble">You have trouble sleeping?</choice>
+	</node>
+	<node ID="Pyre_Trouble">
+		<text>
+			Well, yes! &amp;w*chuckles*&amp;y
+
+			You're clearly not from 'round 'ere. These streets, they come alive at night, and barely wind down during the day.
+
+			'Could really do with some proper sleep, 'n June says dreamweavers're just the thing.
+		</text>
+		<choice GotoID="End" StartQuest="Dreamcatcher">I'll be on my way then.</choice>
+	</node>
+	<node ID="Start" IfHaveQuest="Dreamcatcher" IfNotFinishedQuest="Dreamcatcher">
+		<text>
+			Well, any luck?
+
+			Dreamweavers grow in swamps, and by rivers. Anywhere that's hot and humid, really.
+		</text>
+		<choice GotoID="Pyre_GiveDream" IfHasBlueprint="TT_Dream" CompleteQuestStep="Dreamcatcher~Return to Ol' Pyre">I have found the seed.</choice>
+		<choice GotoID="End">Soon, I shall return.</choice>
+	</node>
+	<node ID="Pyre_GiveDream">
+		<text>
+			Well done, young one. At last, I may rest.
+
+			&amp;w*gazes into the dream*&amp;y
+
+		 	S'pose I underestimated you. If you're in search of more work, you should give my partner June a shout. She's always on the lookout for curiosities. Heh, ya might even learn a thing or two from 'er.
+		</text>
+		<choice GotoID="End">...sleep tight.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Dreamcatcher" IfNotHaveQuest="Tears of Heaven">
+		<text>
+			Hehe, it's you again.~
+			Have ye spoken to June yet?~
+			Hush hush now, I'm busy.~
+			Mmmmmmh...~
+			&amp;w*mumbles*&amp;y ...may be able to decompile the mainframe via a Laquelle-fusion of the third linegate...
+		</text>
+		<choice GotoID="Pyre_Pearl_Start" IfFinishedQuest="A Royal Wedding">Friend, June said you wanted a word with me?</choice>
+		<choice GotoID="End">Live and drink, Pyre.</choice>
+	</node>
+	<node ID="Pyre_Pearl_Start">
+		<text>
+			Oh, that's right! Friend, come close.
+
+			As you now know, June and I are having a bit've a feast soon, to commemorate our union. I intend on making her a splendid gift; a moonpearl earring. I've thought of a ring or a necklace, but earrings're by and far her favourite.
+
+			I cannot leave the workshop fer extended periods of time, t'would arouse suspicion. Please, my child, fetch me a moonpearl! I shall make it worth your while.
+
+			And say not one word to June! I'll have yer tongue otherwise you little rat! &amp;w*hark hark hark*&amp;y
+		</text>
+		<choice GotoID="End" StartQuest="Tears of Heaven">You can rest easy, father. A pearl I shall find.</choice>
+	</node>
+	<node ID="Start" IfHaveQuest="Tears of Heaven" IfNotFinishedQuest="Tears of Heaven">
+		<text>
+			Pssst! How's the search goin'?
+
+			I've heard June speak of a strange plant upon which grow divine pearls; said something about the hills, I think.
+ 		</text>
+		<choice GotoID="Pyre_GivePearl" IfHasBlueprint="Moonpearl" CompleteQuestStep="Tears of Heaven~Return to Pyre">Father, I have found the pearl!</choice>
+		<choice GotoID="End">Soon, I shall return.</choice>
+	</node>
+	<node ID="Pyre_GivePearl">
+		<text>
+			Wondrous, oh how wonderful! I'll get straight to workin' on it. Please, come sleep over sometime.
+		</text>
+		<choice GotoID="End">I'm overjoyed, Spyro.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Tears of Heaven">
+		<text>
+			Friend, it's you again! Take a seat!~
+			Welcome home. Been helpin' June I hear?~
+			Sorry, child, 've got a task that requires my attention.~
+			&amp;w*mumbles*&amp;y ...just a few more days, hehehe...
+		</text>
+		<choice GotoID="End">Live and drink, father.</choice>
+	</node>
+</conversation>
+
+<conversation ID="Meribelle">
+	<node ID="Start">
+		<text>
+			Moon and sun, =player.formalAddressTerm=.
+		</text>
+		<choice GotoID="Meribelle_Warden">You are the warden of this place?</choice>
+		<choice GotoID="Meribelle_Lost">Excuse me, I feel a bit lost...</choice>
+		<choice GotoID="Meribelle_Crazy">Who's the old man yelling obscenities?</choice>
+		<choice GotoID="Meribelle_Ruler">Who rules this land? By which law must one abide?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	<node ID="Meribelle_Warden">
+		<text>
+			Read the colours, newcomer. Name's Meribelle.
+
+			If I catch you tricking the locals with psychic shenanigans, you may well feel the flaming-cold embrace of my blade.
+		</text>
+		<choice GotoID="Meribelle_Esper">You dislike espers?</choice>
+		<choice GotoID="Meribelle_Lost">Excuse me, I feel a bit lost...</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	<node ID="Meribelle_Lost">
+		<text>
+			That is understandable my dear. This... this is the cradle of civilization! A city to rival all that lays in Qud.
+
+			I recommend paying a visit to the Amphitheatre, a short walk south of here. The Reliquary, too, is an eye-catching monument of ages past. It lays north.
+
+			Eastward you'll find the city's residential blocks; west lay the assemblies, heart of the city. It beats day and night.
+		</text>
+		<choice GotoID="End">Thank you, warden.</choice>
+	</node>
+	<node ID="Meribelle_Esper">
+		<text>
+			More than that, my dear. I hunt dangerous miscreants that disturb the public peace.
+
+			I just happen to specialise in tracking and dispatching those with mental prowess; I assure you, my eyes see all.
+		</text>
+		<choice GotoID="Meribelle_Miscreants">Miscreants?</choice>
+		<choice GotoID="Meribelle_Help">Can I help in any way?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	<node ID="Meribelle_Miscreants">
+		<text>
+			Yes, miscreants. And beasts... of unspeakable origins.
+			To roam the towers is a dangerous occupation, friend. Lead-toothed turrets lay around every corner, and massive gaps threaten to make every step your last.
+			As the altitude rises, so too does danger... relics, too, become more common, left untarnished by scavengers such as yourself.
+		</text>
+		<choice GotoID="Meribelle_Help">Can I help in any way?</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	<node ID="Meribelle_Help">
+		<text>
+			Hmmm, you might be of some aid. How's your aim? More importantly, is your will one of rust or iron?
+
+			The towers, you see. We've since abandoned them, save for the lower levels. It's gotten especially violent these last few years, and without a functioning defence grid we are at the mercy of our blades.
+
+			Esper cults, such as the Seekers of the Sightless Way, are ever-present; flesh-eating flora and beasts are a given.
+
+			You'll need special access to reach the upper levels. I can sell you my card; the pay-off in treasure and loot will surely be worth it. Won't be cheap, though. Applying for a new one is always a pain, what with android bureaucracy and all.
+		</text>
+		<choice GotoID="End">I'll think about it, warden.</choice>
+	</node>
+	<node ID="Meribelle_Crazy">
+		<text>
+			Oh, him? Name's Konkomorus. He's a preacher, or prophet, or something. I'm not one for religion, but his zeal does appeal to some of the metropolitans.
+
+			I'd be wary, though. I've tried numerous times to excavate information from the little man, but to no avail. His God is a mystery, for better or for worse.
+		</text>
+		<choice GotoID="Meribelle_Lost">Could you give me some directions? I'm lost.</choice>
+		<choice GotoID="End">Live and drink.</choice>
+	</node>
+	<node ID="Meribelle_Ruler">
+		<text>
+			Ruler? Hmmm. Our system's a little more complex, I'm afraid. The assemblies dictate production quotas and are the lifeblood of the city.
+
+			The socialites are the closest to being 'rulers'; they wield legislative power, but the executive power remains in the hands of myself, and the mechanite units that guard the city.
+
+			Overall, I'd say the androids are a little more privileged than the rest; they run the place, save for the shops. They refer to themselves as 'the collective'.
+
+			We had a ruler, once. He's left us now.
+		</text>
+		<choice GotoID="Meribelle_Azure">Who was this ruler?</choice>
+		<choice GotoID="End">Fascinating!</choice>
+	</node>
+	<node ID="Meribelle_Azure">
+		<text>
+			I daren't speak his name, so long it's been. Azure.
+			Azure was the administrative AI of Andromimos, the last great mind of the city. The socialites think highly of themselves, but none could ever fill Azure's shoes.
+
+			His grave lays beneath the Reliquary. Though beware, and I repeat myself, beware; the underbelly is a hotpot of carnage and violence. We lost all control after the defence grid shut down. Rogue mechanites run amok, and show no signs of stopping.
+		</text>
+		<choice GotoID="End">Intriguing...</choice>
+	</node>
+</conversation>
+
+<conversation ID="Konkomorus">
+	<node ID="Start">
+		<text>
+			Praise the Lord! Pray for your salvation!~
+			The end is nigh, brothers and sisters! Nigh I tell you!~
+			Brace yourselves, children, for the rain shall soon redden! All hope will be lost!
+		</text>
+		<choice GotoID="Konkomorus_Who">Who are you?</choice>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="Konkomorus_Who">
+		<text>
+			You're quite blunt, traveller, though that is to be expected.
+			I am the great Konkomorus! Prophet of the true Lord, harbinger of rebirth!
+		</text>
+		<choice GotoID="Konkomorus_Lord">Who is this Lord you speak of?</choice>
+		<choice GotoID="End">Live and drink, priest.</choice>
+	</node>
+	<node ID="Konkomorus_Lord">
+		<text>
+			Our Lord is merciful! Our Lord is mighty. Those who follow Him may yet be spared in the coming times!
+		</text>
+		<choice GotoID="Konkomorus_Lord2">You didn't answer my question, priest.</choice>
+		<choice GotoID="End">Sure...</choice>
+	</node>
+	<node ID="Konkomorus_Lord2">
+		<text>
+			Curiosity is a fault! You may soon lose an eye, or a finger.
+			Do not displease me, youngling!
+		</text>
+		<choice GotoID="Konkomorus_Lord3">I wish to know more about this Lord.</choice>
+		<choice GotoID="End">Alright.</choice>
+	</node>
+	<node ID="Konkomorus_Lord3">
+		<text>
+			ENOUGH! You're disturbing the public, what with your common sense and all!
+		</text>
+		<choice GotoID="End">Hmmm... what a suspicious old man.</choice>
+	</node>
+</conversation>
+
+<conversation ID="TT_June">
+	<node ID="Start" IfNotFinishedQuest="Dreamcatcher">
+		<text>
+			...~
+			Please just leave me alone.~
+			&amp;w*shies away*&amp;y
+		</text>
+		<choice GotoID="End">...</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Dreamcatcher" IfNotHaveQuest="Silver Skies">
+		<text>
+			Hey, you know your way around plants, right? Spyro seems to think so.
+		</text>
+		<choice GotoID="June_Who">Who's Spyro?</choice>
+		<choice GotoID="End">I do not.</choice>
+	</node>
+	<node ID="June_Who">
+		<text>
+			Oh, I mean Pyre. We're close, him and I.
+
+			So, would you be interested in collecting the rarest of seeds, on my behalf?
+
+			Could be a great opportunity for you to learn a thing or two on Qud's wonderfully diverse flora.
+		</text>
+		<choice GotoID="June_Why">Why do you need them?</choice>
+		<choice GotoID="End">Not really.</choice>
+	</node>
+	<node ID="June_Why">
+		<text>
+			Ah, pardon. I'm a horticulturalist, my veins run green with a passion for gardening.
+
+			Over the years I'd amassed quite the collection of seeds, yet much to my dismay, my garden of olde is no more.
+		</text>
+		<choice GotoID="June_What">What happened to your garden?</choice>
+		<choice GotoID="June_Where">Where are you from?</choice>
+	</node>
+	<node ID="June_What">
+		<text>
+			Oh, it's a bit tragic, really. We'd become a bit too different, Pyre and I. Just a little too different.
+
+			Safe to say I don't think any of my crops beat the flames; we received the message loud and clear, and left on a trek for a new home.
+		</text>
+		<choice GotoID="June_Work">So, about your offer...</choice>
+		<choice GotoID="June_Where">Where are you from?</choice>
+	</node>
+	<node ID="June_Where">
+		<text>
+			From Red Rock! Have you heard of the place? Probably not; it's mostly a landmark for the locals of the region.
+			There's not much there, really. I don't miss it, especially after having lost my slice of Eden.
+		</text>
+		<choice GotoID="June_Work">So, about your offer...</choice>
+		<choice GotoID="June_What">What happened to your garden?</choice>
+	</node>
+	<node ID="June_Work">
+		<text>
+			Right! I require someone skilled in harvestry to find and bring both flower and seed to me.
+
+			I dare not leave my home again, after what happened. And even here some of the locals eye us with suspicion, though Spyro says not to worry; according to him this place is home to free thinkers of all sorts.
+
+			Apologies if I was a bit rude to you, earlier on. I haven't fully settled down here yet.
+
+			As for your first task, let's start with something simple, and close. I'd like for you to bring me a bellflower!
+		</text>
+		<choice GotoID="June_SS">Tell me more about this bellflower.</choice>
+		<choice GotoID="End">On second though, I'm not really interested.</choice>
+	</node>
+	<node ID="June_SS">
+		<text>
+			Their leaves are a sleek silver, and their petals glow a bright white. Under the moonlight they shine like little specks of light off a glass plane.
+
+			Its entire survival strategy is reliant on blending in with its surroundings; the grey tones and fluorescent lights of skyscrapers.
+
+			What makes the bellflower so rare is its habitat. Only in the chrome towers of Andromimos does it grow! Many times have I tried to port them to the red soil of the land, but to no use. The flower is simply too delicate and fragile.
+		</text>
+		<choice GotoID="End" StartQuest="Silver Skies">Fascinating!</choice>
+	</node>
+	<node ID="Start" IfHaveQuest="Silver Skies" IfNotFinishedQuest="Silver Skies">
+		<text>
+			&amp;w*smiles*&amp;y
+
+			Going well? Remember, the bellflower grows only in the chrome towers of Andromimos. It's a remote, desolate area, and you'll need to watch your every step.
+		</text>
+		<choice GotoID="June_SS_Complete" IfHasBlueprint="TT_Bellflower" CompleteQuestStep="Silver Skies~Return to June">I found it!</choice>
+		<choice GotoID="End">I'm on it.</choice>
+	</node>
+	<node ID="June_SS_Complete">
+		<text>
+			Well done! You should keep it, friend; as a trophy.
+		</text>
+		<choice GotoID="End">That was fun.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Silver Skies" IfNotHaveQuest="A Royal Wedding">
+		<text>
+			Ready to scour the lands once more? Mother Nature's curiosities lay in wait, hidden in plain sight.
+		</text>
+		<choice GotoID="June_Wedding">I shall open my third eye.</choice>
+		<choice GotoID="End">Not yet.</choice>
+	</node>
+	<node ID="June_Wedding">
+		<text>
+			&amp;w*chuckles*&amp;y
+
+			Okay, okay, listen... I've got some pretty exciting news!
+
+			Pyre and I, we're making it official. And I need a dress! &amp;w*eeee*&amp;y
+		</text>
+		<choice GotoID="June_Congrats">Congratulations.</choice>
+	</node>
+	<node ID="June_Congrats">
+		<text>
+			Thank you, friend.
+
+			Now, we must pick a colour for the dress, and it is known that no colour matches that of the Fleur de Lys, or so I have heard.
+
+			Years has it been since I've last seen one, and so my memory needs a little refreshing! Please, my apprentice, bring me a Fleur de Lys, from the many swamps of Qud.
+		</text>
+		<choice GotoID="June_FdL">Is there anything else I should know of this flower?</choice>
+		<choice GotoID="End">I'm not quite ready for such a journey.</choice>
+	</node>
+	<node ID="June_FdL">
+		<text>
+			Your curiosity is admirable, florocrat!
+
+			The Fleur de Lys grows not only in the marshlands, but also in the Jungle, and by River Svy.
+
+			It is famed far and wide for its beautiful colour, as it sports a purple hue unlike any other in the land!
+
+			A lesser known fact is that its seeds are tiny; no larger than a grain of sand. Fascinating, right?
+		</text>
+		<choice GotoID="End" StartQuest="A Royal Wedding">Fascinating.</choice>
+	</node>
+	<node ID="Start" IfHaveQuest="A Royal Wedding" IfNotFinishedQuest="A Royal Wedding">
+		<text>
+			I'm still so indecisive! Summertime orange? Redwood brown? Or a bellflower silver?
+
+			Remember, apprentice. The Fleur de Lys grows in humid areas, such as the jungles of Qud.
+		</text>
+		<choice GotoID="June_FdL_Complete" IfHasBlueprint="Fleur de Lys" CompleteQuestStep="A Royal Wedding~Return to June">The colour is astonishing, look!</choice>
+		<choice GotoID="End">I'll find it.</choice>
+	</node>
+	<node ID="June_FdL_Complete">
+		<text>
+			Wow! That's it, that's the one! It's even more gorgeous than I remember.
+
+			Just look at those stripes, that purple-blue fade! And the yellow touches - simply divine!
+		</text>
+		<choice GotoID="End">That was too easy.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="A Royal Wedding" IfNotHaveQuest="Tears of Heaven">
+		<text>
+			My apprentice! I must thank you again, for the flower I mean. Give it a few days; soon, I shall have my dress ready for the event!
+
+			Oh, by the by, I believe Ol' Pyre wanted to have a word with ya. Nothing too serious, I'm assured.
+		</text>
+		<choice GotoID="End">I can't wait.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="A Royal Wedding" IfHaveQuest="Tears of Heaven" IfNotFinishedQuest="Tears of Heaven">
+		<text>
+			Well, what did Pyre say?
+
+			Hey, you can tell me!
+		</text>
+		<choice GotoID="End">No can do, June.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Tears of Heaven" IfNotHaveQuest="Gifts of Heaven">
+		<text>
+			Child! It's been many weeks now since the beginning of your apprenticeship; I believe you are ready for what may yet be your greatest task.
+
+			Yes, you heard me right! Whispers in the shadows speak of a strange seed that, supposedly, fell from the sky. If they are to be believed we absolutely must get our hands on it!
+		</text>
+		<choice GotoID="June_Rumours">So we're to believe simple rumours?</choice>
+		<choice GotoID="End">I'm not in the mood for this, mother.</choice>
+	</node>
+	<node ID="June_Rumours">
+		<text>
+			That's not the spirit! Believe me, child, this could be it. The biggest break the horticulturalist community has seen in years!
+
+			Please, you must aid me. It'll be worth its weight in sapphire!
+
+			I hear this 'starseed', as it's been dubbed, made landfall in the great salt deserts.
+		</text>
+		<choice GotoID="End" StartQuest="Gifts of Heaven">Fine, fine. I'll go look for this 'seed'.</choice>
+		<choice GotoID="End">Another time, perhaps.</choice>
+	</node>
+	<node ID="Start" IfHaveQuest="Gifts of Heaven" IfNotFinishedQuest="Gifts of Heaven">
+		<text>
+			Well? Any luck on your end?
+
+			Remember, if rumours are to be believed, this 'starseed' is to be found in the desert, in the far East.
+		</text>
+		<choice GotoID="June_Gifts_Complete" IfHasBlueprint="Starseed" CompleteQuestStep="Gifts of Heaven~Return to June">The starseed, it exists! Behold!</choice>
+		<choice GotoID="End">I require more time.</choice>
+	</node>
+	<node ID="June_Gifts_Complete">
+		<text>
+			It's... what *is* that?
+
+			I- I must analyse it. This is unlike anything I have ever seen before.
+
+			I'll buy it off of you! For science, this must be done.
+		</text>
+		<choice GotoID="End">You have my blessing.</choice>
+	</node>
+	<node ID="Start" IfFinishedQuest="Gifts of Heaven">
+		<text>
+			Child! Welcome home.~
+			The starseed? No luck as of yet. It's mystified myself, and every expert I know, m'fraid.~
+			Soon, soon! Just a few more days until the wedding!
+
+			&amp;w*chuckles*&amp;y
+
+			Of course you're invited, what a question.
+		</text>
+		<choice GotoID="End">Live and drink, mother.</choice>
+	</node>
+</conversation>
+<conversation ID="TT_Solid_Snake">
+	<node ID="Start">
+		<text>
+			Hmmm...~
+			W-What are you doing here? You've created a time paradox!~
+			A strong man doesn’t need to read the future. He makes his own.~
+			He who controls the battlefield, controls history.~
+			Unfortunately, killing is one of those things that gets easier the more you do it.~
+			Where the hell am I?~
+			I don’t have any more tears to shed.~
+			Colonel, do you copy? I've lost sight of the compound.~
+			Li... la... lo..?~
+			War... war has changed. It's an endless series of proxy battles fought between nanomachines.
+		</text>
+		<choice GotoID="End">...</choice>
+	</node>
+</conversation>
+
+
+<!-- Don't touch this -->
+</conversations>

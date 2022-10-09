@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<encountertables>
+
+<!--
+
+  	*************
+  	Gear Revised
+  	*************
+
+-->
+
+<encountertable Name="Melee Weapons 1C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Iron Sickle"></object>
+    <object Chance="10" Number="1d1" Blueprint="Pitchfork"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 1R" Load="Merge">
+  <objects>
+    <object Chance="20" Number="1d1" Blueprint="Iron Sickle"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 2C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Claymore Sword"></object>
+  </objects>
+</encountertable>
+
+  <encountertable Name="Melee Weapons 2R" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Claymore Sword"></object>
+    <object Chance="5" Number="1d1" Blueprint="Claymore Carbide"></object>
+    <object Chance="10" Number="1d1" Blueprint="Steel Sickle"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 3C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Claymore Carbide"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 4R" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Reaper's Claw"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 5C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Reaper's Claw"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 5R" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="TT_Crysteel_Claymore"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Melee Weapons 6C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="TT_Crysteel_Claymore"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 1C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Bronze Shield"></object>
+    <object Chance="5" Number="1d1" Blueprint="Feather Kilt"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 1R" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Suntan Tunic"></object>
+    <object Chance="15" Number="1d1" Blueprint="Halfmoon Shield"></object>
+    <object Chance="5" Number="1d1" Blueprint="Witchwood Crown"></object>
+    <object Chance="1" Number="1d1" Blueprint="Carnival Mask"></object>
+    <object Chance="1" Number="1d1" Blueprint="Dice"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 2C" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Rootshield"></object>
+    <object Chance="5" Number="1d1" Blueprint="Koiskin Tunic"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 2R" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Suntan Tunic"></object>
+    <object Chance="5" Number="1d1" Blueprint="Sunblessed Tunic"></object>
+    <object Chance="10" Number="1d1" Blueprint="Witchwood Crown"></object>
+    <object Chance="10" Number="1d1" Blueprint="Flowershield"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 3C" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Koiskin Tunic"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 3R" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Sunblessed Tunic"></object>
+    <object Chance="5" Number="1d1" Blueprint="Mirrormask Helm"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 4C" Load="Merge">
+  <objects>
+    <object Chance="10" Number="1d1" Blueprint="Mirrormask Helm"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Armor 4R" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Mirrormask Helm"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Utility 2" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1d1" Blueprint="Guiding Starcandle"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Utility 3" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Guiding Starcandle"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Artifact 0R" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1d1" Blueprint="Folded Duowheeler"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Trinkets 5" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1" Blueprint="@OdditiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Trinkets 6" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1" Blueprint="@OdditiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Trinkets 7" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1" Blueprint="@OdditiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Trinkets 8" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1" Blueprint="@OdditiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Artifact 1R" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="2" Number="1d1" Blueprint="Folded Duowheeler"></object>
+    <object Chance="5" Number="1d1" Blueprint="Stun Staff"></object>
+    <object Chance="2" Number="1d3" Blueprint="TT_Magazine"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Artifact 2R" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Folded Duowheeler"></object>
+    <object Chance="10" Number="1d1" Blueprint="Stun Staff"></object>
+    <object Chance="5" Number="1d3" Blueprint="TT_Magazine"></object>
+  </objects>
+</encountertable>
+
+
+
+<!--
+
+  	*****************************
+  	Flora & Fauna Revised & Added
+  	*****************************
+
+-->
+
+<!-- Special Tables -->
+
+<encountertable Name="SwanBevy" Load="Merge">
+
+  <objects>
+    <object Chance="100" Number="2d3" Blueprint="Iron Swan"></object>
+    <object Chance="80" Number="1d1" Blueprint="Black Swan"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- Regular Biome Tables -->
+
+<!-- Andromimos: Chrome Towers -->
+
+<encountertable Name="AndromimosGround">
+  <objects>
+    <object Chance="100" Number="3d2" Blueprint="Tame Dog"></object>
+    <object Chance="100" Number="3d3" Blueprint="Metropolitan"></object>
+    <object Chance="100" Number="1d6" Blueprint="TT_Penny_Pincher"></object>
+    <object Chance="50" Number="2d2" Blueprint="Android Socialite"></object>
+    <object Chance="50" Number="2d2" Blueprint="Arconaut"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="ChromeVegetation" Density="minimum">
+
+  <objects>
+    <object Chance="100" Number="32-64" Blueprint="TT_Skyvines"></object>
+    <object Chance="80" Number="4d6" Blueprint="TT_Grimshoot"></object>
+    <object Chance="80" Number="3d3" Blueprint="Livid Creeper"></object>
+    <object Chance="80" Number="3d3" Blueprint="Jilted Lover"></object>
+    <object Chance="10" Number="4d4" Blueprint="Aloe Volta"></object>
+    <object Chance="40" Number="2d3" Blueprint="Seed-Spitting Vine"></object>
+    <object Chance="40" Number="2d3" Blueprint="Thirst Thistle"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeLowEncounters" Density="minimum">
+
+  <objects>
+    <object Chance="30" Number="2d2" Blueprint="Dog"></object>
+    <object Chance="30" Number="2d2" Blueprint="Cannibal"></object>
+    <object Chance="25" Number="1d4" Blueprint="Scrap-clad Hermit"></object>
+    <object Chance="25" Number="1d4" Blueprint="Arconaut"></object>
+    <object Chance="25" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="10" Number="2d2" Blueprint="Barathrumite Arconaut"></object>
+    <object Chance="8" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="20" Number="1d4" Blueprint="Android Worker"></object>
+    <object Chance="20" Number="1d4" Blueprint="prev.gen Android"></object>
+    <object Chance="25" Number="2d3" Blueprint="Microturret"></object>
+    <object Chance="80" Number="1d3" Blueprint="RifleTurret"></object>
+    <object Chance="15" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="40" Number="1d2" Blueprint="Rimewyk"></object>
+    <object Chance="80" Number="1d3" Blueprint="Novice of the Sightless Way"></object>
+    <object Chance="20" Number="1d2" Blueprint="Disciple of the Sightless Way"></object>
+    <object Chance="4" Number="1d1" Blueprint="Glow-Wight Hero of Agolgut 1"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeMidEncounters" Density="minimum">
+
+  <objects>
+    <object Chance="30" Number="2d2" Blueprint="Juicing Cannibal"></object>
+    <object Chance="25" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="25" Number="1d2" Blueprint="Seedsprout Worm"></object>
+    <object Chance="25" Number="1d4" Blueprint="Scrap-clad Hermit"></object>
+    <object Chance="20" Number="1d3" Blueprint="Arconaut"></object>
+    <object Chance="25" Number="1d4" Blueprint="Plastronoid"></object>
+    <object Chance="25" Number="1d2" Blueprint="Turret Tinker"></object>
+    <object Chance="10" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="20" Number="1d4" Blueprint="prev.gen Android"></object>
+    <object Chance="20" Number="2d2" Blueprint="Microturret"></object>
+    <object Chance="40" Number="1d3" Blueprint="RifleTurret"></object>
+    <object Chance="40" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="50" Number="1d2" Blueprint="Rimewyk"></object>
+    <object Chance="20" Number="1d3" Blueprint="Novice of the Sightless Way"></object>
+    <object Chance="50" Number="1d2" Blueprint="Disciple of the Sightless Way"></object>
+    <object Chance="20" Number="1d2" Blueprint="Dervish of the Sightless Way"></object>
+    <object Chance="2" Number="1d1" Blueprint="Glow-Wight Hero of Agolgut 1"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeHighEncounters" Density="minimum">
+
+  <objects>
+    <object Chance="30" Number="2d2" Blueprint="Juicing Cannibal"></object>
+    <object Chance="30" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="40" Number="1d1" Blueprint="Quartziferous Mirror"></object>
+    <object Chance="25" Number="1d4" Blueprint="Scrap-clad Hermit"></object>
+    <object Chance="15" Number="1d2" Blueprint="Arconaut"></object>
+    <object Chance="25" Number="2d3" Blueprint="Glowmoth"></object>
+    <object Chance="12" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="20" Number="1d2" Blueprint="Slumberling"></object>
+    <object Chance="20" Number="3d2" Blueprint="Quartz Baboon"></object>
+    <object Chance="40" Number="1d3" Blueprint="LaserTurret"></object>
+    <object Chance="20" Number="1d1" Blueprint="RocketTurret"></object>
+    <object Chance="40" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="50" Number="1d2" Blueprint="Rimewyk"></object>
+    <object Chance="50" Number="1d2" Blueprint="Waveform Worm"></object>
+    <object Chance="50" Number="1d2" Blueprint="Dervish of the Sightless Way"></object>
+    <object Chance="30" Number="1d2" Blueprint="Disciple of the Sightless Way"></object>
+    <object Chance="1" Number="1d1" Blueprint="Glow-Wight Hero of Agolgut 1"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeTowersLow" Density="minimum">
+
+  <objects>
+    <tableobject Chance="66" Table="ChromeVegetation"></tableobject>
+    <tableobject Chance="95" Table="ChromeLowEncounters"></tableobject>
+    <tableobject Chance="15" Table="Chest 2"></tableobject>
+    <tableobject Chance="5" Table="Chest 4"></tableobject>
+    <object Chance="10" Number="1d2" Blueprint="@LesserChimeras"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeTowersMid" Density="minimum">
+
+  <objects>
+    <tableobject Chance="66" Table="ChromeVegetation"></tableobject>
+    <tableobject Chance="95" Table="ChromeMidEncounters"></tableobject>
+    <tableobject Chance="15" Table="Chest 3"></tableobject>
+    <tableobject Chance="5" Table="Chest 5"></tableobject>
+    <object Chance="15"  Number="1d2" Blueprint="@LesserChimeras"></object>
+    <object Chance="5" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+    <object Chance="6" Number="1d2" Blueprint="TT_Bellflower Plant"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="ChromeTowersHigh" Density="minimum">
+
+  <objects>
+    <tableobject Chance="66" Table="ChromeVegetation"></tableobject>
+    <tableobject Chance="95" Table="ChromeHighEncounters"></tableobject>
+    <tableobject Chance="15" Table="Chest 4"></tableobject>
+    <tableobject Chance="5" Table="Chest 6"></tableobject>
+    <object Chance="8" Number="2d2" Blueprint="TT_Bellflower Plant"></object>
+    <object Chance="20" Number="1d2" Blueprint="@LesserChimeras"></object>
+    <object Chance="5" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- Andromimos: Underbelly -->
+
+<encountertable Name="UnderbellyVegetation" Density="minimum">
+
+  <objects>
+    <object Chance="100" Number="64-256" Blueprint="TT_Skyvines"></object>
+    <object Chance="80" Number="8d6" Blueprint="TT_Grimshoot"></object>
+    <object Chance="80" Number="6d3" Blueprint="Livid Creeper"></object>
+    <object Chance="80" Number="4d3" Blueprint="Jilted Lover"></object>
+    <object Chance="10" Number="4d4" Blueprint="Aloe Volta"></object>
+    <object Chance="40" Number="3d3" Blueprint="Seed-Spitting Vine"></object>
+    <object Chance="40" Number="3d3" Blueprint="Thirst Thistle"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="UnderbellyDeep1" Density="minimum">
+
+  <objects>
+    <tableobject Chance="95" Table="Underbelly1Encounters"></tableobject>
+    <object Chance="100" Number="1d3+1" Blueprint="Tomb Techlight5"></object>
+    <object Chance="100" Number="20-40" Blueprint="@UnderbellyCityStuff"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="UnderbellyDeep2" Density="minimum">
+
+  <objects>
+    <tableobject Chance="100" Table="UnderbellyVegetation"></tableobject>
+    <tableobject Chance="95" Table="Underbelly2Encounters"></tableobject>
+    <object Chance="80" Number="1d2" Blueprint="Tomb Techlight5"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="UnderbellyDeep3" Density="minimum">
+
+  <objects>
+    <tableobject Chance="90" Table="Underbelly3Encounters"></tableobject>
+    <object Chance="100" Number="1d3+1" Blueprint="Tomb Techlight3"></object>
+    <object Chance="100" Number="20-40" Blueprint="@UnderbellyCityStuff"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="Underbelly1Encounters" Density="minimum">
+
+  <objects>
+    <object Chance="90" Number="4d3" Blueprint="TT_Ectomorph"></object>
+    <object Chance="50" Number="2d3" Blueprint="Dog"></object>
+    <object Chance="50" Number="1d2" Blueprint="Giant Centipede Nest"></object>
+    <object Chance="75" Number="2d4" Blueprint="Quillipede"></object>
+    <object Chance="80" Number="2d3" Blueprint="Cannibal"></object>
+    <object Chance="30" Number="1d4" Blueprint="Scrap-clad Hermit"></object>
+    <object Chance="40" Number="1d4" Blueprint="Arconaut"></object>
+    <object Chance="25" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="10" Number="2d2" Blueprint="Barathrumite Arconaut"></object>
+    <object Chance="8" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="30" Number="2d3" Blueprint="Rogue Mechanite"></object>
+    <object Chance="20" Number="1d4" Blueprint="prev.gen Android"></object>
+    <object Chance="40" Number="2d3" Blueprint="Microturret"></object>
+    <object Chance="90" Number="2d3" Blueprint="RifleTurret"></object>
+    <object Chance="20" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="20" Number="1d2" Blueprint="Slumberling"></object>
+    <object Chance="40" Number="1d3" Blueprint="Novice of the Sightless Way"></object>
+    <object Chance="10" Number="1d2" Blueprint="Disciple of the Sightless Way"></object>
+    <object Chance="2" Number="1d1" Blueprint="Glow-Wight Hero of Agolgut 1"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="Underbelly2Encounters" Density="minimum">
+
+  <objects>
+    <object Chance="50" Number="2d3" Blueprint="TT_Ectomorph"></object>
+    <object Chance="40" Number="1d3" Blueprint="Scrapbot"></object>
+    <object Chance="25" Number="1d2" Blueprint="Sprouting Orb"></object>
+    <object Chance="75" Number="2d3" Blueprint="Cannibal"></object>
+    <object Chance="60" Number="2d2" Blueprint="Juicing Cannibal"></object>
+    <object Chance="30" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="40" Number="1d1" Blueprint="Quartziferous Mirror"></object>
+    <object Chance="50" Number="3d3" Blueprint="Glowmoth"></object>
+    <object Chance="33" Number="1d2" Blueprint="Breather"></object>
+    <object Chance="10" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="20" Number="1d2" Blueprint="Slumberling"></object>
+    <object Chance="20" Number="2d2+1" Blueprint="Rogue Mechanite"></object>
+    <object Chance="10" Number="1d2" Blueprint="TT_Rogue Mechanite"></object>
+    <object Chance="33" Number="1d3" Blueprint="LaserTurret"></object>
+    <object Chance="20" Number="1d1" Blueprint="RocketTurret"></object>
+    <object Chance="33" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="50" Number="1d3" Blueprint="Waveform Worm"></object>
+    <object Chance="20" Number="1d2" Blueprint="Dervish of the Sightless Way"></object>
+    <object Chance="50" Number="1d2" Blueprint="Snailmother"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="Underbelly3Encounters" Density="minimum">
+
+  <objects>
+    <object Chance="90" Number="4d3" Blueprint="TT_Ectomorph"></object>
+    <object Chance="50" Number="1d4" Blueprint="Scrapbot"></object>
+    <object Chance="50" Number="1d3" Blueprint="Boosterbot"></object>
+    <object Chance="33" Number="1d2" Blueprint="Traipsing Mortar"></object>
+    <object Chance="25" Number="1d4" Blueprint="Juicing Cannibal"></object>
+    <object Chance="30" Number="1d3" Blueprint="Mimic"></object>
+    <object Chance="60" Number="1d1" Blueprint="Quartziferous Mirror"></object>
+    <object Chance="25" Number="2d3" Blueprint="Glowmoth"></object>
+    <object Chance="66" Number="1d3" Blueprint="FaerieBlue"></object>
+    <object Chance="20" Number="1d1" Blueprint="Breather"></object>
+    <object Chance="12" Number="1d1" Blueprint="Mysterious Gunslinger"></object>
+    <object Chance="100" Number="2d3+1" Blueprint="Rogue Mechanite"></object>
+    <object Chance="80" Number="2d2" Blueprint="TT_Rogue Mechanite"></object>
+    <object Chance="40" Number="1d3" Blueprint="LaserTurret"></object>
+    <object Chance="25" Number="1d3" Blueprint="RocketTurret"></object>
+    <object Chance="75" Number="1d3" Blueprint="ChaingunTurret"></object>
+    <object Chance="40" Number="1d2" Blueprint="Waveform Worm"></object>
+    <object Chance="50" Number="1d2" Blueprint="Dervish of the Sightless Way"></object>
+    <object Chance="25" Number="2d2" Blueprint="Disciple of the Sightless Way"></object>
+    <object Chance="5" Number="1d1" Blueprint="Chrome Pyramid"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Watervine / Saltmarsh -->
+
+<encountertable Name="WatervineEncounters" Density="medium" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Secluded Witch"></object>
+    <object Chance="35" Number="1d2" Blueprint="Iron Swan"></object>
+    <object Chance="3" Number="1d1" Blueprint="@SecludedWitchWatervine"></object>
+    <object Chance="3" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+    <tableobject Chance="2" Table="SwanBevy"></tableobject>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="WatervineVegitation" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="10" Number="4d3+2" Blueprint="Mintlace Tree"></object>
+    <object Chance="15" Number="3d6" Blueprint="Bittergrette Bush"></object>
+    <object Chance="2" Number="1" Blueprint="Fleur de Lys Flower"></object>
+    <object Chance="3" Number="1" Blueprint="Dreamweaver"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Water / River Svy -->
+
+<encountertable Name="WaterEncounters" Density="medium" Load="Merge">
+  <objects>
+    <object Chance="45" Number="1d3" Blueprint="Croc"></object>
+    <object Chance="70" Number="2d6" Blueprint="Madpole" Aquatic="true"></object>
+    <object Chance="70" Number="2d4" Blueprint="Sunkoi Fish"></object>
+    <object Chance="35" Number="1d3" Blueprint="Iron Swan"></object>
+    <object Chance="5" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+    <tableobject Chance="3" Table="SwanBevy"></tableobject>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="WaterVegitation" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="2" Number="1" Blueprint="Fleur de Lys Flower"></object>
+    <object Chance="3" Number="1" Blueprint="Dreamweaver"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Salt Desert -->
+<encountertable Name="SaltDesert" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+    <object Chance="1" Number="1" Blueprint="Starspawn"></object>
+    <object Chance="10" Number="1d2" Blueprint="Desert Fox"></object>
+  </objects>
+</encountertable>
+
+<!-- .Wastes / Deathlands -->
+
+<encountertable Name="WastesAnimals" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="4" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+    <object Chance="1" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Plains / Desert Canyon -->
+
+<encountertable Name="PlainsVegitation" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="20" Number="3d5" Blueprint="Boomrose Bush"></object>
+    <object Chance="15" Number="3d6" Blueprint="Bittergrette Bush"></object>
+    <object Chance="1" Number="1d1" Blueprint="Tears of Chloris"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="PlainsAnimals" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="10" Number="1d2" Blueprint="Rubberfox"></object>
+    <object Chance="1" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Hills -->
+
+<encountertable Name="HillsAnimals" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="15" Number="1d3" Blueprint="Rubberfox"></object>
+    <object Chance="5" Number="1d1" Blueprint="Secluded Witch"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="HillsVegitation" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="20" Number="2d4+2" Blueprint="Boomrose Bush"></object>
+    <object Chance="1" Number="1d1" Blueprint="Tears of Chloris"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Mountains -->
+
+<encountertable Name="MountainAnimals" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="5" Number="1d2" Blueprint="Rubberfox"></object>
+    <object Chance="3" Number="1d1" Blueprint="Desert Fox"></object>
+  </objects>
+
+</encountertable>
+
+
+<!-- .Jungle -->
+
+<encountertable Name="Jungle" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="3" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+    <object Chance="1" Number="1" Blueprint="@JungleRaritiesGroup"></object>
+    <object Chance="1" Number="1" Blueprint="@RaritiesGroup"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="JungleVegitation" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="15" Number="3d6" Blueprint="Boomrose Bush"></object>
+    <object Chance="15" Number="3d3+3" Blueprint="Mimingo"></object>
+    <object Chance="2" Number="1" Blueprint="Fleur de Lys Flower"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="JungleAnimals1" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="3" Number="1d1" Blueprint="Firefox"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="JungleAnimals2" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="6" Number="1d1" Blueprint="Firefox"></object>
+  </objects>
+
+</encountertable>
+
+
+<encountertable Name="JungleAnimals3" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="10" Number="1d2" Blueprint="Firefox"></object>
+  </objects>
+
+</encountertable>
+
+
+<encountertable Name="JungleAnimals4" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="15" Number="1d2" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+
+<encountertable Name="JungleAnimals5" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="6" Number="1d2" Blueprint="Firefox"></object>
+  </objects>
+
+</encountertable>
+
+
+<encountertable Name="JungleAnimals6" Density="minimum" Load="Merge">
+
+  <objects>
+    <object Chance="3" Number="1d1" Blueprint="Firefox"></object>
+  </objects>
+
+</encountertable>
+
+
+
+<!-- .Ruins -->
+
+<encountertable Name="Ruin Creatures 1" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="10" Number="1d1" Blueprint="Rubberfox"></object>
+</objects>
+
+</encountertable>
+
+<encountertable Name="Ruin Creatures 2" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="10" Number="1d2" Blueprint="Rubberfox"></object>
+  <object Chance="1" Number="1d1" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+
+<encountertable Name="Ruin Creatures 3" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="5" Number="1d2" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+
+<encountertable Name="Ruin Creatures 4" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="10" Number="1d2" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+
+<encountertable Name="Ruin Creatures 5" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="5" Number="1d2" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+<encountertable Name="Ruin Creatures 6" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="5" Number="1d1" Blueprint="Firefox"></object>
+</objects>
+
+</encountertable>
+
+
+<encountertable Name="Ruin Creatures 7" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="2" Number="1d2" Blueprint="Genesplice Worm"></object>
+</objects>
+
+</encountertable>
+
+<encountertable Name="Ruin Creatures 8" Density="minimum" Load="Merge">
+
+<objects>
+  <object Chance="2" Number="1d2" Blueprint="Genesplice Worm"></object>
+</objects>
+
+</encountertable>
+
+
+<!-- .Redrock -->
+
+<encountertable Name="Redrock Surface" Density="medium" Load="Merge">
+  <objects>
+    <object Chance="3" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+    <object Chance="5" Number="1d1" Blueprint="Tears of Chloris"></object>
+    <object Chance="5" Number="1d1" Blueprint="SultanShrine"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Redrock 6" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="100" Number="1d1" Blueprint="Rocky"></object>
+    <object Chance="100" Number="2d2+2" Blueprint="RedrockGirshling"></object>
+    <object Chance="100" Number="1d2" Blueprint="RedrockZealot"></object>
+    <object Chance="100" Number="2d2+2" Blueprint="Gnawed Watervine"></object>
+    <object Chance="100" Number="2d3+2" Blueprint="River Nymph"></object>
+    <tableobject Chance="5" Table="Junk 2"></tableobject>
+  </objects>
+</encountertable>
+
+
+<!-- .Rusted Archway -->
+
+<encountertable Name="Rusted Archway Surface" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Tears of Chloris"></object>
+  </objects>
+</encountertable>
+
+
+<!-- .Grit Gate -->
+
+<encountertable Name="Grit Gate Surface" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Fleur de Lys Flower"></object>
+  </objects>
+</encountertable>
+
+
+<!-- .Bethesda Susa  -->
+
+<encountertable Name="Bethesda Susa Surface" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="100" Number="2d3+2" Blueprint="Mintlace Tree"></object>
+    <object Chance="66" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+    <object Chance="5" Number="1" Blueprint="Fleur de Lys Flower"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Bethesda Susa Wharf" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="50" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+  </objects>
+</encountertable>
+
+
+<!-- .Golgotha -->
+
+<encountertable Name="Golgotha Surface" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1" Blueprint="Fleur de Lys Flower"></object>
+  </objects>
+</encountertable>
+
+
+<!-- .Rustwell -->
+
+<encountertable Name="Rustwell Surface" Density="minimum" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d1" Blueprint="Tears of Chloris"></object>
+  </objects>
+</encountertable>
+
+
+
+<!-- .Surface Ruins -->
+
+<encountertable Name="Deathlands Creatures 1" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d3+1" Blueprint="@FaerieGroupBlue"></object>
+  </objects>
+</encountertable>
+
+
+<!-- .Cave -->
+
+<encountertable Name="Cave Critters 1" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d2" Blueprint="Rubberfox"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Cave Critters 2" Load="Merge">
+  <objects>
+    <object Chance="5" Number="1d2" Blueprint="Rubberfox"></object>
+  </objects>
+</encountertable>
+
+<encountertable Name="Cave Critters 3" Load="Merge">
+  <objects>
+    <object Chance="1" Number="1d1" Blueprint="Firefox"></object>
+    <object Chance="3" Number="1d1" Blueprint="Secluded Witch"></object>
+    <object Chance="3" Number="1d6+3" Blueprint="@FaerieGroup"></object>
+  </objects>
+</encountertable>
+
+
+<!-- Farms -->
+
+<encountertable Name="Starapple Farm" Density="high" Load="Merge">
+
+  <objects>
+    <object Chance="100" Number="1d2" Blueprint="AppleFarmer"></object>
+    <object Chance="50" Number="1" Blueprint="FarmerWife"></object>
+  </objects>
+
+</encountertable>
+
+<encountertable Name="Pig Farm" Density="high">
+
+  <objects>
+    <object Chance="100" Number="1d2" Blueprint="PigFarmer"></object>
+    <object Chance="50" Number="1d2" Blueprint="FarmerWife"></object>
+  </objects>
+
+</encountertable>
+
+
+
+</encountertables>

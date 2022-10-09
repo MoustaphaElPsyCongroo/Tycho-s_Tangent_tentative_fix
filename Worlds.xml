@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+  <world Name="JoppaWorld" Load="Merge">
+
+
+    <cell Name="CellCarbideCity" Inherits="Jungle"
+          ApplyTo="TerrainCarbideCity"
+          Mutable="false" > <!--sets whether or not procgen functions here -->
+
+<!-- NW -->
+
+      <zone Level="10" x="0" y="0" Name="carbo-chromaic assemblies, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NW.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+<!-- W -->
+
+      <zone Level="10" x="0" y="1" Name="carbo-chromaic assemblies, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W2.rpm"></map>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="0" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_W9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- SW -->
+
+      <zone Level="10" x="0" y="2" Name="mechanite facilities, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SW.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+      </zone>
+
+<!-- NE -->
+
+      <zone Level="10" x="2" y="0" Name="residential block, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE2.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="2" y="0" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_NE9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- E -->
+
+      <zone Level="10" x="2" y="1" Name="residential block, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E2.rpm"></map>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="2" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_E9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- SE -->
+
+      <zone Level="10" x="2" y="2" Name="mining grounds, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE2.rpm"></map>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="2" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_SE9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- Centre -->
+
+      <zone Level="10" x="1" y="1" Name="city centre, Andromimos" ProperName="false" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre2.rpm"></map>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="1" y="1" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Centre9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- S -->
+
+      <zone Level="10" x="1" y="2" Name="The Amphitheatre, Andromimos" ProperName="true" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+      <zone Level="9" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre2.rpm"></map>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre3.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="7" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre4.rpm"></map>
+        <encounter Table="ChromeTowersLow" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="6" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre5.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="5" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre6.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="4" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre7.rpm"></map>
+        <encounter Table="ChromeTowersMid" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="3" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre8.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+      <zone Level="2" x="1" y="2" Name="skyside, Andromimos" ProperName="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Amphitheatre9.rpm"></map>
+        <encounter Table="ChromeTowersHigh" Amount="medium"></encounter>
+        <builder Class="FlagInside"></builder>
+        <builder Class="Music" Track="Spoopy Ambience" Chance="5"></builder>
+      </zone>
+
+<!-- N -->
+
+      <zone Level="10" x="1" y="0" Name="The Reliquary, Andromimos" ProperName="true" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_Reliquary.rpm"></map>
+        <builder Class="Music" Track="Urban Dreams" Chance="5"></builder>
+        <encounter Table="AndromimosGround" Amount="medium"></encounter>
+      </zone>
+
+<!-- Azure - The Underbelly -->
+
+      <zone Level="11" x="1" y="0" Name="Beneath the Reliquary" ProperName="true" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_BeneathReliquary.rpm"></map>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="12" x="1" y="0" Name="The Catacombs" ProperName="true" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_BeneathReliquary2.rpm"></map>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="13-22" x="1" y="0" Name="The Underbelly" NameContext="Andromimos">
+        <builder Class="ZoneTemplate:UnderbellyZone"></builder>
+        <builder Class="SolidEarth"></builder>
+        <builder Class="UnderbellyCity" XCorner="10" YCorner="2" Shell="true" WallMaterial="TT_Secure_Wall_Yellow" ShellMaterial="CarbideWall" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="15" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="25"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <encounter Table="UnderbellyDeep1"></encounter>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+      </zone>
+
+      <zone Level="23-37" x="1" y="0" Name="The Shattered Underbelly" NameContext="Andromimos">
+        <builder Class="ZoneTemplate:UnderbellyZone"></builder>      
+        <builder Class="UnderbellySpire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <encounter Table="UnderbellyDeep2"></encounter>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+      </zone>
+
+      <zone Level="38-44" x="1" y="0" Name="The Bunker Complex" NameContext="Andromimos">
+        <builder Class="ZoneTemplate:UnderbellyZone"></builder>
+        <builder Class="SolidEarth"></builder>
+        <builder Class="UnderbellyCity" XCorner="10" YCorner="2" Shell="true" WallMaterial="TT_Secure_Wall_Orange" ShellMaterial="CarbideWall" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <encounter Table="UnderbellyDeep3"></encounter>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+      </zone>
+
+      <zone Level="44" x="1" y="0" Name="distant hearts" ProperName="true" DisableForcedConnections="Yes">
+        <map FileName="CarbideCity_BeneathReliquary.rpm"></map>
+        <builder Class="Music" Track="Lazarus" Chance="5"></builder>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+    </cell>
+
+  </world>
+</worlds>

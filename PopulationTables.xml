@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+<!--
+
+  	****************
+  	B&A Starter Kits
+  	****************
+
+-->
+
+<population Name="StartingGear_AgentOfEntropy">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Cultist Robe" Number="1"></object>
+    <object Blueprint="Iron Sickle" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_AspiringBarathrumite">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Advanced Toolkit" Number="1"></object>
+    <object Blueprint="Chem Cell" Number="1-2"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_Biographer">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Across3" Number="1"></object>
+    <object Blueprint="Ink Phial" Number="2-3"></object>
+    <table Name="Cookbooks" Number="1d3" Chance="80"></table>
+    <object Blueprint="RandomFactionDeed" Number="0-1" Chance="20"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_ChromeMother">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Chrome Womb" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_Claymore">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Claymore Sword" Number="1"></object>
+    <object Blueprint="Chain Mail" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_DeathXIII">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="HalfFullWaterskin" Number="1"></object>
+    <object Blueprint="Lover's Blossom" Number="1"></object>
+    <object Blueprint="Reaper's Claw" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_Deepdweller">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Woven Tunic" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_Flowerchild">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Dried Lah Petals" Number="7-10"></object>
+    <object Blueprint="Suntan Tunic" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_GoatfolkDescendant">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Feather Kilt" Number="1"></object>
+    <object Blueprint="Albino Ape Pelt" Number="1d2" Chance="100"> </object>
+  </group>
+</population>
+
+<population Name="StartingGear_Rootdweller">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Vine-Weave Tunic" Number="1"></object>
+    <object Blueprint="Frowning Moon Mask" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_ServantOfPtoh">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Iron Sickle" Number="0-1"></object>
+    <group Style="pickone">
+      <object Blueprint="Seeker Robes" Weight="97"></object>
+      <object Blueprint="Seeker Exalted Robes" Weight="3"></object>
+    </group>
+  </group>
+</population>
+
+<population Name="StartingGear_Snapfriend">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Woven Tunic" Number="1"></object>
+  </group>
+</population>
+
+<population Name="StartingGear_TheHermitIX">
+  <group Style="pickeach">
+    <table Name="StartingGear_Common"></table>
+
+    <object Blueprint="Guiding Starcandle" Number="1"></object>
+  </group>
+</population>
+
+
+<!--
+
+  	***********************
+  	NPC & Chest Inventories
+  	***********************
+
+-->
+
+<population Name="SupplyCrateInventory">
+  <group Style="pickeach">
+    <object Blueprint="Lead Slug" Number="3d8+6" Chance="50"></object>
+    <object Blueprint="Bandage" Number="1d1" Chance="30"></object>
+    <object Blueprint="Canned Mystery Meat" Number="1d4" Chance="20"></object>
+    <object Blueprint="TT_Magazine" Number="1d3" Chance="15"></object>
+  </group>
+</population>
+<population Name="SecludedWitchInventory">
+  <group Style="pickeach">
+    <object Blueprint="Starapple" Number="1d4+2"></object>
+    <object Blueprint="Boomrose" Number="2d4"></object>
+    <object Blueprint="Mintlace Thread" Number="1d4+2"></object>
+    <object Blueprint="Witchwood Bark" Number="1d4+4"></object>
+    <object Blueprint="Witchwood Wreath" Number="1d3"></object>
+    <object Blueprint="Steel Sickle" Number="1d1"></object>
+    <object Blueprint="Witchwood Crown" Number="1d1" Chance="10"></object>
+    <object Blueprint="Moonpearl" Number="1d1" Chance="5"></object>
+    <object Blueprint="Urberry" Number="1d1" Chance="5"></object>
+    <object Blueprint="Guiding Starcandle" Number="1d1" Chance="5"></object>
+  </group>
+</population>
+<population Name="FarmerWeapon">
+  <group Style="pickone">
+    <object Blueprint="Pitchfork" Number="1"></object>
+    <object Blueprint="Iron Vinereaper" Number="1"></object>
+    <object Blueprint="Iron Sickle" Number="1"></object>
+    <object Blueprint="Steel Vinereaper" Number="1"></object>
+    <object Blueprint="Steel Sickle" Number="1"></object>
+  </group>
+</population>
+<population Name="FarmerWifeInventory">
+  <group Style="pickeach">
+    <object Blueprint="Mintlace Thread" Number="1d4+2"></object>
+    <object Blueprint="Mintlace Preserves" Number="2d4+4"></object>
+    <object Blueprint="Boomrose" Number="1" Chance="15"></object>
+  </group>
+</population>
+<population Name="VintnerInventoryRevised">
+  <group Style="pickeach">
+    <object Blueprint="WineWaterskin" Number="4-6"></object>
+    <object Blueprint="Bittergrette" Number="8-16"></object>
+    <object Blueprint="Crusty Loaf" Number="1-2"></object>
+    <object Blueprint="Hunk of Cheese" Number="1-2"></object>
+    <object Blueprint="Smoldered Mushroom" Number="1-2" Chance="20"></object>
+    <table Name="Cookbooks" Number="1" Chance="20"></table>
+  </group>
+</population>
+<population Name="RiverNymphInventory">
+  <group Style="pickeach">
+    <object Blueprint="Sandals of the River-Wives" Number="1" Chance="50"></object>
+    <object Blueprint="Carnival Mask" Number="1" Chance="20"></object>
+    <object Blueprint="Dried Lah Petals" Number="0-3"></object>
+    <object Blueprint="Boomrose" Number="1d4" Chance="20"></object>
+    <group Style="pickone">
+      <object Blueprint="Dagger2" Number="1" Chance="15"></object>
+      <object Blueprint="Iron Sickle" Number="1" Chance="15"></object>
+    </group>
+  </group>
+</population>
+<population Name="MetropolitanInventory">
+  <group Style="pickeach">
+    <object Blueprint="TT_Magazine" Number="1" Chance="15"></object>
+    <object Blueprint="Leather Gloves" Number="1" Chance="60"></object>
+    <group Style="pickone">
+      <object Blueprint="Wide-brimmed Hat" Number="1" Chance="100"></object>
+      <object Blueprint="Crimson Hood" Number="1" Chance="50"></object>
+    </group>
+    <group Style="pickone">
+      <object Blueprint="Cloth Robe" Number="1" Chance="75"></object>
+      <object Blueprint="Elastyne Skin Suit" Number="1" Chance="15"></object>
+    </group>
+    <group Style="pickone">
+      <object Blueprint="Leather Boots" Number="1" Chance="75"></object>
+      <object Blueprint="Elastyne Slippers" Number="1" Chance="15"></object>
+    </group>
+  </group>
+</population>
+<population Name="PennyPincherInventory">
+  <group Style="pickeach">
+    <object Blueprint="TT_Penny" Number="1"></object>
+    <object Blueprint="TT_Penny" Number="1-3" Chance="15"></object>
+    <object Blueprint="TT_Magazine" Number="1" Chance="5"></object>
+    <object Blueprint="Bittergrette" Number="1-3" Chance="25"></object>
+    <object Blueprint="Crusty Loaf" Number="1" Chance="25"></object>
+    <object Blueprint="Quilted Shawl" Number="1" Chance="15"></object>
+  </group>
+</population>
+
+
+<!--
+
+  	********************
+  	Critter Group Spawns
+  	********************
+
+-->
+
+<population Name="SecludedWitchWatervine">
+  <group Style="pickeach">
+    <object Number="1" Blueprint="Secluded Witch" Chance="90"></object>
+    <object Number="2d4+4" Blueprint="Mintlace Tree"></object>
+    <object Number="1d2" Blueprint="FaerieBlue"></object>
+    <object Number="1" Blueprint="Bedroll"></object>
+  </group>
+</population>
+
+<population Name="SecludedWitchHills">
+  <group Style="pickeach">
+    <object Number="1" Blueprint="Secluded Witch" Chance="90"></object>
+    <object Number="2d4+4" Blueprint="Witchwood Tree"></object>
+    <object Number="1d2" Blueprint="FaerieBlue"></object>
+    <object Number="1" Blueprint="Bedroll"></object>
+  </group>
+</population>
+
+<population Name="AndroidShepherdHerd">
+  <group Style="pickeach">
+    <object Number="1-2" Blueprint="Tick Shepherd"></object>
+    <object Number="2d4+4" Blueprint="Tick"></object>
+    <object Number="1" Blueprint="prev.gen Android" Chance="15"></object>
+  </group>
+</population>
+
+<population Name="AndroidSocialiteGroup">
+  <group Style="pickeach">
+    <object Number="3d2" Blueprint="Android Socialite"></object>
+    <object Number="1-2" Blueprint="prev.gen Android" Chance="15"></object>
+    <object Number="1-2" Blueprint="gen.5 Mechanite" Chance="15"></object>
+  </group>
+</population>
+
+<population Name="AndroidMechaniteGroup">
+  <group Style="pickeach">
+    <object Number="1-2" Blueprint="Android Socialite" Chance="50"></object>
+    <object Number="1d3" Blueprint="gen.5 Mechanite"></object>
+    <object Number="1d3" Blueprint="gen.6 Mechanite" Chance="75"></object>
+  </group>
+</population>
+
+<population Name="FaerieGroup">
+  <group Style="pickeach">
+    <object Chance="100" Number="2d4" Blueprint="FaerieYoung"></object>
+    <object Chance="100" Number="2d4" Blueprint="FaeriePink"></object>
+    <object Chance="15" Number="1d1" Blueprint="FaerieBlue"></object>
+  </group>
+</population>
+
+<population Name="FaerieGroupBlue">
+  <group Style="pickeach">
+    <object Chance="25" Number="1d3" Blueprint="FaerieYoung"></object>
+    <object Chance="100" Number="1d3" Blueprint="FaerieBlue"></object>
+  </group>
+</population>
+
+<population Name="KernishiGroup">
+  <group Style="pickeach">
+    <object Number="1" Blueprint="TT_Kernishi_Eater" Hint="Center"></object>
+    <object Number="1d3+5" Blueprint="TT_Kernishi_Blocker" Hint="RadialFromCenter:1"></object>
+  </group>
+</population>
+
+
+<!-- Rare characters + (supposedly unique) items list -->
+<population Name="RaritiesGroup">
+  <group Style="pickone">
+    <object Chance="25" Number="1" Blueprint="Starseed"></object>
+    <object Chance="12" Number="1" Blueprint="TT_Blade_of_a_Forgotten_Prince"></object>
+    <object Chance="10" Number="1" Blueprint="TT_Everspring_Emerald"></object>
+    <object Chance="5" Number="1" Blueprint="Phelicia"></object>
+    <object Chance="5" Number="1" Blueprint="Centifriend"></object>
+    <object Chance="5" Number="1" Blueprint="D-12"></object>
+    <object Chance="4" Number="1" Blueprint="TT_Imperial_Seal"></object>
+    <object Chance="2" Number="1" Blueprint="TT_Face_of_the_Firstborn"></object>
+    <object Chance="1" Number="1" Blueprint="TT_The_Black_Lotus"></object>
+  </group>
+</population>
+
+<population Name="JungleRaritiesGroup">
+  <group Style="pickone">
+    <object Chance="10" Number="1" Blueprint="TT_Solid_Snake"></object>
+  </group>
+</population>
+
+<!-- Only rare items (chests) -->
+<population Name="OdditiesGroup">
+  <group Style="pickone">
+    <object Chance="25" Number="1" Blueprint="Starseed"></object>
+    <object Chance="12" Number="1" Blueprint="TT_Blade_of_a_Forgotten_Prince"></object>
+    <object Chance="10" Number="1" Blueprint="TT_Everspring_Emerald"></object>
+    <object Chance="4" Number="1" Blueprint="TT_Imperial_Seal"></object>
+    <object Chance="2" Number="1" Blueprint="TT_Face_of_the_Firstborn"></object>
+    <object Chance="1" Number="1" Blueprint="TT_The_Black_Lotus"></object>
+  </group>
+</population>
+
+
+
+<population Name="LesserChimeras">
+  <object Blueprint="FaerieBlue" Number="1d1" Chance="50"></object>
+  <group Style="pickone">
+    <object Number="1d2" Blueprint="Mimic" Weight="8"></object>
+    <object Number="1d1" Blueprint="TT_Ectomorph" Weight="7"></object>
+    <object Number="1d2" Blueprint="Genesplice Worm" Weight="7"></object>
+    <object Number="1d1" Blueprint="TT_Replicant" Weight="6"></object>
+    <object Number="1" Blueprint="High Dervish of the Sightless Way" Weight="5"></object>
+    <group Style="pickeach">
+      <table Number="1" Name="GreaterChimeras" Weight="1"></table>
+    </group>
+  </group>
+</population>
+
+<population Name="GreaterChimeras">
+  <object Blueprint="FaerieBlue" Number="1d1" Chance="75"></object> 
+  <group Style="pickone">
+    <object Number="1" Blueprint="Urman"></object>
+  </group>
+</population>
+
+<population Name="UnderbellyCityStuff">
+  <group Style="pickeach">
+    <group Style="pickeach">
+      <object Chance="50" Number="1d2" Blueprint="Waterbed" Hint="Adjacent"></object>
+      <object Chance="75" Number="1d2" Blueprint="PlasticTree" Hint="AlongWall"></object>
+    </group>
+    <group Style="pickeach">
+      <object Chance="50" Number="1d2" Blueprint="Waterbed" Hint="Adjacent"></object>
+      <object Chance="75" Number="1d2" Blueprint="PlasticTree" Hint="AlongWall"></object>
+    </group>
+    <group Style="pickone">
+      <object Chance="25" Number="1d2" Blueprint="Porcelain Bowl" Hint="AlongWall"></object>
+      <object Chance="25" Number="1d2" Blueprint="Porcelain Bowl2" Hint="AlongWall"></object>
+    </group>
+    <group Style="pickone">
+      <object Chance="40" Number="1d4" Blueprint="TT_Neon_Sign_Top1" Hint="AdjacentToStartsWith:MetalWall"></object>
+    </group>
+    <object Chance="100" Number="1d3" Blueprint="Supply Crate"></object>
+    <object Chance="100" Number="1d10" Blueprint="Bones"></object>
+  </group>
+</population>
+
+<population Name="UnderbellySurface">
+  <group Style="pickone">
+    <table Name="SecludedWitchWatervine" Number="1" Weight="1"></table>
+    <table Name="KernishiGroup" Number="1" Weight="3"></table>
+    <table Name="AndroidShepherdHerd" Number="1" Weight="3"></table>
+  </group>
+</population>
+
+<population Name="UnderbellyGlobals">
+  <object Blueprint="ConcreteFloor"/>
+</population>
+
+<!-- don't touch this -->
+</populations>
